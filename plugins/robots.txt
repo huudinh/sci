@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: */page/*
+Disallow: /cp/*
+Disallow: /wp-json/
+Disallow: /wp-includes/
+Disallow: */?replytocom
+Disallow: *?replytocom
+Disallow: *pageinfo*
+Disallow: /?s=
+Disallow: *?attachment_id
+Disallow: */?attachment
+Disallow: *service*
+Disallow: /service.php?
+Disallow: /?s=%
+Sitemap: https://tuyendung.benhvienthammydonga.vn/sitemap_index.xml

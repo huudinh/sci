@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SCI FRAMEWORK</title>
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../core/css/style.css" />
+	<script src="../core/dist/jquery.min.js"></script>
+	
+</head>
+
+<body>
+
+    <style>
+        .fb_chat_1_0_0 {
+			position: fixed;
+			bottom: 0px;
+			right: 0px;
+			z-index: 2
+		}
+
+		.fb_chat_1_0_0-phone {
+			background-color: transparent;
+			width: 200px;
+			height: 200px;
+			cursor: pointer;
+			z-index: 200000 !important;
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translateZ(0);
+			-webkit-transition: visibility .5s;
+			-moz-transition: visibility .5s;
+			-o-transition: visibility .5s;
+			transition: visibility .5s;
+			right: 150px;
+			top: 30px
+		}
+
+		.fb_chat_1_0_0__circle {
+			width: 160px;
+			height: 160px;
+			top: 20px;
+			left: 20px;
+			position: absolute;
+			background-color: transparent;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			border-radius: 100%;
+			border: 2px solid rgba(30, 30, 30, 0.4);
+			opacity: 1;
+			-webkit-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+			-moz-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+			-ms-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+			-o-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+			animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s
+		}
+
+		.fb_chat_1_0_0__circle-fill {
+			width: 100px;
+			height: 100px;
+			top: 50px;
+			left: 50px;
+			position: absolute;
+			background-color: #000;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			border-radius: 100%;
+			border: 2px solid transparent;
+			opacity: 1;
+			-webkit-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			-moz-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			-ms-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			-o-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s
+		}
+
+		.fb_chat_1_0_0__img-circle {
+			width: 60px;
+			height: 60px;
+			top: 70px;
+			left: 70px;
+			position: absolute;
+			background: rgba(30, 30, 30, 0.1) url(image/messenger.png) no-repeat center center;
+			background-size: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			border-radius: 100%;
+			border: 2px solid transparent;
+			opacity: 1;
+			-webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+			-moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+			-ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+			-o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+			animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out
+		}
+
+		.fb_chat_1_0_0-green .fb_chat_1_0_0__circle-fill {
+			background-color: rgba(0, 175, 242, 0.5);
+			opacity: 1 !important
+		}
+
+		.fb_chat_1_0_0-green .fb_chat_1_0_0__circle {
+			border-color: #00aff2;
+			opacity: .5
+		}
+
+		.fb_chat_1_0_0-green .fb_chat_1_0_0__img-circle {
+			background-color: #fff
+		}
+
+		@media (max-width: 414px) {
+			.fb_chat_1_0_0 {
+				display: none
+			}
+		}
+
+		@media (max-width: 1440px) {
+			.fb_chat_1_0_0 {
+				bottom: -20px;
+				right: -20px
+			}
+		}
+
+		@media (max-width: 414px) {
+			.fb_chat_1_0_0 {
+				display: none
+			}
+		}
+
+		@-moz-keyframes coccoc-alo-circle-anim {
+			0% {
+				transform: rotate(0) scale(0.5) skew(1deg);
+				opacity: .1
+			}
+
+			30% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .5
+			}
+
+			100% {
+				transform: rotate(0) scale(1) skew(1deg);
+				opacity: .1
+			}
+		}
+
+		@-webkit-keyframes coccoc-alo-circle-anim {
+			0% {
+				transform: rotate(0) scale(0.5) skew(1deg);
+				opacity: .1
+			}
+
+			30% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .5
+			}
+
+			100% {
+				transform: rotate(0) scale(1) skew(1deg);
+				opacity: .1
+			}
+		}
+
+		@keyframes coccoc-alo-circle-anim {
+			0% {
+				transform: rotate(0) scale(0.5) skew(1deg);
+				opacity: .1
+			}
+
+			30% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .5
+			}
+
+			100% {
+				transform: rotate(0) scale(1) skew(1deg);
+				opacity: .1
+			}
+		}
+
+		@-moz-keyframes coccoc-alo-circle-fill-anim {
+			0% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .2
+			}
+
+			50% {
+				transform: rotate(0) scale(1) skew(1deg);
+				opacity: .2
+			}
+
+			100% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .2
+			}
+		}
+
+		@-webkit-keyframes coccoc-alo-circle-fill-anim {
+			0% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .2
+			}
+
+			50% {
+				transform: rotate(0) scale(1) skew(1deg);
+				opacity: .2
+			}
+
+			100% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .2
+			}
+		}
+
+		@keyframes coccoc-alo-circle-fill-anim {
+			0% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .2
+			}
+
+			50% {
+				transform: rotate(0) scale(1) skew(1deg);
+				opacity: .2
+			}
+
+			100% {
+				transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: .2
+			}
+		}
+
+		@-moz-keyframes coccoc-alo-circle-img-anim {
+			0% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+
+			10% {
+				transform: rotate(-25deg) scale(1) skew(1deg)
+			}
+
+			20% {
+				transform: rotate(25deg) scale(1) skew(1deg)
+			}
+
+			30% {
+				transform: rotate(-25deg) scale(1) skew(1deg)
+			}
+
+			40% {
+				transform: rotate(25deg) scale(1) skew(1deg)
+			}
+
+			50% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+
+			100% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+		}
+
+		@-webkit-keyframes coccoc-alo-circle-img-anim {
+			0% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+
+			10% {
+				transform: rotate(-25deg) scale(1) skew(1deg)
+			}
+
+			20% {
+				transform: rotate(25deg) scale(1) skew(1deg)
+			}
+
+			30% {
+				transform: rotate(-25deg) scale(1) skew(1deg)
+			}
+
+			40% {
+				transform: rotate(25deg) scale(1) skew(1deg)
+			}
+
+			50% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+
+			100% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+		}
+
+		@keyframes coccoc-alo-circle-img-anim {
+			0% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+
+			10% {
+				transform: rotate(-25deg) scale(1) skew(1deg)
+			}
+
+			20% {
+				transform: rotate(25deg) scale(1) skew(1deg)
+			}
+
+			30% {
+				transform: rotate(-25deg) scale(1) skew(1deg)
+			}
+
+			40% {
+				transform: rotate(25deg) scale(1) skew(1deg)
+			}
+
+			50% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+
+			100% {
+				transform: rotate(0) scale(1) skew(1deg)
+			}
+		}
+
+		/*# sourceMappingURL=../maps/icon-facebook.css.map */
+    </style>
+
+	<div class="fb_chat_1_0_0">
+		<div class="fb_chat_1_0_0-phone fb_chat_1_0_0-green fb_chat_1_0_0-show">
+			<div class="fb_chat_1_0_0__circle"></div>
+			<div class="fb_chat_1_0_0__circle-fill"></div>
+			<div class="fb_chat_1_0_0__img-circle"></div>
+		</div>
+	</div>
+
+	
+
+</body>
+
+
+</html>
