@@ -1,36 +1,28 @@
 <?php    
-$module_id =  get_option('mfpd_option_name');
+    $module_id =  get_option('mfpd_option_name');
+    $path = get_template_directory_uri();
+    $arrcheck = array();
 
-// Json Build
-// $json = new BuildJson;
-// $page_json = json_decode($json->read('page-'.get_the_ID()));
-$filename = 'https://nhakhoaparis.vn/wp-json/acf/v3/pages/'.$module_id.'/page_field/';
-$data = file_get_contents($filename);
-$page_json = json_decode($data);
+    $url = get_site_url().'/wp-json/acf/v3/pages/';
+    $page_json = json_decode(file_get_contents($url.$module_id.'/group_page_field/'));
 
-$page_field = get_field('page_field',$module_id);
-// Đường dẫn đến theme
-$path = get_template_directory_uri();
-$arrcheck = array();
-$css_inline = '';
-$js_inline = '';
+    foreach($page_json->group_page_field->footer_custom as $field): 
 
-foreach($page_field as $field_0):
-    foreach($field_0 as $field_1):
-        foreach($field_1 as $field):
-            $name = $field['acf_fc_layout'];
+        if($field->acf_fc_layout == 'footer'): 
+            foreach($field->footer_sub_fields as $footer_data): 
 
-            if(in_array($name,$arrcheck)){
-                $check = 1;
-            }else{
-                array_push($arrcheck,$name);
-                $check = 0;
-            }
-            include(locate_template('template-footer_v2/content-'.$name.'.php'));
-        endforeach;
+                $name = $footer_data->acf_fc_layout;
+            
+                if(in_array($name,$arrcheck)){
+                    $check = 1;
+                }else{
+                    array_push($arrcheck,$name);
+                    $check = 0;
+                }
+                include(locate_template('template-footer/content-'.$name.'.php'));	
+            endforeach;
+        endif;
     endforeach;
-endforeach;
-echo $css_inline;
 ?>
 
 
@@ -40,8 +32,8 @@ echo $css_inline;
 <?php do_action( 'theme_js' ); ?>
 <script>
 // add Img Lazy Demo
-addImgDefault('img.lazy','src');
-addImgDefault('source.lazy','srcset');
+// addImgDefault('img.lazy','src');
+// addImgDefault('source.lazy','srcset');
 
 window.addEventListener("scroll", function () { 
     // Add Onscroll .menu a
@@ -60,13 +52,12 @@ autoLazy('source.lazy','srcset');
 autoLazy('.lazy-bg','img-bg');
 </script>
 
-<?php //get_template_part('Module_v2/Popup/messenger_1_0_0/messenger_1_0_0'); ?>
-<?php //get_template_part('Module_v2/Popup/popup_person_1_0_0/popup_person_1_0_0'); ?>
-<?php get_template_part('Module_v2/Popup/popup_call_1_1_0/popup_call_1_1_0'); ?>
-<?php get_template_part('Module_v2/Popup/regist_ft_1_0_0/regist_ft_1_0_0'); ?>
-<?php get_template_part('Module_v2/Popup/popup_regist_1_0_8/popup_regist_1_0_8'); ?>
-<?php get_template_part('Module_v2/Popup/popup_regist_1_0_1/popup_regist_1_0_1'); ?>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/core_v2/js/jquery.min.js"></script>
-<script src="/quangcao247/contact/template/js/js.js?t=11235"></script>
-<?php get_template_part('Module_v2/Other/checking_site_1_0_0/checking_site_1_0_0'); ?>
+<?php get_template_part('Module/Popup/popup_call_1_1_0/popup_call_1_1_0'); ?>
+<?php get_template_part('Module/Popup/regist_ft_1_0_0/regist_ft_1_0_0'); ?>
+<?php get_template_part('Module/Popup/popup_regist_1_0_8/popup_regist_1_0_8'); ?>
+<?php get_template_part('Module/Popup/popup_regist_1_0_1/popup_regist_1_0_1'); ?>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/media/js/jquery.min.js"></script>
+<!-- <script src="/quangcao247/contact/template/js/js.js?t=11235"></script> -->
+<?php get_template_part('Module/Other/checking_site_1_0_0/checking_site_1_0_0'); ?>
