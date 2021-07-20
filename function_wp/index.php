@@ -5,4 +5,7 @@
     } else {
         echo 'public';
     }
+
+    // Check Post ID 
+    $postid = get_the_ID();
 ?>
