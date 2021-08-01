@@ -8,4 +8,9 @@
 
     // Check Post ID 
     $postid = get_the_ID();
-?>
+
+    // Check Page
+    is_page();
+
+    // Support Thumbnail Post
+    add_theme_support( 'post-thumbnails' );
