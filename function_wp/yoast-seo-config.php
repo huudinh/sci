@@ -139,4 +139,34 @@ if(is_singular('post')) {
 <?php
 }
 
+/**
+ * Add schema to yoast seo breadcrumb
+ */
+add_filter('wpseo_breadcrumb_links', 'jj_add_crumb_schema', 10, 1);
+function jj_add_crumb_schema($crumbs) {
+    if ( ! is_array( $crumbs ) || $crumbs === array() ) {
+        return $crumbs;
+    }
+    $listItems = [];
+    $j = 1;
+    foreach ( $crumbs as $i => $crumb ) {
+        $item = [];
+        $listItem = [
+            '@type' => 'ListItem',
+            'position' => $j,
+            'name' => $crumb['text'],
+            'item' => $crumb['url']
+        ];
+        $listItems[] = $listItem;
+        $j++;
+    }
+    $schema = [
+        '@context' => 'http://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => $listItems
+    ];
+    $html = '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n" . '</script> ';
+    echo $html;
+    return $crumbs;
+}
 ?>
