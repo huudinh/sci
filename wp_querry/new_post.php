@@ -29,5 +29,4 @@
             </div>
         ';
     endwhile; wp_reset_postdata(); 
-    endif;
 ?>
