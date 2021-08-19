@@ -12,5 +12,8 @@
     // Check Page
     is_page();
 
+    // Get Link
+    $link = get_permalink();
+
     // Support Thumbnail Post
     add_theme_support( 'post-thumbnails' );
