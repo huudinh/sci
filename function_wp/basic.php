@@ -12,6 +12,9 @@
     // Check Page
     is_page();
 
+    // Check Page Search
+    is_search()
+
     // Get Link
     $link = get_permalink();
 

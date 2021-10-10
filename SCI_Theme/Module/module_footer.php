@@ -4,15 +4,18 @@
     $arrcheck = array();
 
     $url = get_site_url().'/wp-json/acf/v3/pages/';
-    $page_json = json_decode(file_get_contents($url.$module_id.'/group_page_field/'));
 
-    foreach($page_json->group_page_field->footer_custom as $field): 
-
-        if($field->acf_fc_layout == 'footer'): 
-            foreach($field->footer_sub_fields as $footer_data): 
+    $apiUrl = $url.$module_id.'/group_page_field/';
+    $response = wp_remote_get($apiUrl);
+    $responseBody = wp_remote_retrieve_body( $response );
+    $page_json = json_decode( $responseBody );
+    
+    foreach($page_json->group_page_field->header_custom as $field): 
+        if($field->acf_fc_layout == 'footers'): 
+            foreach($field->footers_sub_fields as $footer_data): 
 
                 $name = $footer_data->acf_fc_layout;
-            
+                
                 if(in_array($name,$arrcheck)){
                     $check = 1;
                 }else{
@@ -53,11 +56,5 @@ autoLazy('.lazy-bg','img-bg');
 </script>
 
 
-<?php get_template_part('Module/Popup/popup_call_1_1_0/popup_call_1_1_0'); ?>
-<?php get_template_part('Module/Popup/regist_ft_1_0_0/regist_ft_1_0_0'); ?>
-<?php get_template_part('Module/Popup/popup_regist_1_0_8/popup_regist_1_0_8'); ?>
-<?php get_template_part('Module/Popup/popup_regist_1_0_1/popup_regist_1_0_1'); ?>
-
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/media/js/jquery.min.js"></script>
-<!-- <script src="/quangcao247/contact/template/js/js.js?t=11235"></script> -->
 <?php get_template_part('Module/Other/checking_site_1_0_0/checking_site_1_0_0'); ?>

@@ -1,0 +1,18 @@
+@import "tobi/tobi";
+
+//Bootrap style
+.text-center{
+    text-align: center;
+}
+.pc {
+    @media #{$r414} {
+        display: none;
+    }
+}
+
+.mb {
+    display: none;
+    @media #{$r414} {
+        display: block;
+    }
+}

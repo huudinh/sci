@@ -1,124 +1,4 @@
-// onScroll Active Menu
-function onScroll() {
-    const menu = document.querySelectorAll('.menu a');
-    let y = document.documentElement.scrollTop;
-    let sections = document.querySelectorAll('.temp');
-    let i = 0;
-    sections.forEach(function (section) {
-        let z = section.offsetTop - 70;
-        let active = document.querySelectorAll('.menu a.active');
-        if (z <= y) {
-            active[0].classList.remove('active');
-            menu[i].classList.add('active');
-        }
-        if (i < menu.length - 1) {
-            i++;
-        }
-    });
-}
-
-// Accrodion Single
-var Accordion = function (options) {
-    var element = typeof options.element === 'string' ?
-        document.getElementById(options.element) : options.element,
-        openTab = options.openTab,
-        oneOpen = options.oneOpen || false,
-
-        titleClass = 'accordion-title',
-        contentClass = 'accordion-content';
-
-    render();
-
-    function render() {
-        // attach classes to buttons and containers
-        [].forEach.call(element.querySelectorAll('button'),
-            function (item) {
-                item.classList.add(titleClass);
-                item.nextElementSibling.classList.add(contentClass);
-            });
-
-        // attach only one click listener
-        element.addEventListener('click', onClick);
-
-        // accordion starts with all tabs closed
-        closeAll();
-
-        // sets the open tab - if defined
-        if (openTab) {
-            open(openTab);
-        }
-    }
-
-    function onClick(e) {
-        if (e.target.className.indexOf(titleClass) === -1) {
-            return;
-
-        }
-
-        if (oneOpen) {
-            closeAll();
-            removeActive();
-            e.target.classList.add("active");
-        } else {
-            e.target.classList.toggle("active");
-        }
-
-        toggle(e.target.nextElementSibling);
-    }
-    function removeActive() {
-        [].forEach.call(element.querySelectorAll('.' + titleClass), function (item) {
-            item.classList.remove("active");
-        });
-    }
-
-    function closeAll() {
-        [].forEach.call(element.querySelectorAll('.' + contentClass), function (item) {
-            item.style.height = 0;
-        });
-    }
-
-    function toggle(el) {
-
-        var height = el.scrollHeight;
-
-        if (el.style.height === '0px' || el.style.height === '') {
-            el.style.height = height + 'px';
-        } else {
-            el.style.height = 0;
-        }
-    }
-
-    function getTarget(n) {
-        return element.querySelectorAll('.' + contentClass)[n - 1];
-    }
-
-    function open(n) {
-        var target = getTarget(n);
-
-        if (target) {
-            if (oneOpen) closeAll();
-            target.style.height = target.scrollHeight + 'px';
-        }
-    }
-
-    function close(n) {
-        var target = getTarget(n);
-
-        if (target) {
-            target.style.height = 0;
-        }
-    }
-
-    function destroy() {
-        element.removeEventListener('click', onClick);
-    }
-
-    return {
-        open: open,
-        close: close,
-        destroy: destroy
-    };
-};
+document.addEventListener("DOMContentLoaded", function(){
 
 // Accrodion Multil
 var acc = document.getElementsByClassName("accordions-title");
@@ -279,7 +159,7 @@ for (let modalVideo of modalVideos) {
 
     let modalSrc = modalVideo.getAttribute('data-video');
 
-    modalSrc = `//www.youtube-nocookie.com/embed/${modalSrc}?rel=0&controls=1&autoplay=1&nocookie=true`;
+    modalSrc = `//www.youtube-nocookie.com/embed/${modalSrc}?rel=0&controls=1&autoplay=1&nocookie=true&mute=true`;
 
     //Tat Popup Video Button Close
     let modalClipBoxs = document.getElementsByClassName('modal-clipBox');
@@ -298,6 +178,7 @@ for (let modalVideo of modalVideos) {
         for (let modalClipBox of modalClipBoxs) {
             item.addEventListener("click", () => {
                 modalClipBox.style.display = "none";
+                youtube.setAttribute('src', '');
             });
         }
 
@@ -308,17 +189,136 @@ for (let modalVideo of modalVideos) {
         for (let modalClipBox of modalClipBoxs) {
             item.addEventListener("click", () => {
                 modalClipBox.style.display = "none";
+                youtube.setAttribute('src', '');
             });
         }
 
     }
 }
 
-//Lazy LDP
-// window.addEventListener("scroll", function () { 
-//     myLoad('section','loaded');
-//     myLoad('run','runslide');
-// }); 
+});
+
+// Accrodion Single
+var Accordion = function (options) {
+    var element = typeof options.element === 'string' ?
+        document.getElementById(options.element) : options.element,
+        openTab = options.openTab,
+        oneOpen = options.oneOpen || false,
+
+        titleClass = 'accordion-title',
+        contentClass = 'accordion-content';
+
+    render();
+
+    function render() {
+        // attach classes to buttons and containers
+        [].forEach.call(element.querySelectorAll('button'),
+            function (item) {
+                item.classList.add(titleClass);
+                item.nextElementSibling.classList.add(contentClass);
+            });
+
+        // attach only one click listener
+        element.addEventListener('click', onClick);
+
+        // accordion starts with all tabs closed
+        closeAll();
+
+        // sets the open tab - if defined
+        if (openTab) {
+            open(openTab);
+        }
+    }
+
+    function onClick(e) {
+        if (e.target.className.indexOf(titleClass) === -1) {
+            return;
+
+        }
+
+        if (oneOpen) {
+            closeAll();
+            removeActive();
+            e.target.classList.add("active");
+        } else {
+            e.target.classList.toggle("active");
+        }
+
+        toggle(e.target.nextElementSibling);
+    }
+    function removeActive() {
+        [].forEach.call(element.querySelectorAll('.' + titleClass), function (item) {
+            item.classList.remove("active");
+        });
+    }
+
+    function closeAll() {
+        [].forEach.call(element.querySelectorAll('.' + contentClass), function (item) {
+            item.style.height = 0;
+        });
+    }
+
+    function toggle(el) {
+
+        var height = el.scrollHeight;
+
+        if (el.style.height === '0px' || el.style.height === '') {
+            el.style.height = height + 'px';
+        } else {
+            el.style.height = 0;
+        }
+    }
+
+    function getTarget(n) {
+        return element.querySelectorAll('.' + contentClass)[n - 1];
+    }
+
+    function open(n) {
+        var target = getTarget(n);
+
+        if (target) {
+            if (oneOpen) closeAll();
+            target.style.height = target.scrollHeight + 'px';
+        }
+    }
+
+    function close(n) {
+        var target = getTarget(n);
+
+        if (target) {
+            target.style.height = 0;
+        }
+    }
+
+    function destroy() {
+        element.removeEventListener('click', onClick);
+    }
+
+    return {
+        open: open,
+        close: close,
+        destroy: destroy
+    };
+};
+
+// onScroll Active Menu
+function onScroll() {
+    const menu = document.querySelectorAll('.menu a');
+    let y = document.documentElement.scrollTop;
+    let sections = document.querySelectorAll('.temp');
+    let i = 0;
+    sections.forEach(function (section) {
+        let z = section.offsetTop - 70;
+        let active = document.querySelectorAll('.menu a.active');
+        if (z <= y) {
+            active[0].classList.remove('active');
+            menu[i].classList.add('active');
+        }
+        if (i < menu.length - 1) {
+            i++;
+        }
+    });
+}
 
 function myLoad(sec, name) {
     const section_loads = document.querySelectorAll(sec);
@@ -409,4 +409,30 @@ function myLazy(sec, attr) {
         }
     }
 }
- 
+function autoLazy(sec, attr) {
+    const section_loads = document.querySelectorAll(sec);
+
+    for (let i = 0; i < section_loads.length; i++) {
+       setTimeout(()=>{
+           switch(attr){
+               case 'loaded':
+                section_loads[i].classList.add('loaded');
+                   break;
+               case 'src':
+                   section_loads[i].src = section_loads[i].dataset.src;
+                   section_loads[i].classList.remove('lazy');
+                   break;
+               case 'srcset':
+                   section_loads[i].srcset = section_loads[i].dataset.srcset;
+                   section_loads[i].classList.remove('lazy');
+                   break;
+               case 'img-bg':
+                   section_loads[i].classList.remove('lazy-bg');
+                   section_loads[i].classList.add('img-bg');
+                   break;
+               default:
+                   console.log(`Sorry, we are out of ${attr}.`);
+           }
+       },5000);
+    }
+}

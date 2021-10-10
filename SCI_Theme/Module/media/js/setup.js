@@ -1,22 +1,22 @@
-// // Add Smooth Scrolling Link
-// const links = document.querySelectorAll("a[href='#pageReg']");
+// Add Smooth Scrolling Link
+const links = document.querySelectorAll(".menu a, a[href='#pageReg']");
 
-// for (const link of links) {
-//     link.addEventListener("click", clickHandler);
-// }
+for (const link of links) {
+    link.addEventListener("click", clickHandler);
+}
 
-// function clickHandler(e) {
-//     e.preventDefault();
-//     const href = this.getAttribute("href");
+function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
     
-//     if(href != '#'){
-//         const offsetTop = document.querySelector(href).offsetTop;
-//         scroll({
-//             top: offsetTop - 70,
-//             behavior: "smooth"
-//         });
-//     }
-// }
+    if(href != '#'){
+        const offsetTop = document.querySelector(href).offsetTop;
+        scroll({
+            top: offsetTop - 70,
+            behavior: "smooth"
+        });
+    }
+}
 // add Img Lazy Demo
 addImgDefault('img.lazy','src');
 addImgDefault('source.lazy','srcset');
@@ -31,6 +31,11 @@ window.addEventListener("scroll", function () {
     myLazy('source.lazy','srcset');
     myLazy('.lazy-bg','img-bg');
 }); 
+
+autoLazy('section','loaded');
+autoLazy('img.lazy','src');
+autoLazy('source.lazy','srcset');
+autoLazy('.lazy-bg','img-bg');
 
 
 

@@ -4,8 +4,11 @@
     $arrcheck = array();
 
     $url = get_site_url().'/wp-json/acf/v3/pages/';
-    $page_json = json_decode(file_get_contents($url.$module_id.'/group_page_field/'));
-    
+    $apiUrl = $url.$module_id.'/group_page_field/';
+    $response = wp_remote_get($apiUrl);
+    $responseBody = wp_remote_retrieve_body( $response );
+    $page_json = json_decode( $responseBody );
+
     foreach($page_json->group_page_field->header_custom as $field): 
         if($field->acf_fc_layout == 'header'): 
             foreach($field->header_sub_fields as $header_data): 
