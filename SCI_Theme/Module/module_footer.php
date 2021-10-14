@@ -48,11 +48,7 @@ window.addEventListener("scroll", function () {
     myLazy('source.lazy','srcset');
     myLazy('.lazy-bg','img-bg');
 }); 
-autoLazy('section','loaded');
-autoLazy('.slide_run','slide');
-autoLazy('img.lazy','src');
-autoLazy('source.lazy','srcset');
-autoLazy('.lazy-bg','img-bg');
+
 </script>
 
 

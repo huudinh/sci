@@ -39,5 +39,4 @@
 ?>
 
 </body>
-<?php do_action( 'theme_js' ); ?>
 <?php //wp_footer(); ?>
