@@ -20,3 +20,9 @@
 
     // Support Thumbnail Post
     add_theme_support( 'post-thumbnails' );
+
+
+    // Post Functiion
+    $excerpt =  get_the_excerpt();
+    $admin = get_the_author();
+    $time = get_the_date('d/m/Y');
