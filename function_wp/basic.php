@@ -26,3 +26,5 @@
     $excerpt =  get_the_excerpt();
     $admin = get_the_author();
     $time = get_the_date('d/m/Y');
+
+    get_sidebar();
