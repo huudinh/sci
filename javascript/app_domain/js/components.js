@@ -40,6 +40,9 @@ components.mainScreen1 = `
             <select id="search_trangql" class="search_date">
                 <option value="">Trang QL</option>
             </select>
+            <select id="search_note" class="search_date">
+                <option value="">Ghi chú</option>
+            </select>
             <button type="submit" id="searchBtn">Tìm kiếm</button>
         </div>
         <table>
@@ -56,6 +59,8 @@ components.mainScreen1 = `
                 <th>Số điện thoại</th>
                 <th>Email</th>
                 <th>Trang QL</th>
+                <th>Ghi chú</th>
+                <th>SSL count</th>
             </tr>
             <tbody id="listPost"></tbody>
         </table>
@@ -270,7 +275,7 @@ components.adminMain = `
             <span id="viewAdmin" class="viewAdmin">[Xem lại]</span>
         </div>
         <div id="adminMain" class="adminMain">
-            <iframe src="https://docs.google.com/spreadsheets/d/1plIfCKdWwHAH9SGa2zOuC4irRNdQEhLSANkNY52UZwM/edit?usp=sharing" title="W3Schools Free Online Web Tutorials"></iframe>
+            <iframe src="https://docs.google.com/spreadsheets/d/1plIfCKdWwHAH9SGa2zOuC4irRNdQEhLSANkNY52UZwM/edit?usp=sharing" title="Google drive"></iframe>
         </div>   
     </div>
 `;

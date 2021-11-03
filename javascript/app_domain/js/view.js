@@ -30,11 +30,9 @@ view.setActiveScreen = (screenName) => {
                 controller.adminMain();
             });
             getAPI();
-            showIP(ipdata);
             showType(typeData);
             showBrand(brand);
-            showDate(dateData)
-            showTrangQL(trangQL)
+            showDate(dateData);
             break;
 
         case 'mainScreen2' :
@@ -45,8 +43,8 @@ view.setActiveScreen = (screenName) => {
                 controller.logOut();
             });
             getAPIbrand('Kangnam');
-            showIP(ipdata);
             showType(typeData);
+            showBrand(brand);
             showDate(dateData)
             break;
 
@@ -58,8 +56,8 @@ view.setActiveScreen = (screenName) => {
                 controller.logOut();
             });
             getAPIbrand('Đông Á');
-            showIP(ipdata);
             showType(typeData);
+            showBrand(brand);
             showDate(dateData)
             break;
         case 'mainScreen4' :
@@ -70,8 +68,8 @@ view.setActiveScreen = (screenName) => {
                 controller.logOut();
             });
             getAPIbrand('Paris');
-            showIP(ipdata);
             showType(typeData);
+            showBrand(brand);
             showDate(dateData)
             break;
         case 'mainScreen5' :
@@ -82,8 +80,8 @@ view.setActiveScreen = (screenName) => {
                 controller.logOut();
             });
             getAPIbrand('Hồng Hà');
-            showIP(ipdata);
             showType(typeData);
+            showBrand(brand);
             showDate(dateData)
             break;
         case 'mainScreen6' :
@@ -94,8 +92,8 @@ view.setActiveScreen = (screenName) => {
                 controller.logOut();
             });
             getAPIbrand('Học Viện');
-            showIP(ipdata);
             showType(typeData);
+            showBrand(brand);
             showDate(dateData)
             break;
         case 'mainScreen7' :
@@ -106,8 +104,8 @@ view.setActiveScreen = (screenName) => {
                 controller.logOut();
             });
             getAPIbrand('Richard Huy');
-            showIP(ipdata);
             showType(typeData);
+            showBrand(brand);
             showDate(dateData)
             break;
         case 'adminMain' :

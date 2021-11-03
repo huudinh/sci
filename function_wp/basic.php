@@ -1,4 +1,8 @@
 <?php
+    if (wp_is_mobile()):
+        /* Display and echo mobile specific stuff here */
+    endif;
+    
     //Check Private / Public
     if ( get_post_status ( $ID ) == 'private' ) {
         echo 'private';
