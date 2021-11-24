@@ -12,6 +12,7 @@
 	$idvideo = $my_array_of_vars['v'];    
 	  // Output: C4kxS1ksqtw
 ?> 
+<!-- https://img.youtube.com/vi/uL-CQF0u3Ik/maxresdefault.jpg -->
 <a class="js-video-button homeModulE__clip" data-video-id="<?php echo $idvideo; ?>" href="#" >
 	<img src="/rs/?w=352&h=235&src=<?php echo $redux_builder_nqt['sci-section-5-slides'][0]['image']?>" alt="">
 </a>	
