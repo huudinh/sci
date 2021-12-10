@@ -32,3 +32,6 @@
     $time = get_the_date('d/m/Y');
 
     get_sidebar();
+
+    $cate_desc = category_description();
+    single_cat_title()
