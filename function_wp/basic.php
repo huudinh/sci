@@ -35,3 +35,10 @@
 
     $cate_desc = category_description();
     single_cat_title()
+
+    // Get field ACF
+    $product_info = explode("\n", get_field('product_info'));
+
+    // Read thumbnail
+    $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');            
+    $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
