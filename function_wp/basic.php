@@ -42,3 +42,6 @@
     // Read thumbnail
     $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');            
     $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
+
+    //Trim Word
+    wp_trim_words( get_the_excerpt($post->ID), 30 )
