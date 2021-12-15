@@ -1,0 +1,47 @@
+.wheel {
+    max-width: 800px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wheel::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(images/point.png) no-repeat;
+    width: 60px;
+    height: 50px;
+    background-size: 100%;
+    left: -35px;
+    top: 226px;
+    z-index: 12;
+}
+
+.spin {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-size: 100%;
+    margin: -69px 0 0 -69px;
+    border-radius: 100%;
+    z-index: 1000;
+    background-image: url(images/start.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.spin-end {
+    background-image: url(images/start_end.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
