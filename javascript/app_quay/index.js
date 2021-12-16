@@ -55,26 +55,35 @@ spin.addEventListener('click', () => {
             console.log(voucher[0].name);
             spin_wheel(20149);
             spin.classList.add('spin-end');
+            localStorage.setItem("checked", true);
 
         } else if (randnum <= number2) {
             console.log(voucher[1].name);
             spin_wheel(20239);
             spin.classList.add('spin-end');
+            localStorage.setItem("checked", true);
+
 
         } else if (randnum <= number3) {
             console.log(voucher[2].name);
             spin_wheel(20261);
             spin.classList.add('spin-end');
+            localStorage.setItem("checked", true);
+
 
         } else if (randnum <= number4) {
             console.log(voucher[3].name);
             spin_wheel(20284);
             spin.classList.add('spin-end');
+            localStorage.setItem("checked", true);
+
 
         } else if (randnum <= number5) {
             console.log(voucher[4].name);
             spin_wheel(20306);
             spin.classList.add('spin-end');
+            localStorage.setItem("checked", true);
+
 
         }
     }
