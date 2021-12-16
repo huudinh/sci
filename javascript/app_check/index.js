@@ -88,20 +88,26 @@ const data = [{
 
 ]
 const app_check = document.getElementById('app_check');
+const container = document.createElement('div');
+container.classList.add('checkForm');
+
 
 // console.log(data);
 
 for (let i = 0; i < data.length; i++) {
     let index = i;
+    let containerCheck = document.createElement('div');
+    containerCheck.classList.add('checkQuestion');
     // console.log(data[i].name);
     const questionGroup = new QuestionGroup(data[i].name, data[i].nameValue);
-    app_check.appendChild(questionGroup.render());
+    containerCheck.appendChild(questionGroup.render());
 
     for (let item of data[i].question) {
         // console.log(item.questionName);
         const inputGroup = new InputGroup(item.questionName, item.questionValue, index);
-        app_check.appendChild(inputGroup.render());
+        containerCheck.appendChild(inputGroup.render());
     }
+    container.appendChild(containerCheck);
 }
 
 
@@ -109,6 +115,7 @@ let button = document.createElement('button');
 button.innerHTML = 'Nhan ket qua';
 button.classList.add('ketQua');
 
+app_check.appendChild(container);
 app_check.appendChild(button);
 
 
