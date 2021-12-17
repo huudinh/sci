@@ -117,9 +117,6 @@ function change_theme($theme)
             
             return 'mdichvu';
         }}
-    
-    
-    
 }
 ?>
 
