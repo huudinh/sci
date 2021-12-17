@@ -10,6 +10,8 @@ class QuestionGroup {
 
         this.$name = document.createElement('div');
         this.$name.innerHTML = names;
+        this.$name.classList.add('checkTitleName')
+
         this.$nameValue = document.createElement('div');
         this.$nameValue.innerHTML = nameValue;
     }
