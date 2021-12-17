@@ -1,46 +1,3 @@
-<?php if(isset($_GET['test'])): ?>	
-
-<?php else: ?>
-
-<?php endif;?>
-	
-	
-<?php
-	/*Hàm tách ID video youtube*/
-	$url = $redux_builder_nqt['sci-section-5-slides'][0]['url'];
-	parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
-	$idvideo = $my_array_of_vars['v'];    
-	  // Output: C4kxS1ksqtw
-?> 
-<!-- https://img.youtube.com/vi/uL-CQF0u3Ik/maxresdefault.jpg -->
-<a class="js-video-button homeModulE__clip" data-video-id="<?php echo $idvideo; ?>" href="#" >
-	<img src="/rs/?w=352&h=235&src=<?php echo $redux_builder_nqt['sci-section-5-slides'][0]['image']?>" alt="">
-</a>	
-
-
-<?php
-function getIDvideo($url) {
-	
-	parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
-	return $my_array_of_vars['v'];  
-} 
-$idVideo = get_sub_field('name');
-getIDvideo($idVideo);
-
-?>
-
-Fix thumnail
-add_theme_support( 'post-thumbnails', array( 'post', 'customposttypename' ) );
-
-Fix Title
-if ( !function_exists( 'yourtheme_setup' ) ) {
-    function yourtheme_setup() {
-        add_theme_support( 'title-tag' );
-    }
-
-    add_action( 'after_setup_theme', 'yourtheme_setup' );
-}
-
 //Fix img thumbnail Function
 
 function get_first_image() {
@@ -66,11 +23,7 @@ $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
 						$img = '/wp-content/themes/codeteam/logo.png';
 					endif;
 					
-  <?php 
-  // fix duplicate listing add noindex automatically to date, author and tag archives
-  if($paged > 1 || is_author() || is_tag() || is_date() || is_attachment()){
-    echo '<meta name="robots" content="noindex,follow" />'; } 
-  ?>					
+				
 			
 User-agent: *
 Disallow: /wp-admin/
