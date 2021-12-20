@@ -157,13 +157,18 @@ button.addEventListener('click', () => {
 
     let number = data.length / 2;
 
-    if (a >= number) {
-        console.log('Nam Muc 1')
-    } else if (b >= number) {
-        console.log('Nam Muc 2')
+    if (arrResult.length > 0) {
+        if (a >= number) {
+            console.log('Nam Muc 1')
+        } else if (b >= number) {
+            console.log('Nam Muc 2')
+        } else {
+            console.log('Nam Muc 3')
+        }
     } else {
-        console.log('Nam Muc 3')
+        alert('Bạn chưa chọn đủ thông tin');
     }
+
 
 
     // console.log(a, b, c, d);
