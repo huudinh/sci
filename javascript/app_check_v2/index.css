@@ -1,0 +1,10 @@
+.checkForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.checkQuestion {
+    width: 50%;
+    padding: 5px 0;
+}
