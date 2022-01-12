@@ -1,5 +1,5 @@
 import { WinnerList } from './winnerList.js';
-import { Rotation } from './rotation.js?v=1';
+import { Rotation } from './rotation.js?v=2';
 class Main {
     $container;
     $title;

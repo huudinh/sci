@@ -9,8 +9,8 @@ class WinnerList {
     $tenGiai;
     $phanThuong;
     $form;
-    $titleMB;
-    $tableMB;
+    $titleMN;
+    $tableMN;
     $winnerList;
 
     constructor() {
@@ -18,11 +18,11 @@ class WinnerList {
         this.$container.style.display = 'none';
         this.$container.classList.add('modal-container');
 
-        this.$titleMB = document.createElement('div');
-        this.$titleMB.classList.add('winnerListTitle');
-        this.$titleMB.innerHTML = 'Danh sách nhân viên trúng thưởng Miền Bắc';
+        this.$titleMN = document.createElement('div');
+        this.$titleMN.classList.add('winnerListTitle');
+        this.$titleMN.innerHTML = 'Danh sách nhân viên trúng thưởng Miền Nam';
 
-        this.$tableMB = document.createElement('table');
+        this.$tableMN = document.createElement('table');
         this.$tr = document.createElement('tr');
 
         this.$maNV = document.createElement('th');
@@ -46,21 +46,21 @@ class WinnerList {
         this.$btnCancel.innerHTML = 'Thoát';
         this.$btnCancel.addEventListener('click', this.handleCancel);
 
-        db.collection('listWinnersMB').onSnapshot(this.listWinnersMBListener);
+        db.collection('listWinnersMN').onSnapshot(this.listWinnersMNListener);
     }
-    listWinnersMBListener = (snapshot) => {
+    listWinnersMNListener = (snapshot) => {
         snapshot.docChanges().forEach((change) => {
-            const listWinnersMB = change.doc.data();
+            const listWinnersMN = change.doc.data();
             // const id = change.doc.id;
 
             const $winnerListItem = new WinnerListItem(
-                listWinnersMB.maNV,
-                listWinnersMB.tenNV,
-                listWinnersMB.thKhoi,
-                listWinnersMB.tenGiai,
-                listWinnersMB.phanThuong
+                listWinnersMN.maNV,
+                listWinnersMN.tenNV,
+                listWinnersMN.thKhoi,
+                listWinnersMN.tenGiai,
+                listWinnersMN.phanThuong
             );
-            this.$tableMB.appendChild($winnerListItem.render());
+            this.$tableMN.appendChild($winnerListItem.render());
         });
     };
 
@@ -91,10 +91,10 @@ class WinnerList {
         this.$tr.appendChild(this.$tenGiai);
         this.$tr.appendChild(this.$phanThuong);
 
-        this.$tableMB.appendChild(this.$tr);
+        this.$tableMN.appendChild(this.$tr);
 
-        modalContent.appendChild(this.$titleMB);
-        modalContent.appendChild(this.$tableMB);
+        modalContent.appendChild(this.$titleMN);
+        modalContent.appendChild(this.$tableMN);
         modalContent.appendChild(footer);
 
         this.$container.appendChild(modalContent);

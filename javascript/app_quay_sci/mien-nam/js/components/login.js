@@ -86,10 +86,10 @@ class Login {
         this.$container.appendChild(this.$feedbackMessage);
         this.$container.appendChild(this.$form);
 
-        // const $divider = document.createElement('hr');
-        // this.$container.appendChild($divider);
+        const $divider = document.createElement('hr');
+        this.$container.appendChild($divider);
 
-        // this.$container.appendChild(this.$linkToRegister);
+        this.$container.appendChild(this.$linkToRegister);
 
         this.$screenContainer.appendChild(this.$container);
         return this.$screenContainer;

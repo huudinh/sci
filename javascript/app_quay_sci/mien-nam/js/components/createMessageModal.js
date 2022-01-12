@@ -58,7 +58,7 @@ class CreateMessageModal {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        db.collection('listWinnersMB')
+        db.collection('listWinnersMN')
             .add({
                 maNV: this.user.MaNV,
                 tenNV: this.user.TenNV,

@@ -1,0 +1,3413 @@
+{
+    "mienBac": [{
+            "MaNV": "A100001",
+            "TenNV": "Võ Tiến Huy",
+            "TH_Khoi": "Ban Tổng Giám đốc"
+        },
+        {
+            "MaNV": "A100003",
+            "TenNV": "Hán Thị Linh Nhung",
+            "TH_Khoi": "Ban Tổng Giám đốc"
+        },
+        {
+            "MaNV": "A100668",
+            "TenNV": "Bùi Khánh Đa",
+            "TH_Khoi": "Ban Tổng Giám đốc"
+        },
+        {
+            "MaNV": "A102631",
+            "TenNV": "Lê Hoài Phương",
+            "TH_Khoi": "Trợ lý Điều hành"
+        },
+        {
+            "MaNV": "A100590",
+            "TenNV": "Võ Hương Liên",
+            "TH_Khoi": "Trợ lý Điều hành"
+        },
+        {
+            "MaNV": "A100005",
+            "TenNV": "Hoàng Viết Tùng",
+            "TH_Khoi": "Trưởng nhóm Trợ lý Điều hành"
+        },
+        {
+            "MaNV": "A100291",
+            "TenNV": "Vương Thị Thanh Thủy",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A101175",
+            "TenNV": "Phạm Nhật Duy",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A100423",
+            "TenNV": "Hán Thị Thu Thảo",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A100382",
+            "TenNV": "Lê Đặng Hoàng Vân",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A101401",
+            "TenNV": "Bùi Bích Ngọc",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A101651",
+            "TenNV": "Nguyễn Thu Phương",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A101787",
+            "TenNV": "Nguyễn Ngọc Dương",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A101689",
+            "TenNV": "Vũ Thị Hà Thanh",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A102314",
+            "TenNV": "Trịnh Thị Lan",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A102800",
+            "TenNV": "Phạm Thị Thanh Thảo",
+            "TH_Khoi": "Khối Tài chính kế toán"
+        },
+        {
+            "MaNV": "A101498",
+            "TenNV": "Triệu Thị Bích Ngọc",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A101399",
+            "TenNV": "Lê Thị Hạnh",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A102185",
+            "TenNV": "Trịnh Lan Anh",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A101214",
+            "TenNV": "Nguyễn Thị Kiều Trang",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A101497",
+            "TenNV": "Nguyễn Thị Hương",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A101351",
+            "TenNV": "Nông Thị Nghiệp",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A102243",
+            "TenNV": "Đinh Thị Nhung",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A101761",
+            "TenNV": "Vũ Phi Hùng",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "L101719",
+            "TenNV": "Nguyễn Kế Thu",
+            "TH_Khoi": "Khối Hành chính nhân sự"
+        },
+        {
+            "MaNV": "A100344",
+            "TenNV": "Lê Thị Thu Hương",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101664",
+            "TenNV": "Trịnh Kim Loan",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100009",
+            "TenNV": "Võ Tuấn Diễm",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100106",
+            "TenNV": "Phạm Đức Thành",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100107",
+            "TenNV": "Nguyễn Xuân Trường",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100191",
+            "TenNV": "Nguyễn Chí Linh",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100454",
+            "TenNV": "Nguyễn Hữu Nam",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101715",
+            "TenNV": "Đỗ Duy Long",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100105",
+            "TenNV": "Bùi Đức Tân",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "L100452",
+            "TenNV": "Nguyễn Nhật Hải",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101562",
+            "TenNV": "Nguyễn Đức Hoằng",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "B101391",
+            "TenNV": "Nguyễn Văn Kiên",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "H101508",
+            "TenNV": "Trần Văn Dương",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101695",
+            "TenNV": "Phạm Chí Quang",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101744",
+            "TenNV": "Trần Lệ Thu",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102542",
+            "TenNV": "Mã Đình Tước",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102666",
+            "TenNV": "Vũ Quang Thắng",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100630",
+            "TenNV": "Nguyễn Khánh Hương Giang",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101768",
+            "TenNV": "Nguyễn Đức Thọ",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101824",
+            "TenNV": "Bùi Trịnh Thanh",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101854",
+            "TenNV": "Nguyễn Thị Phương Dung",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101936",
+            "TenNV": "Nguyễn Hữu Chí",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102165",
+            "TenNV": "Đoàn Cao Sơn",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102516",
+            "TenNV": "Nguyễn Ngọc Hải",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102667",
+            "TenNV": "Trần Thị Lệ",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102715",
+            "TenNV": "Trịnh Ngọc Hưng",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102831",
+            "TenNV": "Đặng Thị Hường",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102855",
+            "TenNV": "Nguyễn Hồng Phương Chi",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100496",
+            "TenNV": "Ngô Doãn Huy",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102251",
+            "TenNV": "Nguyễn Lệ Thủy",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101626",
+            "TenNV": "Hán Chí Thanh",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102736",
+            "TenNV": "Lê Thị Hiền",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101760",
+            "TenNV": "Phạm Thị Lợi",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101443",
+            "TenNV": "Đỗ Thị Thúy Hà",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100114",
+            "TenNV": "Hồ Thị Hải Yến",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "H101299",
+            "TenNV": "Đặng Thị Hòa",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100006",
+            "TenNV": "Phùng Quang Hào",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102716",
+            "TenNV": "Phạm Vinh Quang",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102470",
+            "TenNV": "Nguyễn Thị Vân",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102474",
+            "TenNV": "Đặng Kiều Long",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102476",
+            "TenNV": "Đoàn Thảo Ngọc Trang",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102601",
+            "TenNV": "Bùi Thị Thảo Hương",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102472",
+            "TenNV": "Nguyễn Thị Kim Quế",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102490",
+            "TenNV": "Phạm Trung Hiếu",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102571",
+            "TenNV": "Nguyễn Hữu Linh",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A101248",
+            "TenNV": "Hà Ngọc Diệp",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100082",
+            "TenNV": "Đỗ Thị Tâm",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100270",
+            "TenNV": "Đỗ Trà Mi",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100098",
+            "TenNV": "Nguyễn Thị Kim Dung",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100735",
+            "TenNV": "Đồng Bích Ngọc",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100087",
+            "TenNV": "Nguyễn Thị Thu Hường",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100088",
+            "TenNV": "Phạm Thị Ngọc Anh",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A102614",
+            "TenNV": "Trần Thị Bích Phượng",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100007",
+            "TenNV": "Phạm Ngọc Tuyên",
+            "TH_Khoi": "Khối Vận hành"
+        },
+        {
+            "MaNV": "A100138",
+            "TenNV": "Nguyễn Thị Hồng Nhung",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101314",
+            "TenNV": "Trần Lâm Hùng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100141",
+            "TenNV": "Vũ Thị Thêu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102627",
+            "TenNV": "Lê Thị Loan",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102090",
+            "TenNV": "Nguyễn Anh Tuấn",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102247",
+            "TenNV": "Đỗ Minh Vương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100185",
+            "TenNV": "Đào Thị Lan",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100178",
+            "TenNV": "Lê Thị Cúc",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100300",
+            "TenNV": "Ma Thị Linh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100182",
+            "TenNV": "Ban Thị Hạnh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100181",
+            "TenNV": "Hà Thị Thúy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102619",
+            "TenNV": "Vũ Thị Huệ",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100124",
+            "TenNV": "Lương Thị Thùy Dương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101359",
+            "TenNV": "Lê Tiến Dũng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101780",
+            "TenNV": "Nguyễn Phương Thư",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102536",
+            "TenNV": "Đặng Thị Thanh Hương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "L101196",
+            "TenNV": "Nguyễn Thị Diệu Mi",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102823",
+            "TenNV": "Trịnh Thùy Trang",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "L101690",
+            "TenNV": "Vũ Thị Kim Loan",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100140",
+            "TenNV": "Nguyễn Thị Thùy Trang",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101195",
+            "TenNV": "Phạm Thị Kim Thoa",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100146",
+            "TenNV": "Nguyễn Thị Thu Hạnh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101788",
+            "TenNV": "Nguyễn Thị Linh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101935",
+            "TenNV": "Phan Thị May",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101197",
+            "TenNV": "Nguyễn Thị Thoan",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100147",
+            "TenNV": "Nguyễn Duy Khánh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102258",
+            "TenNV": "Phạm Hồng Ngọc",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101242",
+            "TenNV": "Nguyễn Hữu Quyền",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102569",
+            "TenNV": "Nguyễn Duy Đức",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102428",
+            "TenNV": "Hoàng Thị Thu Lý",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102628",
+            "TenNV": "Hoàng Thị Thu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100758",
+            "TenNV": "Ngô Thị Thu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "H101285",
+            "TenNV": "Vương Thị Kim Cúc",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100164",
+            "TenNV": "Nguyễn Thị Ánh Khương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100163",
+            "TenNV": "Phạm Thanh Tuấn",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100420",
+            "TenNV": "Nguyễn Viết Hưng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101804",
+            "TenNV": "Nguyễn Hồng Sơn",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100753",
+            "TenNV": "Nguyễn Quang Huy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101916",
+            "TenNV": "Ngô Đức Đạt",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102259",
+            "TenNV": "Đỗ Đình Sơn",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100168",
+            "TenNV": "Nguyễn Kim Thoa",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100093",
+            "TenNV": "Nguyễn Thị Thơm",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101307",
+            "TenNV": "Nguyễn Thị Thơm",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101537",
+            "TenNV": "Đào Ngọc Anh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100353",
+            "TenNV": "Trần Văn Việt",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102267",
+            "TenNV": "Lê Đình Hiếu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102505",
+            "TenNV": "Đào Thành Hiếu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101471",
+            "TenNV": "Nguyễn Thị Thắm",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101495",
+            "TenNV": "Huỳnh Thị Kim Dung",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101778",
+            "TenNV": "Phạm Văn Ninh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101776",
+            "TenNV": "Phạm Thị Phượng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101187",
+            "TenNV": "Nguyễn Văn Tuy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101188",
+            "TenNV": "Nguyễn Thị Hiếu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101857",
+            "TenNV": "Trịnh Thị Hồng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102260",
+            "TenNV": "Nguyễn Đức Thuận",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101245",
+            "TenNV": "Bùi Thị Nhài",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100781",
+            "TenNV": "Trần Mai Lan",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101775",
+            "TenNV": "Nghiêm Thị Quyên",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101308",
+            "TenNV": "Nguyễn Thị Hương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101867",
+            "TenNV": "Phạm Thị Thanh Hương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102094",
+            "TenNV": "Nguyễn Thanh Hoa",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102525",
+            "TenNV": "Lê Thị Linh Trang",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101585",
+            "TenNV": "Lê Thị Dương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101191",
+            "TenNV": "Đặng Thị Thùy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102602",
+            "TenNV": "Ngô Thị Huyền",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102730",
+            "TenNV": "Trần Thị Thủy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101946",
+            "TenNV": "Nguyễn Tiến Duy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101587",
+            "TenNV": "Trịnh Xuân Nam",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101555",
+            "TenNV": "Bùi Thị Huệ",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100739",
+            "TenNV": "Lê Thị Thùy Giang",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101239",
+            "TenNV": "Nguyễn Thị Hậu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101883",
+            "TenNV": "Trần Ngô Cẩm Nhung",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101190",
+            "TenNV": "Bùi Thị Nga",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101333",
+            "TenNV": "Phạm Văn Chung",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102036",
+            "TenNV": "Phạm Thị Xuân",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100151",
+            "TenNV": "Trần Văn Anh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100235",
+            "TenNV": "Hoàng Đức Trọng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100241",
+            "TenNV": "Phạm Tiến Mạnh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101232",
+            "TenNV": "Lê Thị Thùy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101240",
+            "TenNV": "Nguyễn Văn Huyên",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101414",
+            "TenNV": "Dương Việt Hùng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101445",
+            "TenNV": "Nguyễn Thành Luân",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101505",
+            "TenNV": "Đặng Hoài Long",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101625",
+            "TenNV": "Nguyễn Tấn Vàng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102050",
+            "TenNV": "Nguyễn Đức Quỳnh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "B101108",
+            "TenNV": "Hán Đức Anh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102164",
+            "TenNV": "Vũ Hữu Chỉnh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102206",
+            "TenNV": "Phạm Hồng Sơn",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102360",
+            "TenNV": "Huỳnh Giang Hà",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102383",
+            "TenNV": "Phan Văn Phương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102592",
+            "TenNV": "Lương Nhật Bảo Hoàng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102825",
+            "TenNV": "An Thị Diệu Thương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "S101233",
+            "TenNV": "Nguyễn Văn Kim",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101377",
+            "TenNV": "Nguyễn Đình Thành",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "L100770",
+            "TenNV": "Dương Hữu Oánh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102253",
+            "TenNV": "Nguyễn Đình Dự",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100166",
+            "TenNV": "Bùi Thị Thắm",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "L100159",
+            "TenNV": "Mai Thị Hồng Thơm",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102641",
+            "TenNV": "Nguyễn Thuý Hằng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100536",
+            "TenNV": "Nguyễn Thị Thu Hiền",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100677",
+            "TenNV": "Đỗ Thị Thanh Mai",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102093",
+            "TenNV": "Lê Thị Nương",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101229",
+            "TenNV": "Trịnh Thị Nga",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101647",
+            "TenNV": "Nguyễn Thị Mai Thu",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101722",
+            "TenNV": "Lê Thị Lan",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100148",
+            "TenNV": "PHạm Thị Long",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100111",
+            "TenNV": "Phạm Thị An",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100266",
+            "TenNV": "Trương Thị Nam",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101791",
+            "TenNV": "Trần Thị Hiền",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102045",
+            "TenNV": "Trịnh Thu Thủy",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100334",
+            "TenNV": "Phạm Tiến Giang",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A102193",
+            "TenNV": "Phạm Thị Linh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100202",
+            "TenNV": "Nguyễn Anh Dũng",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100295",
+            "TenNV": "Nguyễn Hoài Quế",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A101858",
+            "TenNV": "Trần Bảo Trâm",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100161",
+            "TenNV": "Trần Văn Linh",
+            "TH_Khoi": "BVTM Kangnam Hà Nội"
+        },
+        {
+            "MaNV": "A100008",
+            "TenNV": "Nguyễn Bá Úy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100080",
+            "TenNV": "Nguyễn Thị Nghĩa",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101403",
+            "TenNV": "Vi Thị Thanh Nhã",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100084",
+            "TenNV": "Bùi Thị Thủy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101179",
+            "TenNV": "Hoàng Xuân Hóa",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100012",
+            "TenNV": "Dương Hoàng Hải",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102071",
+            "TenNV": "Trần Đức Tĩnh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100650",
+            "TenNV": "Nguyễn Đỗ Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100522",
+            "TenNV": "Hoàng Thị Thúy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100271",
+            "TenNV": "Trương Thị Hạnh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101522",
+            "TenNV": "Trịnh Văn Dương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101693",
+            "TenNV": "Nguyễn Thị Huyền Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101834",
+            "TenNV": "Lê Thị Hiền B",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101957",
+            "TenNV": "Nguyễn Thị Tố Uyên",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101609",
+            "TenNV": "Phạm Thị Yến",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102245",
+            "TenNV": "Lại Thị Phương Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102288",
+            "TenNV": "Lưu Thị Huệ Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101640",
+            "TenNV": "Lê Thị Thanh Huyền",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101438",
+            "TenNV": "Tạ Thị Ánh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102221",
+            "TenNV": "Trịnh Thị Lan",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102099",
+            "TenNV": "Phạm Thị Thủy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102653",
+            "TenNV": "Trần Thị Phương Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101652",
+            "TenNV": "Vũ Thị Yến",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102635",
+            "TenNV": "Phan Thị Giang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101673",
+            "TenNV": "Hoàng Kim Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102683",
+            "TenNV": "Trần Ngọc Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102698",
+            "TenNV": "Phạm Thu Hà",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102769",
+            "TenNV": "Nguyễn Ngọc Diệp",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101323",
+            "TenNV": "Đoàn Thúy Quỳnh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101304",
+            "TenNV": "Nguyễn Thị Ngọc Hoa",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101418",
+            "TenNV": "Nguyễn Thị Nhật Lệ",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102275",
+            "TenNV": "Lê Thị Ngọc",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102608",
+            "TenNV": "Hoàng Văn Cường",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102701",
+            "TenNV": "Nguyễn Thủy Tiên",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102772",
+            "TenNV": "Trịnh Thị Thu Thảo",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102844",
+            "TenNV": "Phạm Bích Thảo",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102849",
+            "TenNV": "Phạm Minh Thi",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102852",
+            "TenNV": "Phạm Thị Liên",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102857",
+            "TenNV": "Lê Đức Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "L101999",
+            "TenNV": "Cao Văn Tuấn",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102820",
+            "TenNV": "Đào Linh Chi",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102824",
+            "TenNV": "Nguyễn Thị Khánh Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100734",
+            "TenNV": "Hoàng Trọng Cương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101368",
+            "TenNV": "Chu Khánh Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100741",
+            "TenNV": "Phạm Thị Hoàn",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102266",
+            "TenNV": "Lý Thu Hằng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102216",
+            "TenNV": "Bùi Thị Ninh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "L101955",
+            "TenNV": "Cao Thị Trang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102662",
+            "TenNV": "Phạm Thị Phương Mai",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102594",
+            "TenNV": "Trương Thị Sâm",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102363",
+            "TenNV": "Lương Thị Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102768",
+            "TenNV": "Phạm Thị Thúy Hường",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102817",
+            "TenNV": "Vũ Khánh Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102827",
+            "TenNV": "Nguyễn Thị Hải Yến",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102835",
+            "TenNV": "Ngô Thu Thủy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102809",
+            "TenNV": "Nguyễn Ngọc Yến",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102810",
+            "TenNV": "Trần Thị Lan",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "H101495",
+            "TenNV": "Trần Thị Nga",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "H101471",
+            "TenNV": "Đoàn Thùy Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102215",
+            "TenNV": "Lê Thị Trang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102081",
+            "TenNV": "Lê Thị Hằng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "H101485",
+            "TenNV": "Phạm Thị Thanh Hạnh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102713",
+            "TenNV": "Mai Kim Phượng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102815",
+            "TenNV": "Nguyễn Hồng Ngọc",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100072",
+            "TenNV": "Triệu Hữu Định",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102615",
+            "TenNV": "Nguyễn Thị Minh Phương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102726",
+            "TenNV": "Đỗ Thùy Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102471",
+            "TenNV": "Lộc Thu Hằng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102030",
+            "TenNV": "Lê Viết Vân Nam",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102535",
+            "TenNV": "Đỗ Thị Hoa",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102355",
+            "TenNV": "Nguyễn Ngọc Dinh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102696",
+            "TenNV": "Hoàng Thị Hải Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102639",
+            "TenNV": "Nguyễn Văn Quang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102796",
+            "TenNV": "Nguyễn Phan Lê Minh Hằng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102652",
+            "TenNV": "Đỗ Thị Lan Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100663",
+            "TenNV": "Nguyễn Thị Minh Châu",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100066",
+            "TenNV": "Nguyễn Thị Nhàn",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101622",
+            "TenNV": "Ngô Thị Phong",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102540",
+            "TenNV": "Trần Thanh Bình",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102106",
+            "TenNV": "Nguyễn Thị Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102301",
+            "TenNV": "Nguyễn Quỳnh Hoa",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102107",
+            "TenNV": "Vũ Mai Trang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101474",
+            "TenNV": "Trần Thành Công",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100669",
+            "TenNV": "Nguyễn Duy Tùng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101463",
+            "TenNV": "Nguyễn Thị Phượng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102373",
+            "TenNV": "Lưu Thị Khánh Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100721",
+            "TenNV": "An Thị Kim Dung",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101814",
+            "TenNV": "Hà Thị Kiều Trinh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101581",
+            "TenNV": "Trần Thị Hải Linh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102434",
+            "TenNV": "Nguyễn Thị Hồng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102463",
+            "TenNV": "Phạm Kiều Trang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102501",
+            "TenNV": "Nguyễn Thị Thu",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102621",
+            "TenNV": "Nguyễn Thành Trung",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102235",
+            "TenNV": "Đỗ Thị Oanh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102776",
+            "TenNV": "Phùng Hà Phương Thảo",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102665",
+            "TenNV": "Phạm Thục Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102680",
+            "TenNV": "Nguyễn Thị Thúy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100646",
+            "TenNV": "Hoàng Minh Cương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100036",
+            "TenNV": "Phạm Hồng Thắng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100215",
+            "TenNV": "Lê Thị Huyền Mai",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101871",
+            "TenNV": "Đỗ Thị Lê",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101729",
+            "TenNV": "Vũ Thị Duyến",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100313",
+            "TenNV": "Đỗ Thị Bích Ngọc",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102503",
+            "TenNV": "Nguyễn Hùng Mạnh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102497",
+            "TenNV": "Trần Ngọc Phương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102385",
+            "TenNV": "Trần Thị Liên",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102368",
+            "TenNV": "Nguyễn Thị Nhung",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102682",
+            "TenNV": "Nguyễn Thị Huyền Trang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101827",
+            "TenNV": "Khổng Việt Hà",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102694",
+            "TenNV": "Phan Văn Long",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102697",
+            "TenNV": "Hà Quang Minh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102732",
+            "TenNV": "Lê Thị Hương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102710",
+            "TenNV": "Bùi Vũ Khánh Ly",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102582",
+            "TenNV": "Trần Thành Đạt",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102811",
+            "TenNV": "Nguyễn Khánh Hiền",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102055",
+            "TenNV": "Phạm Ngọc Ánh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102764",
+            "TenNV": "Nguyễn Thị Tâm Đan",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100661",
+            "TenNV": "Vương Sỹ Tuấn",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101376",
+            "TenNV": "Ninh Thị Sáng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102417",
+            "TenNV": "Nguyễn Thị Diễn",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101993",
+            "TenNV": "Bùi Minh Lý",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102610",
+            "TenNV": "Đặng Thanh Sang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102664",
+            "TenNV": "Hoàng Phương Nam",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102686",
+            "TenNV": "Lê Thị Nhàn",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102283",
+            "TenNV": "Nguyễn Minh Đức",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101886",
+            "TenNV": "Lê Thị Hương Giang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101807",
+            "TenNV": "Lê Thị Vân",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102332",
+            "TenNV": "Ngô Quốc Chuyển",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102444",
+            "TenNV": "Vũ Giáng Ly",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102556",
+            "TenNV": "Nguyễn Viết Cảnh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102400",
+            "TenNV": "Trần Thị Hằng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102620",
+            "TenNV": "Bùi Quốc Huy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102623",
+            "TenNV": "Nguyễn Thị Vân Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102629",
+            "TenNV": "Huỳnh Quốc Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102658",
+            "TenNV": "Đỗ Thị Ngọc Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102699",
+            "TenNV": "Phan Tiến Huy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102669",
+            "TenNV": "Hồ Chí Nam",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101547",
+            "TenNV": "Kim Quang Huy",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102743",
+            "TenNV": "Lê Đình Tâm",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101419",
+            "TenNV": "Hoàng Anh Quân",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102294",
+            "TenNV": "Nguyễn Mạnh Cường",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102609",
+            "TenNV": "Trần Huy Hoàng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102433",
+            "TenNV": "Đỗ Trần Quang Minh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102688",
+            "TenNV": "Đỗ Lan Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102685",
+            "TenNV": "Nguyễn Thị Hiền Lương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102678",
+            "TenNV": "Nguyễn Thị Nhung",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102700",
+            "TenNV": "Trần Thị Trang",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102645",
+            "TenNV": "Phạm Huy Long",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102797",
+            "TenNV": "Dương Thị Lan",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102803",
+            "TenNV": "Phạm Thị Nhung",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102842",
+            "TenNV": "Hoàng Thu Hà",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102853",
+            "TenNV": "Đỗ Thùy Dung",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102837",
+            "TenNV": "Vũ Minh Hoàng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102833",
+            "TenNV": "Nguyễn Thị Huyền",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102830",
+            "TenNV": "Phạm Phương Anh",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102826",
+            "TenNV": "Hoàng Thu Hằng",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101446",
+            "TenNV": "Nguyễn Thanh Trà",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A100063",
+            "TenNV": "An Hà Phương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102487",
+            "TenNV": "Nguyễn Mai Hương",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A101411",
+            "TenNV": "Hồ Hoài Phong",
+            "TH_Khoi": "Khối Sales & MKT"
+        },
+        {
+            "MaNV": "A102787",
+            "TenNV": "Vũ Ánh Ngọc",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102828",
+            "TenNV": "Đặng Thị Nhàn",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101319",
+            "TenNV": "Đàm Ngọc Trâm",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101469",
+            "TenNV": "Nguyễn Mạnh Toàn",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102547",
+            "TenNV": "Cấn Thanh Hương",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102675",
+            "TenNV": "Nguyễn Quỳnh Anh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100203",
+            "TenNV": "Đỗ Thị Mỹ Hoa",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102016",
+            "TenNV": "Tạ Quang Lưu",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100698",
+            "TenNV": "Trần Minh Hiệp",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102612",
+            "TenNV": "Nguyễn Hải Nam",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101741",
+            "TenNV": "Nguyễn Ngọc Anh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102757",
+            "TenNV": "Dương Thị Mỹ Linh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101880",
+            "TenNV": "Vũ Thị Thu Thảo",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101502",
+            "TenNV": "Đào Thị Hương Quỳnh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100670",
+            "TenNV": "Nguyễn Thị Quỳnh Vi",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101739",
+            "TenNV": "Đào Phương Thảo",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102676",
+            "TenNV": "Đào Thị Ngọc",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100298",
+            "TenNV": "Nhữ Thị Quỳnh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100209",
+            "TenNV": "Nguyễn Thị Thu",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101758",
+            "TenNV": "Nguyễn Quỳnh Thu",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101511",
+            "TenNV": "Vũ Đình Công",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "L102224",
+            "TenNV": "Lại Văn Thái Hà",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102395",
+            "TenNV": "Lê Quốc Huy",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102753",
+            "TenNV": "Lê Thị Thu Hương",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102814",
+            "TenNV": "Vũ Thị Phương",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102784",
+            "TenNV": "Trần Thị Hiền",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102522",
+            "TenNV": "Lại Thị Kim Huệ",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "L101354",
+            "TenNV": "Lê Thị Mỹ Hạnh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A000000",
+            "TenNV": "Đặng Thị Khuyên",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "L101879",
+            "TenNV": "Bùi Thị Liên",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102198",
+            "TenNV": "Nguyễn Văn Thùy",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "L101743",
+            "TenNV": "Phùng Duy Công",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A20000",
+            "TenNV": "Trần Thị Mai Như",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A20001",
+            "TenNV": "Trần Chiến",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102841",
+            "TenNV": "Lại Tú Anh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100666",
+            "TenNV": "Trịnh Đông Anh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100640",
+            "TenNV": "Phạm Thị Hạnh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102607",
+            "TenNV": "Nguyễn Văn Thắng",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102793",
+            "TenNV": "Nguyễn Thị Thu Hằng",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100687",
+            "TenNV": "Nguyễn Thị Hạnh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100483",
+            "TenNV": "Phùng Thị Hải Yến",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102456",
+            "TenNV": "Lê Thị Dinh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102048",
+            "TenNV": "Bùi Thị Thúy",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102194",
+            "TenNV": "Bùi Thị Ngần",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101698",
+            "TenNV": "Lê Thị An",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100725",
+            "TenNV": "Nguyễn Thị Thu Phương",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102510",
+            "TenNV": "Bùi Thị Hạnh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102851",
+            "TenNV": "Bùi Đức Nhật Minh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101206",
+            "TenNV": "Cao Thu Hà",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102389",
+            "TenNV": "Nguyễn Khắc Sửu",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102297",
+            "TenNV": "Trần Xuân Thắng",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100692",
+            "TenNV": "Lê Thị Hải",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102618",
+            "TenNV": "Nguyễn Thị Thanh Huyền",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100435",
+            "TenNV": "Phan Thị Hồng",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102573",
+            "TenNV": "Phạm Kiều Oanh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102123",
+            "TenNV": "Nguyễn Thị Thanh Nhâm",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100553",
+            "TenNV": "Nguyễn Thị Hồng Thỏa",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100445",
+            "TenNV": "Hoàng Thị Hải Linh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101749",
+            "TenNV": "Phạm Thị Thuyết",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100541",
+            "TenNV": "Nguyễn Thị Phương",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102570",
+            "TenNV": "Nguyễn Văn Nam",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A101298",
+            "TenNV": "Trương Thiên Khánh Vi",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "B101492",
+            "TenNV": "Hồ Nhật Anh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102453",
+            "TenNV": "Nguyễn Thị Linh Trang",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102087",
+            "TenNV": "Ngô Quý Vinh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100643",
+            "TenNV": "Nguyễn Thị Khánh Trà",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100563",
+            "TenNV": "Nguyễn Thị Diễm Miên",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102794",
+            "TenNV": "Trần Kim Hiền",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100560",
+            "TenNV": "Nguyễn Thị Tố Trinh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100562",
+            "TenNV": "Nguyễn Thùy Giang",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100567",
+            "TenNV": "Lê Thị Huyền",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100564",
+            "TenNV": "Huỳnh Thị Kiều Diễm",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "L100566",
+            "TenNV": "Bùi Quốc Đại",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "B102150",
+            "TenNV": "Nguyễn Văn Thức",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100652",
+            "TenNV": "Dương Thị Kim Anh",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100651",
+            "TenNV": "Lại Trọng Thìn",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102656",
+            "TenNV": "Trương Thị Kim Trang",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102455",
+            "TenNV": "Vũ Thanh Nhàn",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102427",
+            "TenNV": "Trần Minh Hậu",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102445",
+            "TenNV": "Trịnh Thanh Hương",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102441",
+            "TenNV": "Phạm Thị Lành",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102586",
+            "TenNV": "Đồng Văn Chuyên",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102587",
+            "TenNV": "Nguyễn Thị Len",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102460",
+            "TenNV": "Phan Thị Hồng Tiến",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102554",
+            "TenNV": "Vũ Tuấn Tùng",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A102708",
+            "TenNV": "Phạm Thị Thoa",
+            "TH_Khoi": "Nha khoa Paris"
+        },
+        {
+            "MaNV": "A100010",
+            "TenNV": "Nguyễn Tiến Đường",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100683",
+            "TenNV": "Hà Thị Minh Thúy",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102738",
+            "TenNV": "Phạm Thị Yến",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100177",
+            "TenNV": "Nguyễn Thị Hiền Anh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "B101504",
+            "TenNV": "Nguyễn Thị Phương Như",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100426",
+            "TenNV": "Nguyễn Thị Hồng Mơ",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101779",
+            "TenNV": "Hồ Thị Nga",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102626",
+            "TenNV": "Lê Tiểu Ly",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100193",
+            "TenNV": "Vũ Thị Tấm",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100409",
+            "TenNV": "Phạm Thị Thúy Anh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102062",
+            "TenNV": "Nguyễn Thị Hồng Hạnh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100333",
+            "TenNV": "Nguyễn Xuân Diệu",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100378",
+            "TenNV": "Nguyễn Thúy Nga",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101964",
+            "TenNV": "Lê Thị Hoa",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102129",
+            "TenNV": "Trần Đăng Khoa",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102138",
+            "TenNV": "Phạm Thị Thanh Hiền",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102521",
+            "TenNV": "Nguyễn Ngọc Lan",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "B101747",
+            "TenNV": "Lê Tuấn Anh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102396",
+            "TenNV": "Nguyễn Thị Kim Ngoan",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "H101581",
+            "TenNV": "Trần Như Ngọc",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102109",
+            "TenNV": "Nguyễn Thị Hương",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102111",
+            "TenNV": "Lê Thị Ánh Phương",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100793",
+            "TenNV": "Võ Thị Thúy Hạnh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102661",
+            "TenNV": "Trần Thị Nhung",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101996",
+            "TenNV": "Đỗ Thị Dung",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102839",
+            "TenNV": "Phạm Thị Thùy Trang",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102854",
+            "TenNV": "Hà Thị Thoan",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101975",
+            "TenNV": "Nguyễn Minh Sử",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101166",
+            "TenNV": "Vũ Hoàng Minh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100391",
+            "TenNV": "Nguyễn Thị Tỉnh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100387",
+            "TenNV": "Nguyễn Thị Phương",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100460",
+            "TenNV": "Trần Thị Thanh Ngân",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101773",
+            "TenNV": "Vũ Văn Đan",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100415",
+            "TenNV": "Ngô Thị Hải Yến",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101803",
+            "TenNV": "Nguyễn Thị Hoa",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100412",
+            "TenNV": "Vũ Thị Thu Hường",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101573",
+            "TenNV": "Nguyễn Thị Yến",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100411",
+            "TenNV": "Vũ Mai Trang",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102720",
+            "TenNV": "Hà Thị Linh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100125",
+            "TenNV": "Bùi Thị Thu Nga",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101870",
+            "TenNV": "Nguyễn Thu Hà",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100516",
+            "TenNV": "Chu Thị Giang",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102223",
+            "TenNV": "Lương Thảo Linh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100428",
+            "TenNV": "Trần Thị Hằng",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101902",
+            "TenNV": "Nguyễn Thị Yến",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100429",
+            "TenNV": "Nguyễn Thị Ngà",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100385",
+            "TenNV": "Nguyễn Thị Trang Lương",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100544",
+            "TenNV": "Nguyễn Thị Hường",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "L100149",
+            "TenNV": "Nguyễn Thị Hà",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101250",
+            "TenNV": "Trần Ngọc Nam",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101802",
+            "TenNV": "Hoàng Thị Thanh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102284",
+            "TenNV": "Cao Thị Thanh Sang",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100448",
+            "TenNV": "Phạm Quỳnh Duyên",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100447",
+            "TenNV": "Lê Thị Hà",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100401",
+            "TenNV": "Nguyễn Thị Hòa",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100602",
+            "TenNV": "Nguyễn Thị Thùy Linh",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102856",
+            "TenNV": "Phùng Thùy Trang",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102858",
+            "TenNV": "Đặng Thị Ngân",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102515",
+            "TenNV": "Đinh Đình Phước",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "B101882",
+            "TenNV": "Mai Nguyễn Nam Phương",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100573",
+            "TenNV": "Nguyễn Thị Tố Uyên",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102327",
+            "TenNV": "Nguyễn Thị Như Thùy",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100572",
+            "TenNV": "Tô Thị Phượng",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101991",
+            "TenNV": "Nguyễn Thị Thùy Dung",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "B100868",
+            "TenNV": "Đinh Thị Thiên Trang",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102600",
+            "TenNV": "Dương Thị Cẩm Vân",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100638",
+            "TenNV": "Nguyễn Thị Dỏ",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101602",
+            "TenNV": "Nguyễn Thị Khánh Huyền",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102060",
+            "TenNV": "Nguyễn Thị Kim Chi",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102513",
+            "TenNV": "Nguyễn Thị Hồng",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101386",
+            "TenNV": "Cao Xuân Sơn",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A101530",
+            "TenNV": "Nguyễn Thị Thanh Tuyền",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100580",
+            "TenNV": "Quang Thị Dịu",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A100127",
+            "TenNV": "Đoàn Thị Phương",
+            "TH_Khoi": "Hệ thống thẩm mỹ Đông Á"
+        },
+        {
+            "MaNV": "A102735",
+            "TenNV": "Đỗ Văn Huấn",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102075",
+            "TenNV": "Nguyễn Anh Thư",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102719",
+            "TenNV": "Nguyễn Quốc Thắng",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102755",
+            "TenNV": "Lê Thị Lý",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102722",
+            "TenNV": "Lê Thị Huệ",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102723",
+            "TenNV": "Lữ Thị Ninh",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102727",
+            "TenNV": "Nguyễn Thị Hiền",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102648",
+            "TenNV": "Nguyễn Thị Xuân",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102668",
+            "TenNV": "Vũ Thị Mai",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102674",
+            "TenNV": "Nguyễn Thị Mỹ Bình",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102734",
+            "TenNV": "Bùi Thị Thu",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102640",
+            "TenNV": "Hoàng Vi Thanh",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102752",
+            "TenNV": "Trần Thúy Hằng",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102721",
+            "TenNV": "Vũ Thị Thanh",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102778",
+            "TenNV": "Lê Thị Linh",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102801",
+            "TenNV": "Nguyễn Thị Thu",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102812",
+            "TenNV": "Lê Thị Huệ",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A210000",
+            "TenNV": "Đỗ Văn Lụa",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A10003",
+            "TenNV": "Đào Thị Oanh",
+            "TH_Khoi": "Chi nhánh Thanh Hóa"
+        },
+        {
+            "MaNV": "A102758",
+            "TenNV": "Vương Thị Thanh Huyền",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102049",
+            "TenNV": "Nguyễn Thị Như Quỳnh",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102786",
+            "TenNV": "Đỗ Tuấn Hiệp",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102759",
+            "TenNV": "Đặng Thị Ngọc Huyền",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102644",
+            "TenNV": "Nguyễn Thị Khánh Linh",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102760",
+            "TenNV": "Nguyễn Thị Huyền",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102761",
+            "TenNV": "Phạm Thị Quế Chi",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102763",
+            "TenNV": "Phạm Thị Nương",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102790",
+            "TenNV": "Nguyễn Thị Duyên",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102789",
+            "TenNV": "Nguyễn Thị Huỳnh",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102798",
+            "TenNV": "Nguyễn Thị Phương Thảo",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A102829",
+            "TenNV": "Phan Thị Phương",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A10001",
+            "TenNV": "Trần Thị Nhàn",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A10000",
+            "TenNV": "Đào Quang Ngọc",
+            "TH_Khoi": "Chi nhánh Bắc Ninh"
+        },
+        {
+            "MaNV": "A100011",
+            "TenNV": "Trương Thành Vinh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102746",
+            "TenNV": "Lê Thị Ngọc Phương",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101889",
+            "TenNV": "Văn Thị Linh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A100772",
+            "TenNV": "Thái Thị Nhung",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101603",
+            "TenNV": "Lê Tuấn Anh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101949",
+            "TenNV": "Hà Thị Hồng Kim",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102156",
+            "TenNV": "Đoàn Thị Bích Ngọc",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102254",
+            "TenNV": "Nguyễn Thị Phương Anh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102256",
+            "TenNV": "Nguyễn Thị Mai Hiên",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102381",
+            "TenNV": "Phan Anh Quân",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A100038",
+            "TenNV": "Nguyễn Ánh Tuyết",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102483",
+            "TenNV": "Nguyễn Thanh Ngoan",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102286",
+            "TenNV": "Đinh Tuấn Mạnh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102334",
+            "TenNV": "Trịnh Vũ Như Quỳnh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102649",
+            "TenNV": "Đinh Công Duy",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102650",
+            "TenNV": "Trịnh Trung Nghĩa",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102660",
+            "TenNV": "Lương Thế Minh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102500",
+            "TenNV": "Lê Thị Như Quỳnh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102550",
+            "TenNV": "Nguyễn Thị Lan Anh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102557",
+            "TenNV": "Phạm Thị Nhung",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102705",
+            "TenNV": "Nguyễn Văn Tú",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102718",
+            "TenNV": "Nguyễn Thị Thùy Linh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102177",
+            "TenNV": "Tống Thị Hằng",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102804",
+            "TenNV": "Phạm Thị Ngọc Liên",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102703",
+            "TenNV": "Hoàng Gia Nghị",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102672",
+            "TenNV": "Nguyễn Thanh Tú",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102840",
+            "TenNV": "Phạm Tuấn Anh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102838",
+            "TenNV": "Nguyễn Quang Huy",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102813",
+            "TenNV": "Hồ Thị Ngọc Diệp",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102818",
+            "TenNV": "Trịnh Minh Hằng",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A100591",
+            "TenNV": "Đặng Thị Mai",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101701",
+            "TenNV": "Nguyễn Đình Hà Vi",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102452",
+            "TenNV": "Trần Thị Ngọc Mai",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102408",
+            "TenNV": "Dương Thế Ngọc",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102367",
+            "TenNV": "Nguyễn Thị Hồng Lê",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102543",
+            "TenNV": "Lê Quốc Tráng",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102597",
+            "TenNV": "Phan Thu Thủy",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102805",
+            "TenNV": "Nguyễn Thị Thu Thảo",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102806",
+            "TenNV": "Đoàn Thị Trinh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102807",
+            "TenNV": "Phạm Minh Phương",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102808",
+            "TenNV": "Nguyễn Thị Ngọc Ánh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101327",
+            "TenNV": "Dương Thị Thảo",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101839",
+            "TenNV": "Dương Thế Chung",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101792",
+            "TenNV": "Lê Thị Huyền Trang",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102007",
+            "TenNV": "Phạm Thị Hương",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101151",
+            "TenNV": "Nguyễn Minh Huệ",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101754",
+            "TenNV": "Vũ Thị Thùy Linh",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A101943",
+            "TenNV": "Nguyễn Thị Tuyến",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "A102273",
+            "TenNV": "Trần Thị Thu Huyền",
+            "TH_Khoi": "Sales & MKT Đông Á"
+        },
+        {
+            "MaNV": "H101257",
+            "TenNV": "Đào Thị Bích Lân",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101546",
+            "TenNV": "Nguyễn Tiến Sơn",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "A100158",
+            "TenNV": "Trần Bích Châu",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101614",
+            "TenNV": "Trần Thị Yến",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101539",
+            "TenNV": "Nguyễn Thúy Ngân",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101702",
+            "TenNV": "Nguyễn Kim Hùng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "L101287",
+            "TenNV": "Lê Quỳnh Hoa",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101598",
+            "TenNV": "Ngô Quang Cảnh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101592",
+            "TenNV": "Phạm Thị Tuyết",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101620",
+            "TenNV": "Trần Thị Hải Yến",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101549",
+            "TenNV": "Nguyễn Văn Hiệp",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101593",
+            "TenNV": "Trần Minh Đức",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101267",
+            "TenNV": "Lê Minh Tiến",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101295",
+            "TenNV": "Nguyễn Thu Phương",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101296",
+            "TenNV": "Ngô Thị Thơm",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101294",
+            "TenNV": "Hoàng Thị Mai",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101674",
+            "TenNV": "Lê Thanh Loan",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101613",
+            "TenNV": "Nguyễn Văn Thìn",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101560",
+            "TenNV": "Nguyễn Đình Thuận",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101633",
+            "TenNV": "Nguyễn Thế Nam",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101634",
+            "TenNV": "Hà Thị Hồng Vân",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "L101289",
+            "TenNV": "Đào Thị Thu Hiền",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101557",
+            "TenNV": "Đỗ Thị Nguyệt",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101477",
+            "TenNV": "Lãnh Thị Bích Đào",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101542",
+            "TenNV": "Nguyễn Thị Thu",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101571",
+            "TenNV": "Nguyễn Thanh Thúy",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101640",
+            "TenNV": "Ngô Thanh Phương",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101639",
+            "TenNV": "Nguyễn Mạnh Quí",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101693",
+            "TenNV": "Phùng Thị Hồng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101692",
+            "TenNV": "Trương Thị Thương",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101694",
+            "TenNV": "Nguyễn Thị Linh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101685",
+            "TenNV": "Bùi Nguyễn Minh Hiếu",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101467",
+            "TenNV": "Nguyễn Ánh Tuyết",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101536",
+            "TenNV": "Ngô Thị Hà",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101705",
+            "TenNV": "Trần Thị Thương Thương",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101596",
+            "TenNV": "Nguyễn Thị Trang",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101564",
+            "TenNV": "Phạm Thị Liên",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101463",
+            "TenNV": "Trần Thị Thanh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101478",
+            "TenNV": "Đặng Thanh Huyền",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101618",
+            "TenNV": "Trương Thị Nguyệt",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101629",
+            "TenNV": "Nguyễn Thị Hồng Nhung (98)",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101670",
+            "TenNV": "Nguyễn Mạnh Hùng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101643",
+            "TenNV": "Vũ Hoàng Hiệp",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101473",
+            "TenNV": "Nguyễn Thị Thanh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101707",
+            "TenNV": "Lê Thị Hạnh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101489",
+            "TenNV": "Nguyễn Hữu Hùng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101599",
+            "TenNV": "Đỗ Tuấn Anh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101625",
+            "TenNV": "Lê Thị Ngọc Huyền",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101627",
+            "TenNV": "Nguyễn Thị Thu",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101671",
+            "TenNV": "Trần Việt Thắng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101672",
+            "TenNV": "Nông Thị Thanh Liễu",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101706",
+            "TenNV": "Lê Hà Nhi",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101464",
+            "TenNV": "Vũ Thị Hằng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101606",
+            "TenNV": "Dương Thị Quỳnh Như",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101468",
+            "TenNV": "Nguyễn Văn Huỳnh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101628",
+            "TenNV": "Đinh Quang Thắng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101624",
+            "TenNV": "Nguyễn Anh Sơn",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101602",
+            "TenNV": "Ngô Ngọc Dân",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101678",
+            "TenNV": "Lê Thị Mỹ Hòa",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101697",
+            "TenNV": "Bùi Thu Phượng",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101696",
+            "TenNV": "Nguyễn Thị Ngọc Anh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101565",
+            "TenNV": "Đinh Văn Minh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101292",
+            "TenNV": "Mai Hoài Thu",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "A101980",
+            "TenNV": "Lê Xuân Trường",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101578",
+            "TenNV": "Đào Thế Vinh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101505",
+            "TenNV": "Nguyễn Phúc Vinh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101568",
+            "TenNV": "Lê Lan Hương",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101611",
+            "TenNV": "Phí Thị Ngọc Anh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101708",
+            "TenNV": "Vũ Thị Nhạ",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101648",
+            "TenNV": "Vũ Thị Lơ",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101654",
+            "TenNV": "Vũ Thị Khánh Hòa",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101653",
+            "TenNV": "Cao Thị Loan",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101652",
+            "TenNV": "Nguyễn Văn Trung",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101646",
+            "TenNV": "Lê Thị An",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101655",
+            "TenNV": "Phan Thu Huyền",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101656",
+            "TenNV": "Lý Văn Ngọc",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101657",
+            "TenNV": "Cao Văn Hoan",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101666",
+            "TenNV": "Phùng Thị Ngọc Anh",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101688",
+            "TenNV": "Phạm Thị Hà",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101659",
+            "TenNV": "Nguyễn Thị Bích Ngọc",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101660",
+            "TenNV": "Nguyễn Trung Hải",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101661",
+            "TenNV": "Trần Thị Hà",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101663",
+            "TenNV": "Trần Hữu Tài",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "H101662",
+            "TenNV": "Đặng Hữu Tuấn",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        },
+        {
+            "MaNV": "A102073",
+            "TenNV": "Nguyễn Thị Hương",
+            "TH_Khoi": "BVĐK Hồng Hà"
+        }
+    ]
+}

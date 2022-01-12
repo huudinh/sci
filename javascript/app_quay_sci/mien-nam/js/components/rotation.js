@@ -54,10 +54,10 @@ class Rotation {
         this.$gift = document.createElement('div');
         this.$gift.classList.add('rotationGift');
         this.$listID = [];
-        db.collection('listWinnersMB').onSnapshot(this.listWinnersMBListener);
+        db.collection('listWinnersMN').onSnapshot(this.listWinnersMNListener);
 
     }
-    listWinnersMBListener = (snapshot) => {
+    listWinnersMNListener = (snapshot) => {
         snapshot.docChanges().forEach((change) => {
             const id = change.doc.id;
             this.$listID.push(id);
@@ -119,20 +119,20 @@ class Rotation {
         }
     }
 
-    loadNVMB = async(gift) => {
+    loadNVMN = async(gift) => {
         try {
             const res = await fetch(
-                "./js/data/data_mb.json"
+                "./js/data/data_mn.json?v=1"
             );
             const responseJSON = await res.json();
-            this.randMB(responseJSON.mienBac, gift);
+            this.randMN(responseJSON.mienNam, gift);
         } catch (err) {
             console.error(err);
             console.log('Loi ket noi');
         }
     };
 
-    randMB(data, gift) {
+    randMN(data, gift) {
         let item = data[Math.floor(Math.random() * data.length)];
 
         this.$createMessageModal = new CreateMessageModal(item, gift);
@@ -147,7 +147,7 @@ class Rotation {
 
         this.$audio.play();
         setTimeout(() => {
-            this.loadNVMB(gift);
+            this.loadNVMN(gift);
             this.$audio.pause();
         }, 13000)
     }
