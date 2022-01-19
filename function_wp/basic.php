@@ -25,6 +25,10 @@
     // Check Page Search
     is_search()
 
+    is_category();
+
+    is_single();
+
     // Get Link
     $link = get_permalink();
 
