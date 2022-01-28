@@ -73,6 +73,24 @@
     //Trim Word
     wp_trim_words( get_the_excerpt($post->ID), 30 )
 
+    //Excerpt [] => ...
+    add_filter('get_the_excerpt', 'exc');
+    function exc($param) {
+        $excerpt = $param;
+        $charlength=260;
+        $charlength++;
+
+        $subex = mb_substr( $excerpt, 0, $charlength - 5 );
+        $exwords = explode( ' ', $subex );
+        $excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+        if ( $excut < 0 ) {
+            return mb_substr( $subex, 0, $excut ).'...';
+        } else {
+            return $subex.'...';
+        }
+        
+    }
+
     //Thong bao bao tri
     if (!is_user_logged_in()){
         echo '<div style="text-align:center; padding: 50px 0; min-height: 500px;">Website đang trong quá trình bảo trì, vui lòng quay lại sau !
@@ -91,3 +109,8 @@
 
     // Get thumbnail Youtube
     // https://img.youtube.com/vi/uL-CQF0u3Ik/maxresdefault.jpg
+
+    
+    // Get Term ID
+    $category = get_queried_object();
+    echo $category->term_id;

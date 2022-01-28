@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="Resource-type" content="Document" />
+    <meta property="og:description" content="Trắc nghiệm Da Nám" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="media/css/style.css?ver=10" />
+</head>
+
+<body class="LP">
+    <div id="page5" class="temp5">
+        <div class="container">
+            <div class="temp5__box">
+                <div class="item2">
+                    <div class="wheelBox">
+                        <div id="wheel" class="wheel">
+                            <div class="sec">
+                                <img src="media/images/item-spin3.png" alt="">
+                            </div>
+                            <div class="wheelSidebar">
+                                <div class="wheelIcon"></div>
+                            </div>
+                            <div class="wheelSpin">
+                                <button id="spin" class="spin"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="setup" class="setup">
+        <button>Reset</button>
+    </div>
+    <style>
+        .setup {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="modal-btn" data-modal="modalCheckResult2" style="display: none;">test2</div>
+    <div class="modal" id="modalCheckResult2">
+        <div class="modal-bg"></div>
+        <div class="modal-box animate-pop">
+            <div class="modal-header">
+                <div class="modal-close">×</div>
+                <div class="modal-title">Kết quả giải thưởng</div>
+            </div>
+            <div class="modal-body">
+                <p id="modalCheckText2">...</p>
+                <P>Vui lòng điền thông tin để nhận thưởng ngay!</P>
+                <div class="popup_regist_1_0_2_contentBox2">
+                    <div>
+                        <input id="iname" name="iname" type="textbox" required="" placeholder="Họ tên*:">
+                        <input id="imob" name="imob" type="textbox" required="" placeholder="Điện thoại*:">
+                        <input type="hidden" style="display:none" id="iemail" name="iemail" placeholder="Email:">
+                        <!-- <textarea id="itext" type="hidden" name="itext" value="" placeholder="Dịch vụ quan tâm"></textarea> -->
+                        <input type="hidden" id="gclid_field" name="gclid_field" value="">
+                        <input type="hidden" id="code_campaign" name="code_campaign" value="689492631">
+                        <input type="hidden" id="name_campaign" name="name_campaign" value="[Dong A] Điều Trị Nám Bio-Melasma">
+                        <textarea placeholder="Dịch vụ:" id="itext" name="itext" style="display: none;"></textarea>
+                    </div>
+                    <div>
+                        <input id="popup_regist_1_0_2_clickSent" onclick="ants_send_contact(this);" type="button" value="GỬI THÔNG TIN">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="media/js/appspin.js"></script>
+    <!-- <script src="media/js/app_check.js"></script> -->
+    <script src="media/js/lib-min.js"></script>
+
+
+
+</body>
+
+</html>
+
+<!-- CSS By S DA_Brand 11/2020 -->
