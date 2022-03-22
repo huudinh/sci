@@ -29,6 +29,9 @@
 
     is_single();
 
+    //check postype
+    post_type_exists( 'doi-ngu-bac-si' )
+
     // Get Link
     $link = get_permalink();
 
@@ -114,3 +117,18 @@
     // Get Term ID
     $category = get_queried_object();
     echo $category->term_id;
+
+    // Cấm xóa trang chủ
+    function restrict_page_deletion($post_ID){
+        $user = get_current_user_id();
+
+        $restricted_pageId = 59018;
+
+        if($post_ID == $restricted_pageId)
+        {
+            echo "You are not authorized to delete this page.";
+            exit;
+        }
+    }
+    // add_action('before_delete_post', 'restrict_page_deletion', 10, 1);
+    add_action('wp_trash_post', 'restrict_page_deletion', 10, 1);
