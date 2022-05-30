@@ -16,6 +16,9 @@
         echo 'public';
     }
 
+    // Check Home
+    if( is_front_page() || is_home() )
+
     // Check Post ID 
     $postid = get_the_ID();
 
@@ -75,6 +78,10 @@
 
     //Trim Word
     wp_trim_words( get_the_excerpt($post->ID), 30 )
+
+    //Time
+    get_post_modified_time('d/m/Y');
+    get_the_time('d/m/Y');
 
     //Excerpt [] => ...
     add_filter('get_the_excerpt', 'exc');
