@@ -39,18 +39,6 @@ if ( WP_DEBUG ) {
     define( 'SCRIPT_DEBUG', false );
 }
 
-//Bao mat
-
-// Disallow file edit
-define( 'DISALLOW_FILE_EDIT', true );
-
-
-// khong truy cap vao thu muc upload
-<Files *.php>
-deny from all
-</Files>
-
-
 // post show
 <?php echo get_post_field('post_content', $post->ID); ?>
 
@@ -58,7 +46,6 @@ deny from all
 
 //Vo hieu hoa index list file
 Options - Indexes
-
 
 
 Redirect 301 /oldpage.html http://www.yoursite.com/newpage.html
@@ -97,8 +84,3 @@ php_value suhosin.get.max_vars 3000
 php_value suhosin.post.max_vars 3000
 php_value suhosin.request.max_vars 3000
 
-// none xmlrpc.php
-<files xmlrpc.php>
- order allow,deny
- deny from all
-</files>
