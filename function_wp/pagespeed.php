@@ -1,8 +1,17 @@
 <?php
 //Tối ưu page speed
 
+// basic editor
+add_filter('use_block_editor_for_post', '__return_false');
+
+// Fix upload max
+function filter_site_upload_size_limit( $size ) { 
+    return 1024 * 1024 * 0.25; 
+} 
+add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 120 );
+
+// add script handles to the array below
 function add_async_attribute($tag, $handle) {
-    // add script handles to the array below
     $scripts_to_defer = array('script-jquery', 'script-carousel','script-video','script-custom');
     foreach($scripts_to_defer as $defer_script) {
        if ($defer_script === $handle) {
@@ -12,6 +21,20 @@ function add_async_attribute($tag, $handle) {
     return $tag;
  }
  add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+
+//Loại bỏ wp-embeb
+function my_deregister_scripts(){
+    wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );
+
+ //* Remove WP Embed Script
+ function stop_loading_wp_embed() {
+    if (!is_admin()) {
+        wp_deregister_script('wp-embed');
+    }
+}
+add_action('init', 'stop_loading_wp_embed');
  
  // Xoa chan js header
 function footer_enqueue_scripts() {
@@ -24,13 +47,6 @@ function footer_enqueue_scripts() {
 }
 add_action('after_setup_theme', 'footer_enqueue_scripts');
 
- //* Remove WP Embed Script
- function stop_loading_wp_embed() {
-     if (!is_admin()) {
-         wp_deregister_script('wp-embed');
-     }
- }
- add_action('init', 'stop_loading_wp_embed');
  
  //Bỏ src set
  function meks_disable_srcset( $sources ) {

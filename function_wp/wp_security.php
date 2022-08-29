@@ -1,56 +1,12 @@
-//Fix img thumbnail Function
-
-function get_first_image() {
-    global $post, $posts;
-    $first_img = '';
-    ob_start();
-    ob_end_clean();
-    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-    $first_img = $matches[1][0];
-    
-    return $first_img;
-}
-
-// Fix img thumbnail Cate
-$kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium'); 
-    $firts_image= get_first_image($post->ID);
-
-    if($kim):
-        $img = ($kim[0]!='')?$kim[0]:$firts_image[0];
-    elseif($firts_image):
-        $img = get_first_image($post->ID);   
-    else:
-        $img = '/wp-content/themes/codeteam/logo.png';
-    endif;
-					
-				
-			
-User-agent: *
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /wp-json/
-Disallow: */?replytocom
-Disallow: *?replytocom
-Disallow: *?s
-Disallow: *?attachment
-Disallow: */?attachment
-Disallow: *?attachment_id
-Disallow: *pageinfo*
-Sitemap: https://benhvienhongha.vn/sitemap_index.xml			
-
 codeadmin    
 Y@s2H#R47zi^gQrYaK)5b5w&
 
 define('ALLOW_UNFILTERED_UPLOADS', true);
 
+<!-- MSQL -->
+
 Bạn có thực sự muốn thực hiện lệnh truy vấn sau đây không?
 DELETE FROM `wpvvk_posts` WHERE `wpvvk_posts`.`ID` = 1772;
-u181874440.chuatrimun.com.vn
-
-
-
-<meta property="og:image" content="https://benhvienthammykangnam.com.vn/cp/tham-my-ham-mat/ngay-vang-chinh-hinh-ham-mat/media/images/thumb.jpg?ver=31" />
-
 
 add_filter('use_block_editor_for_post', '__return_false');
 
@@ -60,60 +16,12 @@ UPDATE wpdb_posts SET post_content=(REPLACE (post_content, "<script src='https:/
 
 UPDATE wpzx_posts SET post_content=(REPLACE (post_content, '','')) 
 
-<?php 
-
-if(is_single()) {
-	$post_categories = wp_get_post_categories(get_the_ID());
-	$idcat= $post_categories[0];
-	
-  }
-  if(is_category()){
-	$idcat=get_query_var('cat');    
-  }
-
-?>
-<?php $video = get_field('video','category_' . $idcat); ?>
-
-<?php
-function change_theme($theme) 
-{
-    /*$t='';
-    if($_GET["t"] != null){
-            $t = $_GET["t"];
-            if($t!=''){
-                if(!wp_is_mobile()){
-                    return 'dichvu';
-                }else{
-                    return 'mdichvu';
-                }
-            }
-    }else{return $theme;}*/
-    
-    
-    if(strpos($_SERVER['HTTP_USER_AGENT'], 'iPad') !== false){
-                return 'dichvu';
-        }else{
-            if(!wp_is_mobile()){return 'dichvu';}else{
-            
-            return 'mdichvu';
-        }}
-}
-?>
-
 //js fix https
 	<script>
 		if (location.protocol !== 'https:') {
 			location.replace(`https:${location.href.substring(location.protocol.length)}`);
 		}
 	</script>
-	
-
-<?php
-// Cate Loop
-    foreach((get_the_category()) as $category) { 
-		echo $category->cat_name . ' '; 
-	} 
-?>	
 
 <?
 // WP_Security
@@ -132,7 +40,7 @@ define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 //Limit Revisions
 define('AUTOSAVE_INTERVAL', 300); // seconds
-define('WP_POST_REVISIONS', 30);
+define('WP_POST_REVISIONS', 20);
 
 // --------------> function.php
 
@@ -162,7 +70,7 @@ add_filter ( 'pre_site_transient_update_plugins' , 'remove_core_updates' );
 add_filter ( 'pre_site_transient_update_themes' , 'remove_core_updates' );
 
 
-// chi cho phep tai len các file gif png jpg
+// Only allow uploading of files gif png jpg
 add_filter('wp_handle_upload_prefilter', 'yoursite_wp_handle_upload_prefilter');
 function yoursite_wp_handle_upload_prefilter($file) {
     if ($file['type']=='application/octet-stream' && isset($file['tmp_name'])) {
@@ -184,6 +92,12 @@ function yoursite_wp_handle_upload_prefilter($file) {
     return $file;
 }
 
+// Fix upload max
+function filter_site_upload_size_limit( $size ) { 
+    return 1024 * 1024 * 0.25; 
+} 
+add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 120 );
+
 // --------------> htacces.txt
 
 # Bảo vệ WordPress file config
@@ -203,3 +117,18 @@ deny from all
     deny from all
 </Files>
 
+
+// -------------->  Robot.txt 
+    
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: */?replytocom
+Disallow: *?replytocom
+Disallow: *?s
+Disallow: *?attachment
+Disallow: */?attachment
+Disallow: *?attachment_id
+Disallow: *pageinfo*
+Sitemap: https://benhvienhongha.vn/sitemap_index.xml	

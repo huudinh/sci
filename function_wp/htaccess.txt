@@ -63,14 +63,6 @@ Redirect 301 /oldpage2.html http://www.yoursite.com/folder/
 	// echo $images[$rand]['url'];
 ?>
 
-// Fix upload max Function.php
-
-function filter_site_upload_size_limit( $size ) { 
-    return 1024 * 1024 * 64; 
- } 
- add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 120 );
-?>
-
 // field
 php_value memory_limit 256M
 php_value upload_max_filesize 64M
