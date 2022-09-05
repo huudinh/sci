@@ -44,6 +44,41 @@ define('WP_POST_REVISIONS', 20);
 
 // --------------> function.php
 
+// Login remove wordpress authentication
+remove_filter('authenticate', 'wp_authenticate_username_password', 20);
+add_filter('authenticate', function($user, $email, $password){
+    if(empty($email) || empty ($password)){        
+        $error = new WP_Error();
+
+        if(empty($email)){ 
+            $error->add('empty_username', __('<strong>ERROR</strong>: Email field is empty.'));
+        }
+        else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){ 
+            $error->add('invalid_username', __('<strong>ERROR</strong>: Email is invalid.'));
+        }
+
+        if(empty($password)){ 
+            $error->add('empty_password', __('<strong>ERROR</strong>: Password field is empty.'));
+        }
+        return $error;
+    }
+    $user = get_user_by('email', $email);
+    if(!$user){
+        $error = new WP_Error();
+        $error->add('invalid', __('<strong>ERROR</strong>: Either the email or password you entered is invalid.'));
+        return $error;
+    }
+    else{ 
+        if(!wp_check_password($password, $user->user_pass, $user->ID)){ 
+            $error = new WP_Error();
+            $error->add('invalid', __('<strong>ERROR</strong>: Either the email or password you entered is invalid.'));
+            return $error;
+        }else{
+            return $user; 
+        }
+    }
+}, 20, 3);
+
 // Tắt cập nhật plugin
 add_filter( 'auto_update_plugin', '__return_false' );
 
