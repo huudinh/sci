@@ -209,3 +209,12 @@ function change_theme($theme)
 
 //Hiện phần set thumbnail bài viết
 add_theme_support( 'post-thumbnails' );
+
+//Bỏ src set
+function remove_max_srcset_image_width( $max_width ) { return false; } 
+add_filter( 'max_srcset_image_width', 'remove_max_srcset_image_width' ); 
+function wdo_disable_srcset( $sources ) { return false; } 
+add_filter( 'wp_calculate_image_srcset', 'wdo_disable_srcset' );
+
+// Bo lazyload
+add_filter('wp_lazy_loading_enabled', '__return_false');
