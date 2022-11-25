@@ -19,3 +19,8 @@ function itemDouble(arr) {
     });
     return arrNew;
 }
+
+// Remove Double Array Item
+const removeDuplicates = (array) => {
+    return array.filter((item, index) => array.indexOf(item) === index);
+}
