@@ -1,46 +1,12 @@
-<?php
-
-// Header( "HTTP/1.1 301 Moved Permanently" );
-// Header("Location: ".home_url()."");
-
-
-?>
 <?php get_header(); ?>
-<main class="dt-main">
-    <div class="dt-mainBox">
-        <div>
-            Nội dung không tìm thấy hoặc không tồn tại!<br>
-            <br>
-            Bấm <a href="/">vào đây</a> để quay về Trang chủ
-        </div>
-    </div>
-</main>
 <style>
-    .dt-main {
-        text-align: center;
-        padding: 100px 20px;
-        font-size: 20px
-    }
-
-    .dt-main a {
-        color: #0056A4;
-        text-decoration: underline;
-        font-weight: bold
-    }
-
-    .dt-main a:hover {
-        color: #FF706F;
-    }
-
-    .dt-mainBox {
-        height: 180px;
-    }
-
-    @media (max-width:480px) {
-        .dt-main {
-            padding: 20px;
-            font-size: 16px;
-        }
-    }
+  body{background:#eee}
 </style>
+<div style="height:67vh;display:flex;align-items:center">
+    <div class="page text-center" style="height: 400px; max-width:800px; margin:0 auto; padding:50px; text-align:center">
+        <h1 style="padding: 30px 0;" class="">Nội dung không tìm thấy !</h1>
+        <div>Nội dung bạn cầm xem hiện không còn hoặc đã bị xóa. <a href="/" style="color: blue; text-decoration: underline;"><i>Về trang chủ</i></a></div>
+    </div>
+</div>
+	
 <?php get_footer(); ?>

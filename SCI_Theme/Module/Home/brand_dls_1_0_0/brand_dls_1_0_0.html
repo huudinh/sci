@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brand_dls_1_0_0</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="../../assets/sass/custom.min.css" />
+    <link rel="stylesheet" href="sass/brand_dls_1_0_0.min.css">
+
+    <script src="https://huudinh.github.io/assets/js/tiny-slider.min.js"></script>
+</head>
+
+<body>
+    <div class="main_dls_1_0_0">
+        <section class="brand_dls_1_0_0 ">
+            <div class="container">
+                <div class="main_dls_1_0_0__title">Brands</div>
+                <div class="main_dls_1_0_0__line"></div>
+                <div class="brand_dls_1_0_0__content" style="position: relative;">
+                    <div class="slide_step" id="slide_step">
+                        <div>
+                            <p><img src="images/pic-1.jpg" alt=""></p>
+                            <p><img src="images/pic-2.jpg" alt=""></p>
+                        </div>
+                        <div>
+                            <p><img src="images/pic-3.jpg" alt=""></p>
+                            <p><img src="images/pic-4.jpg" alt=""></p>
+                        </div>
+                        <div>
+                            <p><img src="images/pic-5.jpg" alt=""></p>
+                            <p><img src="images/pic-6.jpg" alt=""></p>
+                        </div>
+                        <div>
+                            <p><img src="images/pic-5.jpg" alt=""></p>
+                            <p><img src="images/pic-6.jpg" alt=""></p>
+                        </div>
+                    </div>
+                    <ul class="controls" id="slide_stepControl">
+                        <li class="prev">
+                            <span aria-label="Previous"></span>
+                        </li>
+                        <li class="next">
+                            <span aria-label="Next"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script>
+            var slide_step = tns({
+                container: '#slide_step',
+                items: 3,
+                controlsContainer: '#slide_stepControl',
+                navAsThumbnails: true,
+                autoplay: false,
+                autoplayTimeout: 1000,
+                autoplayButton: '#customize-toggle',
+                gutter: 10,
+                nav:false,
+                responsive: {
+                0: {
+                    items: 1,
+                },
+                820: {
+                    items: 3,
+                }
+            },
+            });
+        </script>
+    </div>
+</body>
+
+</html>

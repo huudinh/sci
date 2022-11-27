@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landa Studio</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css" />
+    <link rel="stylesheet" href="./assets/sass/custom.min.css" />
+    <script src="./assets/js/custom.js"></script>
+
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="Header/header_dls_1_0_0/sass/header_dls_1_0_0.min.css">
+    <header class="header_dls_1_0_0">
+        <div class="container">
+            <div class="header_dls_1_0_0__box">
+                <div class="header_dls_1_0_0__nav" id="headerMenuBtn">
+                    <img width="30" height="30" src="images/header-menu.svg" alt="">
+                </div>
+                <div class="header_dls_1_0_0__logo">
+                    <a href="#">
+                        <img width="240" height="78" src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="header_dls_1_0_0__list" id="headerSideBar">
+                    <div class="header_dls_1_0_0__logoMb">
+                        <a href="#">
+                            <img width="240" height="78" src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">COMPANY</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">BRANDS</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">PROJECTS</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a href="#" class="header_dls_1_0_0__link">CONTACT</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">360 SHOWROOM</a>
+                    </li>                    
+                </ul>
+                <select class="header_dls_1_0_0__language en" onfocus='this.size=2;' onblur='this.size=0;' 
+                onchange='this.size=1; this.blur(); urlHandler(this.value);'>
+                    <option value="#en">English</option>
+                    <option value="#vi">Tiếng Việt</option>
+                </select>
+                <div class="header_dls_1_0_0__bg" id="headerBg"></div>
+            </div>
+        </div>
+    </header>
+    <script src="Header/header_dls_1_0_0/js/header_dls_1_0_0.js"></script>
+
+    
+    <!-- main_dls_1_0_0 -->
+    <main class="main_dls_1_0_0 main_dls_1_0_0--page">
+        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
+        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
+        
+        <!-- breadcrumb_dls_1_0_0 -->
+        <link rel="stylesheet" type="text/css" href="Category/breadcrumb_dls_1_0_0/sass/breadcrumb_dls_1_0_0.min.css" />
+        <div class="breadcrumb_dls_1_0_0">
+            <div class="container">
+                <div class="breadcrumb_dls_1_0_0__box">
+                    <span xmlns:v="http://rdf.data-vocabulary.org/#">
+                        <span typeof="v:Breadcrumb">
+                            <a property="v:title" rel="v:url" href="#">Home</a> ▶
+                            <span typeof="v:Breadcrumb" rel="v:child">
+                                <a property="v:title" rel="v:url" href="#">Projects</a>
+                                <span class="breadcrumb_last"></span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb_dls_1_0_0__line"></div>
+
+        <!-- project_dls_1_1_0 -->
+        <link rel="stylesheet" href="Home/project_dls_1_1_0/sass/project_dls_1_1_0.min.css">
+        <section class="project_dls_1_1_0 ">
+            <div class="container">
+                <div id="modal"></div>                
+                <div class="project_dls_1_1_0__box">
+                    <div class="project_dls_1_1_0__title">
+                        <i class="project_dls_1_1_0__icon"></i>
+                        Project: Tay Ho Villa
+                    </div>
+                    <div class="project_dls_1_1_0__des">
+                        Curabitur ornare ultrices lectus sit amet viverra. Morbi quis orci quis mi porttitor sodales. Nullam vel leo vel tortor gravida ullamcorper. In molestie tempus mi. Integer eu diam at ligula euismod feugiat. Praesent elit orci, dictum eu pellentesque sagittis, sodales maximus mauris.
+                    </div>
+                    <div class="project_dls_1_1_0__photo">
+                        <div class="project_dls_1_1_0__pic project_dls_1_1_0__pic--big">
+                            <img src="images/pic-11.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-12.jpg" class="modal-btn" data-modal="modal-pic"  alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-13.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-14.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-15.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project_dls_1_1_0__box">
+                    <div class="project_dls_1_1_0__title">
+                        <i class="project_dls_1_1_0__icon"></i>
+                        Project: Ecopark Penthouse
+                    </div>
+                    <div class="project_dls_1_1_0__des">
+                        In molestie tempus mi. Integer eu diam at ligula euismod feugiat. Praesent elit orci, dictum eu pellentesque sagittis, sodales maximus mauris.
+                    </div>
+                    <div class="project_dls_1_1_0__photo">
+                        <div class="project_dls_1_1_0__pic project_dls_1_1_0__pic--big">
+                            <img src="images/pic-21.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-22.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-23.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-24.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-25.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project_dls_1_1_0__box">
+                    <div class="project_dls_1_1_0__title">
+                        <i class="project_dls_1_1_0__icon"></i>
+                        Project: Vinhomes villa
+                    </div>
+                    <div class="project_dls_1_1_0__des">
+                        Curabitur ornare ultrices lectus sit amet viverra. Morbi quis orci quis mi porttitor sodales. Nullam vel leo vel tortor gravida ullamcorper. In molestie tempus mi.
+                    </div>
+                    <div class="project_dls_1_1_0__photo">
+                        <div class="project_dls_1_1_0__pic project_dls_1_1_0__pic--big">
+                            <img src="images/pic-31.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-32.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-33.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-34.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                        <div class="project_dls_1_1_0__pic">
+                            <img src="images/pic-35.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="Home/project_dls_1_1_0/js/project_dls_1_1_0.js"></script>
+        
+    <!-- footer_dls_1_0_0 -->
+    <link rel="stylesheet" href="Footer/footer_dls_1_0_0/sass/footer_dls_1_0_0.min.css">
+    <footer class="footer_dls_1_0_0">
+        <div class="container">
+            <div class="footer_dls_1_0_0__box">
+                <div class="footer_dls_1_0_0__top">                                        
+                    <div class="footer_dls_1_0_0__col">
+                        <div class="footer_dls_1_0_0__logo">
+                            <img width="215" height="111" src="images/ft-logo.png" alt="">
+                        </div>
+                        <div class="footer_dls_1_0_0__social">
+                            <a href="#"><img width="32" height="32" src="images/icon-fb.svg" alt="fb"/></a>
+                            <a href="#"><img width="32" height="32" src="images/icon-ins.svg" alt="fb"/></a>
+                            <a href="#"><img width="32" height="32" src="images/icon-youtube.svg" alt="fb"/></a>
+                        </div>
+                    </div>
+                    <div class="footer_dls_1_0_0__col">
+                        <div class="footer_dls_1_0_0__title">CONTACT US</div>
+                        <form class="footer_dls_1_0_0__wrapper" id="register-form">
+                            <div class="footer_dls_1_0_0__form">
+                                <input type="text" name="iemail" placeholder="Your Email">
+                                <textarea placeholder="Comments" name="inote" cols="30" rows="5"></textarea>
+                                <button type="submit">SEND INQUIRY</button>
+                            </div>
+                        </form>
+                        <style>
+                            .border{
+                                border:1px solid #c00 !important;
+                            }
+                        </style>
+                    </div>
+                    <div class="footer_dls_1_0_0__col">
+                        <div class="footer_dls_1_0_0__title">GET IN TOUCH</div>
+                        <div class="footer_dls_1_0_0__info">
+                            <p>A   75 Co Linh str., Thach Ban ward,
+                                Long Bien dist., Hanoi, Vietnam</p>
+                            <p>T   +84 24 3716 0666</p>
+                            <p>E   info@landastudio.vn</p>
+                            <p>W  www.landastudio.vn</p>
+                        </div>
+                        <p>Hotline +84 9 83771639</p>
+                    </div>
+                </div>
+                <div class="footer_dls_1_0_0__bot">
+                    ©Copyright 2022. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Footer/footer_dls_1_0_0/js/footer_dls_1_0_0.js"></script>
+    
+    </main>
+
+</body>
+<script>
+    imgTheme('Header/header_dls_1_0_0/', '.header_dls_1_0_0 img');
+    imgTheme('Home/project_dls_1_1_0/', '.project_dls_1_1_0 img');
+    imgTheme('Footer/footer_dls_1_0_0/', '.footer_dls_1_0_0 img')
+</script>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landa Studio</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css" />
+    <link rel="stylesheet" href="./assets/sass/custom.min.css" />
+    <script src="./assets/js/custom.js"></script>
+
+    <script src="https://huudinh.github.io/assets/js/tiny-slider.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="Header/header_dls_1_0_0/sass/header_dls_1_0_0.min.css">
+    <header class="header_dls_1_0_0">
+        <div class="container">
+            <div class="header_dls_1_0_0__box">
+                <div class="header_dls_1_0_0__nav" id="headerMenuBtn">
+                    <img width="30" height="30" src="images/header-menu.svg" alt="">
+                </div>
+                <div class="header_dls_1_0_0__logo">
+                    <a href="#">
+                        <img width="240" height="78" src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="header_dls_1_0_0__list" id="headerSideBar">
+                    <div class="header_dls_1_0_0__logoMb">
+                        <a href="#">
+                            <img width="240" height="78" src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">COMPANY</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">BRANDS</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">PROJECTS</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a href="#" class="header_dls_1_0_0__link">CONTACT</a>
+                    </li>
+                    <li class="header_dls_1_0_0__item">
+                        <a class="header_dls_1_0_0__link">360 SHOWROOM</a>
+                    </li>                    
+                </ul>
+                <select class="header_dls_1_0_0__language en" onfocus='this.size=2;' onblur='this.size=0;' 
+                onchange='this.size=1; this.blur(); urlHandler(this.value);'>
+                    <option value="#en">English</option>
+                    <option value="#vi">Tiếng Việt</option>
+                </select>
+                <div class="header_dls_1_0_0__bg" id="headerBg"></div>
+            </div>
+        </div>
+    </header>
+    <script src="Header/header_dls_1_0_0/js/header_dls_1_0_0.js"></script>
+
+    <!-- main_dls_1_0_0 -->
+    <main class="main_dls_1_0_0">
+        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--row"></div>
+        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
+        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
+
+        <!-- slider_dls_1_0_0 -->
+        <link rel="stylesheet" href="Home/slider_dls_1_0_0/sass/slider_dls_1_0_0.min.css">
+        <section class="slider_dls_1_0_0">
+            <div class="slider__content" >
+                <div class="slider__control" >
+                    <div onclick="changeSlide(-1)" class="slider__controlLeft"></div>
+                    <div onclick="changeSlide(1)" class="slider__controlRight"></div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let slides = [
+                {
+                    link:'Home/slider_dls_1_0_0/images/slider.jpg',
+                    text:'Luxury Scandinavian',
+                },
+                {
+                    link:'Home/slider_dls_1_0_0/images/slider.jpg',
+                    text:'Luxury Scandinavian',
+                },
+                {
+                    link:'Home/slider_dls_1_0_0/images/slider.jpg',
+                    text:'Luxury Scandinavian',
+                },
+                
+            ];
+        </script>
+        <script src="Home/slider_dls_1_0_0/js/slider_dls_1_0_0.js"></script>
+
+        <!-- about_dls_1_0_0 -->
+        <link rel="stylesheet" href="Home/about_dls_1_0_0/sass/about_dls_1_0_0.min.css">
+        <section class="about_dls_1_0_0">
+            <div class="container">
+                <div class="main_dls_1_0_0__title fadeInUp load">Landa Studio</div>
+                <div class="main_dls_1_0_0__line fadeInUp load"></div>
+                <div class="about_dls_1_0_0__content fadeInUp load">
+                    <p>Praesent non urna ac felis consequat vehicula eu vitae ipsum. Donec sollicitudin justo vitae nisi mattis finibus. Vivamus vulputate laoreet dictum. Vestibulum in semper augue, quis varius velit. Maecenas vitae elit ultricies, facilisis nulla id, molestie dui. Duis varius, ante ut consectetur auctor, lacus ligula ultricies ante, et interdum magna turpis at dolor. </p>
+                    <p>Proin laoreet pellentesque consectetur. Vestibulum semper auctor urna non mattis. Vivamus euismod justo nec aliquet ultricies. Praesent tincidunt pulvinar diam at tempus. Morbi consequat dignissim ullamcorper.</p>
+                    <img src="images/pic.jpg" alt="photo" />
+                </div>
+            </div>
+        </section>
+
+        <!-- brand_dls_1_0_0 -->
+        <link rel="stylesheet" href="Home/brand_dls_1_0_0/sass/brand_dls_1_0_0.min.css">
+        <section class="brand_dls_1_0_0">
+            <div class="container">
+                <div class="main_dls_1_0_0__title fadeInUp load">Brands</div>
+                <div class="main_dls_1_0_0__line fadeInUp load"></div>
+                <div class="brand_dls_1_0_0__content fadeInUp load" style="position: relative;">
+                    <div class="slide_step" id="slide_step">
+                        <div>
+                            <p><img src="images/pic-1.jpg" alt=""></p>
+                            <p><img src="images/pic-2.jpg" alt=""></p>
+                        </div>
+                        <div>
+                            <p><img src="images/pic-3.jpg" alt=""></p>
+                            <p><img src="images/pic-4.jpg" alt=""></p>
+                        </div>
+                        <div>
+                            <p><img src="images/pic-5.jpg" alt=""></p>
+                            <p><img src="images/pic-6.jpg" alt=""></p>
+                        </div>
+                        <div>
+                            <p><img src="images/pic-3.jpg" alt=""></p>
+                            <p><img src="images/pic-4.jpg" alt=""></p>
+                        </div>
+                    </div>
+                    <ul class="controls" id="slide_stepControl">
+                        <li class="prev">
+                            <span aria-label="Previous"></span>
+                        </li>
+                        <li class="next">
+                            <span aria-label="Next"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script>
+            var slide_step = tns({
+                container: '#slide_step',
+                items: 3,
+                controlsContainer: '#slide_stepControl',
+                navAsThumbnails: true,
+                autoplay: false,
+                autoplayTimeout: 1000,
+                autoplayButton: '#customize-toggle',
+                gutter: 10,
+                nav:false,
+                responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                820: {
+                    items: 2,
+                },
+                1024: {
+                    items: 3,
+                }
+            },
+            });
+        </script>
+
+        <!-- project_dls_1_0_0 -->
+        <link rel="stylesheet" href="Home/project_dls_1_0_0/sass/project_dls_1_0_0.min.css">
+        <section class="project_dls_1_0_0 ">
+            <div class="container">
+                <div class="main_dls_1_0_0__title fadeInUp load">Signature Projects</div>
+                <div class="main_dls_1_0_0__line fadeInUp load"></div>
+                <div id="project_dls_1_0_0__content" class="project_dls_1_0_0__content fadeInUp load"></div>
+                <div class="project_dls_1_0_0__more fadeInUp load">MORE PROJECTS</div>
+            </div>
+        </section>
+        <script>
+            const data = [
+                {
+                    name: "Tay Ho Residence",
+                    place: "HANOI, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-1.jpg",
+                    des: "Duis varius, ante ut consectetur auctor, lacus ligula ultricies ante, et interdum magna turpis at dolor. Maecenas aliquam non neque id consequat. Vestibulum luctus vestibulum massa, et congue leo pulvinar ac.",
+                },
+                {
+                    name: "Blue Ocean Villa",
+                    place: "DANANG, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-2.jpg",
+                    des: "Donec erat lacus, ultrices ut est eget, efficitur vehicula augue. Integer a purus ultrices, scelerisque tortor ac, dignissim justo.",
+                },
+                {
+                    name: "Sky Penthouse",
+                    place: "HCMC, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-3.jpg",
+                    des: "Suspendisse et mauris odio. Etiam tincidunt tempor lorem, a feugiat metus lobortis id. Integer sit amet ipsum eget nisi venenatis ullamcorper. Sed at pharetra neque.",
+                },
+                {
+                    name: "Tay Ho Residence",
+                    place: "HANOI, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-1.jpg",
+                    des: "Duis varius, ante ut consectetur auctor, lacus ligula ultricies ante, et interdum magna turpis at dolor. Maecenas aliquam non neque id consequat. Vestibulum luctus vestibulum massa, et congue leo pulvinar ac.",
+                },
+                {
+                    name: "Blue Ocean Villa",
+                    place: "DANANG, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-2.jpg",
+                    des: "Donec erat lacus, ultrices ut est eget, efficitur vehicula augue. Integer a purus ultrices, scelerisque tortor ac, dignissim justo.",
+                },
+                {
+                    name: "Sky Penthouse",
+                    place: "HCMC, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-3.jpg",
+                    des: "Suspendisse et mauris odio. Etiam tincidunt tempor lorem, a feugiat metus lobortis id. Integer sit amet ipsum eget nisi venenatis ullamcorper. Sed at pharetra neque.",
+                },
+            ];
+        </script>
+        <script src="Home/project_dls_1_0_0/js/project_dls_1_0_0.js"></script>
+
+        <!-- footer_dls_1_0_0 -->
+        <link rel="stylesheet" href="Footer/footer_dls_1_0_0/sass/footer_dls_1_0_0.min.css">
+        <footer class="footer_dls_1_0_0">
+            <div class="container">
+                <div class="footer_dls_1_0_0__box">
+                    <div class="footer_dls_1_0_0__top">                                        
+                        <div class="footer_dls_1_0_0__col">
+                            <div class="footer_dls_1_0_0__logo">
+                                <img width="215" height="111" src="images/ft-logo.png" alt="">
+                            </div>
+                            <div class="footer_dls_1_0_0__social">
+                                <a href="#"><img width="32" height="32" src="images/icon-fb.svg" alt="fb"/></a>
+                                <a href="#"><img width="32" height="32" src="images/icon-ins.svg" alt="fb"/></a>
+                                <a href="#"><img width="32" height="32" src="images/icon-youtube.svg" alt="fb"/></a>
+                            </div>
+                        </div>
+                        <div class="footer_dls_1_0_0__col">
+                            <div class="footer_dls_1_0_0__title">CONTACT US</div>
+                            <form class="footer_dls_1_0_0__wrapper" id="register-form">
+                                <div class="footer_dls_1_0_0__form">
+                                    <input type="text" name="iemail" placeholder="Your Email">
+                                    <textarea placeholder="Comments" name="inote" cols="30" rows="5"></textarea>
+                                    <button type="submit">SEND INQUIRY</button>
+                                </div>
+                            </form>
+                            <style>
+                                .border{
+                                    border:1px solid #c00 !important;
+                                }
+                            </style>
+                        </div>
+                        <div class="footer_dls_1_0_0__col">
+                            <div class="footer_dls_1_0_0__title">GET IN TOUCH</div>
+                            <div class="footer_dls_1_0_0__info">
+                                <p>A   75 Co Linh str., Thach Ban ward,
+                                    Long Bien dist., Hanoi, Vietnam</p>
+                                <p>T   +84 24 3716 0666</p>
+                                <p>E   info@landastudio.vn</p>
+                                <p>W  www.landastudio.vn</p>
+                            </div>
+                            <p>Hotline +84 9 83771639</p>
+                        </div>
+                    </div>
+                    <div class="footer_dls_1_0_0__bot">
+                        ©Copyright 2022. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="Footer/footer_dls_1_0_0/js/footer_dls_1_0_0.js"></script>
+    </main>
+</body>
+<script>
+    imgTheme('Header/header_dls_1_0_0/', '.header_dls_1_0_0 img');
+    imgTheme('Home/slider_dls_1_0_0/', '.slider_dls_1_0_0 img');
+    imgTheme('Home/about_dls_1_0_0/', '.about_dls_1_0_0 img');
+    imgTheme('Home/brand_dls_1_0_0/', '.brand_dls_1_0_0 img');
+    imgTheme('Footer/footer_dls_1_0_0/', '.footer_dls_1_0_0 img')
+</script>
+
+</html>

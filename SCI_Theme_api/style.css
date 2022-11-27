@@ -1,0 +1,15 @@
+/*
+  
+ * Theme Name: SCI_Theme
+ * Description: Theme Module Custom Field
+ * Theme URI: https://scigroup.com.vn
+ * Version: 1.0
+ * Author: DinhTrieu
+ * Author URI: https://www.facebook.com/huudinh85
+ * Tags: starter theme, framework theme, two-columns, customize
+ * Textdomain: SCI_Theme
+ */
+
+div#toc_container{
+    margin: 0 auto !important;
+}

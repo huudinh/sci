@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brandcate_dls_1_0_0</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="../../assets/sass/custom.min.css" />
+    <link rel="stylesheet" href="sass/brandcate_dls_1_0_0.min.css">
+
+</head>
+
+<body>
+    <div class="main_dls_1_0_0">
+        <section class="brandcate_dls_1_0_0 ">
+            <div class="container">
+                <ul class="brandcate_dls_1_0_0__nav">
+                    <!-- <li class="active">
+                        <img src="images/icon-1.svg" alt="" /> 
+                        <p>All</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-2.svg" alt="" /> 
+                        <p>Kitchen</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-3.svg" alt="" /> 
+                        <p>Living Room</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-4.svg" alt="" /> 
+                        <p>Bathroom</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-5.svg" alt="" /> 
+                        <p>Bedroom</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-6.svg" alt="" /> 
+                        <p>Ceramic / <br>
+                            Porcelain tiling</p>
+                    </li> -->
+                </ul>
+                <div class="brandcate_dls_1_0_0__content">
+                    <!-- <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-1.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-2.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-3.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-4.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-5.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-6.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-7.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-8.jpg" alt=""></a>
+                    </div>
+                    <div class="brandcate_dls_1_0_0__item">
+                        <a href="#"><img src="images/pic-9.jpg" alt=""></a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <script>
+            let data = [
+                {
+                    pic: 'images/pic-1.jpg',
+                    name: 'Veneer lamellar structure 1',
+                    link: '#',
+                    cate: 'Kitchen'
+                },
+                {
+                    pic: 'images/pic-2.jpg',
+                    name: 'Veneer lamellar structure 2',
+                    link: '#',
+                    cate: 'Living Room',
+                },
+                {
+                    pic: 'images/pic-3.jpg',
+                    name: 'Veneer lamellar structure 3',
+                    link: '#',
+                    cate: 'Bathroom',
+
+                },
+                {
+                    pic: 'images/pic-4.jpg',
+                    name: 'Veneer lamellar structure 4',
+                    link: '#',
+                    cate: 'Bedroom',
+                },
+                {
+                    pic: 'images/pic-5.jpg',
+                    name: 'Veneer lamellar structure 5',
+                    cate: 'Ceramic / Porcelain tiling',
+                    link: '#',
+                },
+                {
+                    pic: 'images/pic-6.jpg',
+                    name: 'Veneer lamellar structure 6',
+                    cate: 'Living Room',
+                    link: '#',
+                },
+                {
+                    pic: 'images/pic-7.jpg',
+                    name: 'Veneer lamellar structure 6',
+                    cate: 'Living Room',
+                    link: '#',
+                },
+                {
+                    pic: 'images/pic-8.jpg',
+                    name: 'Veneer lamellar structure 6',
+                    cate: 'Living Room',
+                    link: '#',
+                },
+                {
+                    pic: 'images/pic-9.jpg',
+                    name: 'Veneer lamellar structure 6',
+                    cate: 'Living Room',
+                    link: '#',
+                },
+            ];
+
+            // Filter Cate
+            const cateArr = [];
+            for(let i = 0; i < data.length; i++){
+                cateArr.push(data[i].cate);
+            }
+
+            const removeDuplicates = (array) => { 
+                return array.filter((item, index) => array.indexOf(item) === index);
+            }
+            cateFilter = removeDuplicates(cateArr);
+            
+            const cateList = [{
+                name: 'All',
+                link: 'images/icon-1.svg'
+            }];
+
+            const addCateList = (name, link, index) => {
+                cateList[index] = {
+                    name: name,
+                    link: link
+                }
+            }
+
+            for(let i = 0; i < cateFilter.length; i++){
+                let item = i + 1;
+                switch (cateFilter[i]){
+                    case 'Kitchen': 
+                        addCateList(cateFilter[i], 'images/icon-2.svg', item);
+                        break;
+                    case 'Living Room':
+                        addCateList(cateFilter[i], 'images/icon-3.svg', item);
+                        break;
+                    case 'Bathroom':
+                        addCateList(cateFilter[i], 'images/icon-4.svg', item);
+                        break;
+                    case 'Bedroom':
+                        addCateList(cateFilter[i], 'images/icon-5.svg', item);
+                        break;
+                    case 'Ceramic / Porcelain tiling':
+                        addCateList(cateFilter[i], 'images/icon-6.svg', item);
+                        break;
+                }
+            }
+        </script>
+        <script src="js/brandcate_dls_1_0_0.js"></script>
+    </div>
+</body>
+
+</html>

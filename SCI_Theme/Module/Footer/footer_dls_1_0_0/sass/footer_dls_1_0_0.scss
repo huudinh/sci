@@ -1,0 +1,107 @@
+.footer_dls_1_0_0 {
+    background: url(../images/ft-bg.jpg) center 0 no-repeat;
+    padding: 30px 0;
+    font-family: var(--primary-font);
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    font-size:14px;
+    &__box{
+        width:68%;
+        margin:0 auto;
+    }
+    &__top {
+        display: flex;
+    }
+    &__logo {
+        img {
+            height: auto;
+        }
+    }
+    &__social{
+        margin:20px 0;
+        img{
+            margin:5px 10px 5px 0;
+            transition: .3s;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+    &__col{
+        width:calc(100% / 3);
+    }
+    &__info {
+        margin-bottom: 20px;
+        p:first-letter {
+            text-transform: uppercase;
+            padding-right:10px;
+        }
+    }
+    &__title{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size:16px;
+    }
+    &__bot{
+        margin-top:-15px;
+    }
+    &__form{
+        width: 80%;
+        margin:0;
+        input, textarea{
+            width:100%;
+            margin:5px 0;
+            padding:8px 10px;
+            background:none;
+            color:#fff;
+            border:1px solid #fff;
+        }
+        button{
+            background:none;
+            border:1px solid #fff;
+            color:#fff;
+            padding:5px 10px;
+            cursor: pointer;
+        }
+    }
+   
+}
+@media (max-width:1180px){
+    .footer_dls_1_0_0__box{
+        width:100%;
+    }
+}
+@media (max-width:820px){
+    .footer_dls_1_0_0__bot {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .footer_dls_1_0_0__top{
+        flex-wrap: wrap;
+    }
+    .footer_dls_1_0_0__col {
+        width: 50%;
+    }
+}
+@media (max-width:720px){
+    .footer_dls_1_0_0{
+        text-align: center;
+        background-size:cover;
+    }
+    .footer_dls_1_0_0__col {
+        width: 100%;
+    }
+    .footer_dls_1_0_0__social {
+        margin: 10px 0;
+    }
+    .footer_dls_1_0_0__form{
+        width:100%;
+    }
+    .footer_dls_1_0_0__form{
+        margin-bottom:25px;
+    }
+    .footer_dls_1_0_0__title{
+        margin-bottom:10px;
+    }
+}
