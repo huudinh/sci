@@ -38,9 +38,11 @@ render(data, count);
 
 // Render giao diện Phân trang
 const pageSplit = () => {
-  let numberPage = data.length / count;
-  for (let i = 1; i < numberPage; i++) {
-    document.querySelector('.brandPost_dls_1_0_0__pages').innerHTML += pageItem(i);
+  let numberPage = Math.ceil(data.length / count);
+  if(numberPage > 1){
+    for (let i = 1; i <= numberPage; i++) {
+      document.querySelector('.brandPost_dls_1_0_0__pages').innerHTML += pageItem(i);
+    }
   }
 }
 pageSplit();

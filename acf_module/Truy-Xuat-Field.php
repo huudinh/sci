@@ -1,9 +1,10 @@
 <?php /* Tổng Hợp code Field */ ?>
 
-
-<?php /* Code lấy Text Field */ ?>
-<?php echo $field['service_title']; ?>
-
+<?php 
+	/* Code lấy Text Field */ 
+	$name = get_field( 'name' );
+	echo $field['service_title'];
+?>
 
 <?php /* Code lấy Image Field */ ?>
 <?php echo $field['about_ytbimage']['url']; ?>

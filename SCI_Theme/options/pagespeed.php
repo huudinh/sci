@@ -1,6 +1,9 @@
 <?php
 //Tối ưu page speed
 
+// Remove blog editor
+add_filter('use_block_editor_for_post', '__return_false');
+
 function add_async_attribute($tag, $handle) {
     // add script handles to the array below
     $scripts_to_defer = array('script-jquery', 'script-carousel','script-video','script-custom');

@@ -39,8 +39,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'choices' => array(
                     'show_header_footer' => 'Header/Footer',
                     'show_module_main' => 'Module Main',
-                    'show_module_sidebar' => 'Sidebar',
-                    'show_module_site' => 'WebSite',
+                    'show_module_site' => 'Setup Website',
                 ),
                 'allow_null' => 0,
                 'other_choice' => 0,
@@ -357,69 +356,74 @@ if( function_exists('acf_add_local_field_group') ):
                                     ),
                                 ),
                             ),
-                         
+                            'id_service_dls_1_0_0' => array(
+                                'key' => 'id_service_dls_1_0_0',
+                                'name' => 'service_dls_1_0_0',
+                                'label' => 'Service 1.0.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_service_dls_1_0_0_sub1',
+                                        'label' => 'Tiêu đề',
+                                        'name' => 'service_title',
+                                        'type' => 'text',
+                                    ),
+                                    array(
+                                        'key' => 'id_service_dls_1_0_0_sub2',
+                                        'label' => 'Photo',
+                                        'name' => 'data',
+                                        'type' => 'gallery',
+                                    ),
+                                    array(
+                                        'key' => 'id_service_dls_1_0_0_sub3',
+                                        'label' => 'Nội dung',
+                                        'name' => 'service_content',
+                                        'type' => 'wysiwyg',
+                                    ),
+                                ),
+                            ),
+                            'id_project_dls_1_1_0' => array(
+                                'key' => 'id_project_dls_1_1_0',
+                                'name' => 'project_dls_1_1_0',
+                                'label' => 'Project 1.0.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_project_dls_1_1_0_sub1',
+                                        'label' => 'Nội dung',
+                                        'name' => 'project',
+                                        'type' => 'repeater',
+                                        'layout' => 'block',
+                                        'sub_fields' => array(
+                                            array(
+                                                'key' => 'id_project_dls_1_1_0_sub1_sub1',
+                                                'label' => 'Tiêu đề',
+                                                'name' => 'project_title',
+                                                'type' => 'text',
+                                            ),
+                                            array(
+                                                'key' => 'id_project_dls_1_1_0_sub1_sub2',
+                                                'label' => 'Mô tả',
+                                                'name' => 'project_content',
+                                                'type' => 'textarea',
+                                                'rows' => 3,
+                                            ),
+                                            array(
+                                                'key' => 'id_project_dls_1_1_0_sub1_sub3',
+                                                'label' => 'Photo',
+                                                'name' => 'project_photo',
+                                                'type' => 'gallery',
+                                            ),
+                                        ),
+                                    ),
+                                ),
+                            ),
                         ),
                         'button_label' => 'Thêm Module',
                         'min' => '',
                         'max' => '',
                     ),
-                      
-                    array(      
-                        'key' => 'group_page_field_sidebar',
-                        'label' => 'Cài đặt Sidebar',
-                        'name' => '',
-                        'type' => 'tab',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => array(
-                            array(
-                                array(
-                                    'field' => 'group_admin',
-                                    'operator' => '==',
-                                    'value' => 'show_module_sidebar',
-                                ),
-                            ),
-                        ),
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'placement' => 'top',
-                        'endpoint' => 0,
-                    ),
-                    array(
-                        'key' => 'sidebar_custom',
-                        'label' => '',
-                        'name' => 'sidebar_custom',
-                        'type' => 'flexible_content',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => array(
-                            array(
-                                array(
-                                    'field' => 'group_admin',
-                                    'operator' => '==',
-                                    'value' => 'show_module_sidebar',
-                                ),
-                            ),
-                        ),
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'layouts' => array(
-                        // Bat dau Module
-
-                        
-                        // End Module                                    
-                        ),
-                        'button_label' => 'Thêm Module',
-                        'min' => '',
-                        'max' => '',
-                    ),
-                               
+                          
                     array(      
                         'key' => 'group_page_field_site',
                         'label' => 'Cài đặt Website',
@@ -466,9 +470,26 @@ if( function_exists('acf_add_local_field_group') ):
                             'id' => '',
                         ),
                         'layouts' => array(
-                        // Bat dau Module
-
-                        // End Module                                    
+                            'id_sidebar_dls_1_0_0' => array(
+                                'key' => 'id_sidebar_dls_1_0_0',
+                                'name' => 'sidebar_dls_1_0_0',
+                                'label' => 'Sidebar 1.0.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_sidebar_dls_1_0_0_sub1',
+                                        'label' => 'Tiêu đề',
+                                        'name' => 'sidebar_title',
+                                        'type' => 'text',
+                                    ),
+                                    array(
+                                        'key' => 'id_sidebar_dls_1_0_0_sub2',
+                                        'label' => 'Danh sách sản phẩm',
+                                        'name' => 'sidebar_content',
+                                        'type' => 'wysiwyg',
+                                    ),
+                                ),
+                            ),
                         ),
                         'button_label' => 'Thêm Module',
                         'min' => '',

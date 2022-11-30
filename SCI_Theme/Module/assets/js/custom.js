@@ -6,7 +6,6 @@ function imgTheme(path, tag) {
         item.setAttribute('src', src);
     }
 }
-
 function sourceTheme(path, tag) {
     let x = document.querySelectorAll(tag);
     for (let item of x) {
@@ -20,10 +19,7 @@ document.addEventListener("scroll", function () {
     myLazy('source.lazy', 'srcset');
     myLazy('.lazy-bg', 'img-bg');
     myLazy('.load', 'loaded');
-    onScroll('.header_1_1_0__list a', 'section', 'active');
-
 });
-scrollClick('.header_1_1_0__list a, a[href="#pageReg"]');
 LazyShowScreen('img.lazy', 'src')
 LazyShowScreen('.load', 'loaded')
 
@@ -62,10 +58,8 @@ function myLazy(sec, attr) {
                 default:
                     console.log(`Sorry, we are out of ${attr}.`);
             }
-
         }
     }
-
 }
 
 function LazyShowScreen(sec, attr) {

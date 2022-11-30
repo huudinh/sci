@@ -1,19 +1,6 @@
 
 <!-- Code tracking Insight -->
-<script src="/css/js_ver2.js?t=1"></script>
-
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-E99XRQ8VQW"></script> -->
-
-<!-- <script>
-    setInterval(() => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'UA-173431536-1');
-        gtag('config', 'G-E99XRQ8VQW');
-    }, 3000);
-</script> -->
+<!-- <script src="/css/js_ver2.js?t=1"></script> -->
 
 <script>
   var ref = document.referrer;

@@ -120,6 +120,11 @@
     // Get thumbnail Youtube
     // https://img.youtube.com/vi/uL-CQF0u3Ik/maxresdefault.jpg
 
+    // Replace 
+    $newstr = str_replace(array("\n"), '<br />', $oldstr);
+
+    // Lay ID Youtube
+    $linkID = getIDvideo($image['description']); 
     
     // Get Term ID
     $category = get_queried_object();
@@ -215,6 +220,9 @@ function remove_max_srcset_image_width( $max_width ) { return false; }
 add_filter( 'max_srcset_image_width', 'remove_max_srcset_image_width' ); 
 function wdo_disable_srcset( $sources ) { return false; } 
 add_filter( 'wp_calculate_image_srcset', 'wdo_disable_srcset' );
+
+// Remove block editor
+add_filter('use_block_editor_for_post', '__return_false');
 
 // Bo lazyload
 add_filter('wp_lazy_loading_enabled', '__return_false');

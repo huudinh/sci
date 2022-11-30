@@ -25,28 +25,23 @@
 	// if($paged > 1 || is_author() || is_tag() || is_date() || is_attachment()){
 	// 	echo '<meta name="robots" content="noindex,nofollow" />'; } 
 	?>
-	<?php include(locate_template('Module/media/css/style_css.php')); ?>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<style>
-        :root {
-            --primary-font: "Raleway", sans-serif;
-            --secondary-font: Roboto, system-ui, -apple-system, "Segoe UI",
-                "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }        
-		body{padding-top:100px;}
-		#toc_container{list-style:none;margin:10px 0;padding:10px;border:1px solid #ccc;background:#eee;margin-bottom:10px!important}
-		#toc_container li a{padding:2px 5px; font-weight:normal;display:block;font-size:15px}
-        .modal-btn {cursor: pointer;}
-		.header_sci_1_0_0{background:rgb(35, 134, 199)!important}
-		main{margin-bottom:20px;}
-		@media (min-width: 1441px) {
-            .container {width: 80%;}
-        }
-		@media (max-width:912px){
-			body{padding-top:62px;}
-		}
-	</style>
+	<?php
+        include(locate_template('Module/assets/sass/lib_css.php')); 
+        include(locate_template('Module/assets/sass/custom_css.php')); 
+    ?>
 </head>
 <body>
-<?php get_template_part('Module/module_header'); ?>
+	<main class="main_dls_1_0_0  main_dls_1_0_0--page">
+			<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
+			<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
+			<?php
+				if(is_single()) {
+					echo '
+						<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--post"></div>
+					';
+				}
+			?>
+<?php 
+	get_template_part('Module/module_header'); 
+	get_template_part('Module/Category/breadcrumb_dls_1_0_0/breadcrumb_dls_1_0_0');	
+?>

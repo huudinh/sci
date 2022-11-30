@@ -14,7 +14,7 @@ $role_object->add_cap( 'manage_options' );
 add_theme_support( 'post-thumbnails' );
 
 /** Disable schema yoast seo **/
-add_filter( 'wpseo_json_ld_output', '__return_false' );
+// add_filter( 'wpseo_json_ld_output', '__return_false' );
 
 /** Remove Yoast HTML Comments from version **/
 add_filter( 'wpseo_debug_markers', '__return_false' );
@@ -273,34 +273,4 @@ function filter_site_upload_size_limit( $size ) {
 } 
 add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 120 );
 
-// CUSTOM POST TYPE 
-add_action( 'init', 'tuyendung_post' );
-function tuyendung_post() {
-    register_post_type( 'tuyen-dung',
-        array(
-            'labels' => array(
-                'name' => __( 'Tuyển dụng' ),
-                'singular_name' => __( 'Tuyển dụng' ),
-                'add_new' => __( 'Tạo mới' ),
-                'add_new_item' => __( 'Tạo Tuyển dụng mới' ),
-                'edit_item' => __( 'Chỉnh sửa' ),
-                'new_item' => __( 'Tuyển dụng mới' ),
-                'view_item' => __( 'Xem Tuyển dụng' ),
-                'not_found' => __( 'Chưa có Tuyển dụng nào.' )
-            ),
-            'description' => '',
-            'public' => true,
-            'publicly_queryable' => true,
-            'exclude_from_search' => true,
-            'menu_position' => 5,
-            'has_archive' => true,
-            'hierarchical' => false,
-            'capability_type' => 'page',
-            'taxonomies' => array( 'category' ),
-            'rewrite' => array( 'slug' => 'tuyen-dung' ),
-            'supports' => array( 'title', 'editor', 'custom-fields', 'thumbnail', )
-        )
-    );
-    flush_rewrite_rules( false );
-}
 ?>
