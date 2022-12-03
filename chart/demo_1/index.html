@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Báo cáo doanh thu năm 2022</title>
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
+  <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  <style>
+    html,
+    body,
+    #myChart {
+      width: 800px;
+      height: 600px;
+    }
+
+    .zc-ref {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='myChart'><a class="zc-ref" href="https://www.zingchart.com/">Charts by ZingChart</a></div>
+  <script>
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    var myConfig = {
+      "globals": {
+        "font-family": "Roboto"
+      },
+      "graphset": [{
+        "type": "area",
+        "background-color": "#fff",
+        "utc": true,
+        "title": {
+          "y": "15px",
+          "text": "Báo cáo doanh thu năm 2022",
+          "background-color": "none",
+          "font-color": "#05636c",
+          "font-size": "24px",
+          "height": "25px",
+          "adjust-layout": true
+        },
+        "plotarea": {
+          "margin-top": "10%",
+          "margin-right": "dynamic",
+          "margin-bottom": "dynamic",
+          "margin-left": "dynamic",
+          "adjust-layout": true
+        },
+        "labels": [{
+            "text": "Kangnam: %plot-2-value",
+            "default-value": "",
+            "color": "#8da0cb",
+            "x": "20%",
+            "y": 50,
+            "width": 120,
+            "text-align": "left",
+            "bold": 0,
+            "font-size": "14px",
+            "font-weight": "bold"
+          },
+          {
+            "text": "Paris: %plot-1-value",
+            "default-value": "",
+            "color": "#66c2a5",
+            "x": "45%",
+            "y": 50,
+            "width": 120,
+            "text-align": "left",
+            "bold": 0,
+            "font-size": "14px",
+            "font-weight": "bold"
+          },
+          {
+            "text": "Hồng Hà: %plot-0-value",
+            "default-value": "",
+            "color": "#fc8d62",
+            "x": "70%",
+            "y": 50,
+            "width": 120,
+            "text-align": "left",
+            "bold": 0,
+            "font-size": "14px",
+            "font-weight": "bold"
+          }
+        ],
+        "scale-x": {
+          "label": {
+            "text": "Năm 2022",
+            "font-size": "14px",
+            "font-weight": "normal",
+            "offset-x": "10%",
+            "font-angle": 360
+          },
+          "item": {
+            "text-align": "center",
+            "font-color": "#05636c"
+          },
+          "zooming": 1,
+          "max-labels": 12,
+          "labels": [
+            "Tháng<br>1",
+            "Tháng<br>2",
+            "Tháng<br>3",
+            "Tháng<br>4",
+            "Tháng<br>5",
+            "Tháng<br>6",
+            "Tháng<br>7",
+            "Tháng<br>8",
+            "Tháng<br>9",
+            "Tháng<br>10",
+            "Tháng<br>11",
+            "Tháng<br>12"
+          ],
+          "max-items": 12,
+          "items-overlap": true,
+          "guide": {
+            "line-width": "0px"
+          },
+          "tick": {
+            "line-width": "2px"
+          },
+        },
+        "crosshair-x": {
+          "line-color": "#fff",
+          "line-width": 1,
+          "plot-label": {
+            "visible": false
+          }
+        },
+        "scale-y": {
+          "values": "0:1500000:300000",
+          "item": {
+            "font-color": "#05636c",
+            "font-weight": "normal"
+          },
+          "label": {
+            "text": "Doanh số",
+            "font-size": "14px"
+          },
+          "guide": {
+            "line-width": "0px",
+            "alpha": 0.2,
+            "line-style": "dashed"
+          }
+        },
+        "plot": {
+          "line-width": 2,
+          "marker": {
+            "size": 1,
+            "visible": false
+          },
+          "tooltip": {
+            "font-family": "Roboto",
+            "font-size": "15px",
+            "text": "Doanh thu %v %t vào %data-days",
+            "text-align": "left",
+            "border-radius": 5,
+            "padding": 10
+          }
+        },
+        "series": [{
+            "values": [
+            24498,
+            51450,
+            76800,
+            99793,
+            2000,
+            42150,
+            220623,
+            71560,
+            129100,
+            124875,
+            277450,
+              0
+            ],
+            "data-days": [
+              "Tháng 1",
+              "Tháng 2",
+              "Tháng 3",
+              "Tháng 4",
+              "Tháng 5",
+              "Tháng 6",
+              "Tháng 7",
+              "Tháng 8",
+              "Tháng 9",
+              "Tháng 10",
+              "Tháng 11",
+              "Tháng 12"
+            ],
+            "line-color": "#fc8d62",
+            "aspect": "spline",
+            "background-color": "#fc8d62",
+            "alpha-area": ".5",
+            "font-family": "Roboto",
+            "font-size": "14px",
+            "text": "Hồng Hà"
+          },
+          {
+            "values": [
+            88099,
+            98800,
+            400475,
+            248450,
+            363649,
+            355100,
+            497655,
+            332700,
+            407125,
+            185922,
+            178700,
+              0
+            ],
+            "data-days": [
+              "Tháng 1",
+              "Tháng 2",
+              "Tháng 3",
+              "Tháng 4",
+              "Tháng 5",
+              "Tháng 6",
+              "Tháng 7",
+              "Tháng 8",
+              "Tháng 9",
+              "Tháng 10",
+              "Tháng 11",
+              "Tháng 12"
+            ],
+            "line-color": "#66c2a5",
+            "background-color": "#66c2a5",
+            "alpha-area": ".3",
+            "text": "Paris",
+            "aspect": "spline",
+            "font-family": "Roboto",
+            "font-size": "14px"
+          },
+          {
+            "values": [
+            176240,
+            355080,
+            258750,
+            838230,
+            318575,
+            1272780,
+            1341314,
+            496400,
+            805932,
+            699750,
+            438275,
+              0
+            ],
+            "data-days": [
+              "Tháng 1",
+              "Tháng 2",
+              "Tháng 3",
+              "Tháng 4",
+              "Tháng 5",
+              "Tháng 6",
+              "Tháng 7",
+              "Tháng 8",
+              "Tháng 9",
+              "Tháng 10",
+              "Tháng 11",
+              "Tháng 12"
+            ],
+            "line-color": "#8da0cb",
+            "background-color": "#8da0cb",
+            "aspect": "spline",
+            "alpha-area": "0.2",
+            "text": "Kangnam",
+            "font-family": "Roboto",
+            "font-size": "14px"
+          }
+        ]
+      }]
+    };
+
+    zingchart.render({
+      id: 'myChart',
+      data: myConfig,
+      height: '100%',
+      width: '100%'
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng Doanh Số</title>
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<body>
+    <div id="myChart" style="width:100%; max-width:600px; height:500px;">
+    </div>
+
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Contry', 'Mhl'],
+                ['Kangnam', 7001326],
+                ['Paris', 3156675],
+                ['Hồng Hà', 1120300],
+            ]);
+
+            var options = {
+                title: 'Tổng doanh số năm 2022',
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+</body>
+
+</html>
