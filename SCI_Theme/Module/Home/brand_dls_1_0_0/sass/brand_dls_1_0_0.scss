@@ -31,6 +31,19 @@
             right:-75px;
         }
     }
+    &__more{
+        border: 1px solid #fff;
+        display: table;
+        margin: 60px auto;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: .3s;
+        color: #fff;
+        &:hover{
+            background:#222;
+            border:1px solid #222;
+        }
+    }
 }
 @media (max-width:1440px){
     .brand_dls_1_0_0 .controls li.next {

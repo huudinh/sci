@@ -19,8 +19,8 @@
 .header_dls_1_0_0__language{position:absolute;z-index:9;top:30px;right:0;background:#212529;border:none;color:#fff;border-radius:none;text-shadow:0 1px 0 rgba(0,0,0,.4);outline:none;overflow:unset!important;padding-left:22px}
 .header_dls_1_0_0__language option{color:#fff;border-radius:4px;padding:2px 5px;box-shadow:0 0 10px 100px #111 inset}
 .header_dls_1_0_0__language option:hover{box-shadow:0 0 10px 100px #333 inset}
-.header_dls_1_0_0__language.en{background:url(<?php echo $path ?>/images/en.png) 0 5px no-repeat}
-.header_dls_1_0_0__language.vi{background:url(<?php echo $path ?>/images/vi.png) 0 5px no-repeat}
+.header_dls_1_0_0__language.en{background:url(<?php echo $path ?>/images/en.png?v=1) 0 5px no-repeat}
+.header_dls_1_0_0__language.vi{background:url(<?php echo $path ?>/images/vi.png?v=1) 0 5px no-repeat}
 .header_dls_1_0_0__nav{display:none}
 .header_dls_1_0_0__logoMb{display:none}
 .header_dls_1_0_0__btnGroup{display:none}

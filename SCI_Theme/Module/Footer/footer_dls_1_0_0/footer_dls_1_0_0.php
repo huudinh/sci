@@ -33,7 +33,7 @@
                     </style>
                 </div>
                 <div class="footer_dls_1_0_0__col">
-                    <div class="footer_dls_1_0_0__title">GET IN TOUCH</div>
+                    <div class="footer_dls_1_0_0__title">Visit Us</div>
                     <div class="footer_dls_1_0_0__info">
                         <?php echo $field["info"]; ?>                        
                     </div>
