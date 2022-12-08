@@ -16,7 +16,7 @@
     &__item{
         display: flex;
         align-items: center;
-        font-size:16px;
+        font-size:15px;
         &>div{
             width:50%;
         }
@@ -33,12 +33,9 @@
             padding-left:90px;
         }
     }
-    &__num{
-        color:#999;
-    }
     &__name{
-        font-size:28px;
-        margin:20px 0 5px;
+        font-size:26px;
+        margin:5px 0;
     }
     &__place{
         text-transform: uppercase;

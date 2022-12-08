@@ -57,22 +57,21 @@
     }
 
     for(let i = 0; i < cateArrNew.length; i++){
-        let item = i + 1;
         switch (cateArrNew[i]){
             case 'Kitchen': 
-                addCateList(cateArrNew[i], '<?php echo $path?>images/icon-2.svg', item, 2);
-                break;
-            case 'Living Room':
-                addCateList(cateArrNew[i], '<?php echo $path?>images/icon-3.svg', item, 3);
+                addCateList(cateArrNew[i], '<?php echo $path ?>images/icon-2.svg', 1);
                 break;
             case 'Bathroom':
-                addCateList(cateArrNew[i], '<?php echo $path?>images/icon-4.svg', item, 4);
+                addCateList(cateArrNew[i], '<?php echo $path ?>images/icon-4.svg', 2);
                 break;
-            case 'Bedroom':
-                addCateList(cateArrNew[i], '<?php echo $path?>images/icon-5.svg', item, 5);
+            case 'Furniture':
+                addCateList(cateArrNew[i], '<?php echo $path ?>images/icon-3.svg', 3);
                 break;
-            case 'Ceramic / Porcelain tiling':
-                addCateList(cateArrNew[i], '<?php echo $path?>images/icon-6.svg', item, 6);
+            case 'Tiling':
+                addCateList(cateArrNew[i], '<?php echo $path ?>images/icon-6.svg', 4);
+                break;
+            case 'Door':
+                addCateList(cateArrNew[i], '<?php echo $path ?>images/icon-door.svg', 5);
                 break;
         }
     }

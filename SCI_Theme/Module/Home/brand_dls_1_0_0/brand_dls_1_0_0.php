@@ -40,7 +40,7 @@
                     foreach( $content as $key => $image ):
                         if($key % 2 == 0){echo '<div>';} 
                         echo '
-                            <p><a href="'.$image['description'].'"><img src="'.$image['url'].'" alt=""><a></p>
+                            <p><a href="'.$image['description'].'"><img src="'.$image['url'].'" alt=""></a></p>
                         ';
                         if($key % 2 != 0){echo '</div>';}
                     endforeach;
