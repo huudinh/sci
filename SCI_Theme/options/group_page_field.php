@@ -292,10 +292,16 @@ if( function_exists('acf_add_local_field_group') ):
                                                 'name' => 'sliderItemLink',
                                                 'type' => 'text',
                                             ),
+                                            array(
+                                                'key' => 'id_slider_dls_1_0_0_sub1_sub3',
+                                                'label' => 'id Youtube',
+                                                'name' => 'sliderItemId',
+                                                'type' => 'text',
+                                            ),
                                         ),
                                     ),
                                 ),
-                            ),  
+                            ), 
                             'id_about_dls_1_0_0' => array(
                                 'key' => 'id_about_dls_1_0_0',
                                 'name' => 'about_dls_1_0_0',

@@ -20,9 +20,24 @@ function showSlider(slides) {
     dots.setAttribute('class', 'slider__dots');
 
     for (let i = 0; i < slides.length; i++) {
+        if(slides[i].youtube){
+            video = `
+                <div class="slider__item" style="padding-bottom:0!important">
+                    <div class="slider_dls_1_0_0__video">
+                        <iframe src="https://www.youtube.com/embed/${slides[i].youtube}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+                    </div>            
+                </div>
+            `;
+        } else {
+            video = `
+                <div class="slider__item" style="background-image:url(${slides[i].link});">
+                    <div class="slider__text">${slides[i].text}</div>
+                </div>
+            `;
+        }
         let slide = `
-            <div class="slider__item" style="background-image:url(${slides[i].link});">
-                <div class="slider__text">${slides[i].text}</div>
+            <div>
+                ${video}
             </div>
         `;
         let dot = `<span class="slider__dot" onclick="showDirect(${i})"></span>`;

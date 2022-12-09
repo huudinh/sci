@@ -24,6 +24,12 @@
                                                 'name' => 'sliderItemLink',
                                                 'type' => 'text',
                                             ),
+                                            array(
+                                                'key' => 'id_slider_dls_1_0_0_sub1_sub3',
+                                                'label' => 'id Youtube',
+                                                'name' => 'sliderItemId',
+                                                'type' => 'text',
+                                            ),
                                         ),
                                     ),
                                 ),
