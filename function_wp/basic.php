@@ -226,3 +226,13 @@ add_filter('use_block_editor_for_post', '__return_false');
 
 // Bo lazyload
 add_filter('wp_lazy_loading_enabled', '__return_false');
+
+// 301
+header("Location:https://benhvienthammykangnam.vn");
+
+//add config.php
+define( 'WP_HOME', 'https://phauthuatnangmuisline.com' );
+define( 'WP_SITEURL', 'https://phauthuatnangmuisline.com' );
+
+// post show
+echo get_post_field('post_content', $post->ID); 
