@@ -76,3 +76,70 @@ php_value suhosin.get.max_vars 3000
 php_value suhosin.post.max_vars 3000
 php_value suhosin.request.max_vars 3000
 
+
+# 301 all domain
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^thammybenhvienhongha\.vn$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.thammybenhvienhongha\.vn$
+RewriteRule (.*) http://www.thammythailan.vn/$1 [R=301,L]
+
+# Redirect 301 mọi trang có giao thức http:// (không có và có www) sang https:// (không có www)
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^example\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.example\.com$
+RewriteRule .* https://example.com%{REQUEST_URI} [R=301,L]
+
+# Redirect 301 mọi trang có giao thức http:// (không có và có www) sang https:// (không có www) kết hợp với redirect 301 mọi trang có giao thức https:// (có www) sang https:// (không có www)
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^example\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.example\.com$
+RewriteRule .* https://example.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} =on
+RewriteCond %{HTTP_HOST} ^www\.example\.com$
+RewriteRule .* https://example.com%{REQUEST_URI} [R=301,L]
+
+# Redirect 301 subdomain sang root domain (domain chính)
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^subdomain\.example\.com$ [NC]
+RewriteRule .* http://www.example.com%{REQUEST_URI} [R=301,L]
+
+#Redirect 301 trang blog subdomain sang subfolder blog của root domain
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^blog\.example\.com$ [NC]
+RewriteRule (.*) http://www.example.com/blog/$1 [R=301,L]
+
+# Redirect 301 subdomain sang subfolder của root domain
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^subdomain\.example\.com$ [NC]
+RewriteRule (.*) http://www.example.com/subdirectory/$1 [R=301,L]
+
+#htaccess mặc định do chính WordPress cung cấp)
+# Redirect từ domain cũ sang domain mới (ĐÚNG)
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^old-domain\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.old-domain\.com$
+RewriteRule ^(.*)$ http://www.new-domain.com [R=301,L]
+
+# BEGIN WordPress
+
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+# END WordPress
+
+
+
