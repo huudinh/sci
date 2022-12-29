@@ -1,6 +1,14 @@
 <?php /* Tổng Hợp code Field */ ?>
 
 <?php 
+	$images = get_field('setting_post_kh','option');
+	// var_dump($images);
+	$max = count($images);
+	$rand = rand(0,$max-1);
+	// echo $images[$rand]['url'];
+?>
+
+<?php 
 	/* Code lấy Text Field */ 
 	$name = get_field( 'name' );
 	echo $field['service_title'];
