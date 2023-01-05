@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css" />
     <link rel="stylesheet" href="./assets/sass/custom.min.css" />
     <script src="./assets/js/custom.js"></script>
-
     <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+    <style>
+        @font-face {
+           font-family: 'fontello';
+           src: url(https://huudinh.github.io/assets/fonts/fontello.woff2) format("woff2"), url(https://huudinh.github.io/assets/fonts/fontello.woff) format("woff");
+       }
+   </style>
+   <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/icon.min.css">
 </head>
 <body>
     <link rel="stylesheet" href="Header/header_dls_1_0_0/sass/header_dls_1_0_0.min.css">
@@ -86,8 +92,8 @@
         <!-- project_dls_1_1_0 -->
         <link rel="stylesheet" href="Home/project_dls_1_1_0/sass/project_dls_1_1_0.min.css">
         <section class="project_dls_1_1_0 ">
+            <div id="modal"></div>                
             <div class="container">
-                <div id="modal"></div>                
                 <div class="project_dls_1_1_0__box">
                     <div class="project_dls_1_1_0__title">
                         <i class="project_dls_1_1_0__icon"></i>
@@ -98,19 +104,19 @@
                     </div>
                     <div class="project_dls_1_1_0__photo">
                         <div class="project_dls_1_1_0__pic project_dls_1_1_0__pic--big">
-                            <img src="images/pic-11.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-11.jpg" class="modal-btn" onclick="popupPhoto(dataSlide1, 0)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-12.jpg" class="modal-btn" data-modal="modal-pic"  alt="">
+                            <img src="images/pic-12.jpg" class="modal-btn" onclick="popupPhoto(dataSlide1, 1)"  alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-13.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-13.jpg" class="modal-btn" onclick="popupPhoto(dataSlide1, 2)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-14.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-14.jpg" class="modal-btn" onclick="popupPhoto(dataSlide1, 3)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-15.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-15.jpg" class="modal-btn" onclick="popupPhoto(dataSlide1, 4)" alt="">
                         </div>
                     </div>
 
@@ -125,19 +131,19 @@
                     </div>
                     <div class="project_dls_1_1_0__photo">
                         <div class="project_dls_1_1_0__pic project_dls_1_1_0__pic--big">
-                            <img src="images/pic-21.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-21.jpg" class="modal-btn" onclick="popupPhoto(dataSlide2, 0)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-22.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-22.jpg" class="modal-btn" onclick="popupPhoto(dataSlide2, 1)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-23.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-23.jpg" class="modal-btn" onclick="popupPhoto(dataSlide2, 2)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-24.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-24.jpg" class="modal-btn" onclick="popupPhoto(dataSlide2, 3)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-25.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-25.jpg" class="modal-btn" onclick="popupPhoto(dataSlide2, 4)" alt="">
                         </div>
                     </div>
 
@@ -152,24 +158,93 @@
                     </div>
                     <div class="project_dls_1_1_0__photo">
                         <div class="project_dls_1_1_0__pic project_dls_1_1_0__pic--big">
-                            <img src="images/pic-31.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-31.jpg" class="modal-btn" onclick="popupPhoto(dataSlide3, 0)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-32.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-32.jpg" class="modal-btn" onclick="popupPhoto(dataSlide3, 1)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-33.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-33.jpg" class="modal-btn" onclick="popupPhoto(dataSlide3, 2)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-34.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-34.jpg" class="modal-btn" onclick="popupPhoto(dataSlide3, 3)" alt="">
                         </div>
                         <div class="project_dls_1_1_0__pic">
-                            <img src="images/pic-35.jpg" class="modal-btn" data-modal="modal-pic" alt="">
+                            <img src="images/pic-35.jpg" class="modal-btn" onclick="popupPhoto(dataSlide3, 4)" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <script>
+            let url = 'Home/project_dls_1_1_0/'
+            const dataSlide1 = [
+                {
+                    "image": `${url}images/pic-11.jpg`,
+                    "text": "Slideshow1"
+                },
+                {
+                    "image": `${url}images/pic-12.jpg`,
+                    "text": "Slideshow2"
+                },
+                {
+                    "image": `${url}images/pic-13.jpg`,
+                    "text": "Slideshow3"
+                },
+                {
+                    "image": `${url}images/pic-14.jpg`,
+                    "text": "Slideshow4"
+                },
+                {
+                    "image": `${url}images/pic-15.jpg`,
+                    "text": "Slideshow4"
+                },
+            ];
+            const dataSlide2 = [
+                {
+                    "image": `${url}images/pic-21.jpg`,
+                    "text": "Slideshow1"
+                },
+                {
+                    "image": `${url}images/pic-22.jpg`,
+                    "text": "Slideshow2"
+                },
+                {
+                    "image": `${url}images/pic-23.jpg`,
+                    "text": "Slideshow3"
+                },
+                {
+                    "image": `${url}images/pic-24.jpg`,
+                    "text": "Slideshow4"
+                },
+                {
+                    "image": `${url}images/pic-25.jpg`,
+                    "text": "Slideshow4"
+                },
+            ];
+            const dataSlide3 = [
+                {
+                    "image": `${url}images/pic-31.jpg`,
+                    "text": "Slideshow1"
+                },
+                {
+                    "image": `${url}images/pic-32.jpg`,
+                    "text": "Slideshow2"
+                },
+                {
+                    "image": `${url}images/pic-33.jpg`,
+                    "text": "Slideshow3"
+                },
+                {
+                    "image": `${url}images/pic-34.jpg`,
+                    "text": "Slideshow4"
+                },
+                {
+                    "image": `${url}images/pic-35.jpg`,
+                    "text": "Slideshow4"
+                },
+            ];
+        </script>
         <script src="Home/project_dls_1_1_0/js/project_dls_1_1_0.js"></script>
         
     <!-- footer_dls_1_0_0 -->
