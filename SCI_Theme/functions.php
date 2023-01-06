@@ -6,6 +6,7 @@ require_once 'shortcode.php';
 
 //Thêm Page Field
 include "options/group_page_field.php";
+include "options/cate_field.php";
 
 $role_object = get_role( 'editor' );
 $role_object->add_cap( 'manage_options' );

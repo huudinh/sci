@@ -14,8 +14,18 @@
 	echo $field['service_title'];
 ?>
 
+<?php
+	// Lấy field Select từ Cate
+	$cate_group = get_field( 'cate_group', 'category_'.$ID );
+?>
+
 <?php /* Code lấy Image Field */ ?>
 <?php echo $field['about_ytbimage']['url']; ?>
+
+<?php
+	// Lấy field Image từ cate
+	$img = get_field( 'img_thumb', 'category_'.$ID );
+?>
 
 
 <?php /* Code lấy Flexible-Content */ ?>
