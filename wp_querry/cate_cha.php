@@ -1,3 +1,4 @@
+<!-- Cach 1 -->
 <div class="container">
     <div class="service_3_1_0">
         <h1 class="service_3_1_0__title"><?php echo single_cat_title() ?></h1>
@@ -26,3 +27,27 @@
         </div>
     </div>
 </div>
+
+<!-- Cach 2 -->
+<?php
+    global $wp_query;
+    $this_category = $wp_query->get_queried_object();
+        
+    if ($this_category->parent == 0) {
+        $parent_category_ID = $this_category->term_id;
+    }
+    else {
+        $parent_category_ID = $this_category->parent;
+    }
+    $taxonomy = 'category';
+    $subcategories_ID = get_term_children($parent_category_ID,$taxonomy);
+?>
+<?php 
+    foreach ( $subcategories_ID as $ID ) {
+        $sub_cat = get_term_by( 'id', $ID, $taxonomy);
+        $sub_cat_link = get_term_link( $ID, $taxonomy);
+        $sub_cat_title = $sub_cat->name;
+        $cate_group = get_field( 'cate_group', 'category_'.$ID );
+        $img = get_field( 'img_thumb', 'category_'.$ID );
+    }
+?>
