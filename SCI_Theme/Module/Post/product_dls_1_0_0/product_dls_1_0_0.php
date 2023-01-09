@@ -1,49 +1,99 @@
 <?php
     $path = get_template_directory_uri();
-    $path = $path.'/Module/Post/post_1_1_0';
+    $path = $path.'/Module/Post/product_dls_1_0_0/';
 
-	include(locate_template("Module/Post/post_1_1_0/css/post_1_1_0_css.php"));
-    $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');            
-    $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
-    $product_info = explode("\n", get_field('product_info'));
+	include(locate_template("Module/Post/product_dls_1_0_0/sass/product_dls_1_0_0_css.php"));
+    $categories = get_the_category();
+
+    $content = get_field( 'single_photo' );    
 ?>
+<script src="<?php echo get_template_directory_uri() ?>/Module/assets/js/tiny-slider.min.js"></script>
 
-<div class="post_1_1_0">
-    <div class="post_1_1_0__content">
-        <div class="post_1_1_0__top">
-            <div class="post_1_1_0__pic">
-                <img width="400" height="400" src="<?php echo $img ?>" alt="<?php the_title() ?>">
-            </div>
-            <div class="post_1_1_0__info">
-                <h1 class="post_1_1_0__title"><?php the_title(); ?></h1>
-                <div class="post_1_1_0__des">
-                    <?php
-                        echo '
-                            <p>'.$product_info[0].'</p>
-                            <p>'.$product_info[1].'</p>
-                            <p>'.$product_info[2].'</p>
-                        ';
-                    ?>
-                </div>
-                <div class="post_1_1_0__price">
-                    <?php echo $product_info[3] ?>
-                </div>
-                <div class="post_1_1_0__buy">
-                    <a href="/lien-he/">Liên Hệ</a>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="post_1_1_0__titleSub">MÔ TẢ SẢN PHẨM</div>
-        <div class="post_1_1_0__detail">
+<div class="product_dls_1_0_0">
+    <h1 class="product_dls_1_0_0__title">
+        <?php 
+            if ( ! empty( $categories ) ) {
+                echo esc_html( $categories[0]->name );	
+            }
+        ?>
+    </h1>
+    <div class="product_dls_1_0_0__photo" style="position: relative;">
+        <div class="slider_pro" id="slider_pro">
             <?php 
-                while ( have_posts() ) : 
-                    the_post(); 
-                    the_content();  
-                endwhile; 
-            ?>            
-
+                foreach( $content as $image ):
+                    echo "
+                        <div>
+                            <img src='".$image['url']."' alt='".$image['title']."'>
+                        </div>
+                    ";
+                endforeach;
+            ?>
         </div>
+        <ul class="controls" id="slider-contPro">
+            <li class="prev">
+                <span aria-label="Previous">‹</span>
+            </li>
+            <li class="next">
+                <span aria-label="Next">›</span>
+            </li>
+        </ul>
+    </div>
+    <div class="product_dls_1_0_0__photoList">
+        <ul class="slider_navpro" id="slider_navpro">
+            <?php 
+                foreach( $content as $image ):
+                    echo "
+                        <li>
+                            <img src='".$image['url']."' alt='".$image['title']."'>
+                        </li>
+                    ";
+                endforeach;
+            ?>
+        </ul>
+        <ul class="controls" id="slider-contPro2">
+            <li class="prev">
+                <span aria-label="Previous"><img src="<?php echo $path ?>images/prev.png" /></span>
+            </li>
+            <li class="next">
+                <span aria-label="Next"><img src="<?php echo $path ?>images/next.png" /></span>
+            </li>
+        </ul>
+
+    </div>
+    <h2 class="product_dls_1_0_0__titleSub"><?php the_title(); ?></h2>
+    <div class="product_dls_1_0_0__detail">
+        <?php 
+            while ( have_posts() ) : 
+                the_post(); 
+                the_content();  
+            endwhile; 
+        ?>             
     </div>
 </div>
+<script>
+    // Slide Pro
+    var slider_pro = tns({
+        container: '.slider_pro',
+        items: 1,
+        controlsContainer: '#slider-contPro',
+        navContainer: '#slider_navpro',
+        navAsThumbnails: true,
+        autoplay: false,
+        autoplayTimeout: 1000,
+        gutter: 10,
+    });
+    var slider_navpro = tns({
+        container: '.slider_navpro',
+        items: 3,
+        controlsContainer: '#slider-contPro2',
+        slideBy: 'page',
+        autoplay: false,
+        loop:true,
+        mouseDrag: true,
+        lazyload: true,
+        lazyloadSelector: '.tns-lazy',
+        gutter: 10,
+        nav:false,
+    
+    });
+</script>

@@ -1,4 +1,4 @@
-<?php
+<?php   
     // Check url test
     if(isset($_GET['test'])):
     else:
@@ -58,16 +58,12 @@
         echo '<meta name="robots" content="noindex,follow" />'; 
     } 
 
-
-    // Post Functiion
+    // Post Function
     $excerpt =  get_the_excerpt();
     $admin = get_the_author();
     $time = get_the_date('d/m/Y');
 
     get_sidebar();
-
-    $cate_desc = category_description();
-    single_cat_title()
 
     // Get field ACF
     $product_info = explode("\n", get_field('product_info'));
@@ -126,10 +122,6 @@
     // Lay ID Youtube
     $linkID = getIDvideo($image['description']); 
     
-    // Get Term ID
-    $category = get_queried_object();
-    echo $category->term_id;
-
     // Cấm xóa trang chủ
     function restrict_page_deletion($post_ID){
         $user = get_current_user_id();

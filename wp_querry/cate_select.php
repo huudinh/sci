@@ -66,3 +66,4 @@ endif;
 if (($typecate == 'brand') || ($typecate == '') || ($typecate == 'new_2')):
     get_template_part('Module/Category/news_3_2_0/news_3_2_0');
 endif;
+

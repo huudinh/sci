@@ -7,7 +7,7 @@
     $typecate = get_field('cate_type', 'category_'.$category_id);
 
     if ($typecate == 'default'):
-        // get_template_part('Module/Category/news_3_0_0/news_3_0_0');
+        get_template_part('Module/Category/prodcate_dls_1_0_0/prodcate_dls_1_0_0');
     endif;
 
     if (($typecate == 'brand') || ($typecate == '') || ($typecate == 'new_2')):

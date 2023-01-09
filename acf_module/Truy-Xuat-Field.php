@@ -1,35 +1,61 @@
 <?php /* Tổng Hợp code Field */ ?>
 
 <?php 
-	$images = get_field('setting_post_kh','option');
-	// var_dump($images);
-	$max = count($images);
-	$rand = rand(0,$max-1);
-	// echo $images[$rand]['url'];
-?>
+	// Get Field basic
+	$product_info = get_field('product_info');
 
-<?php 
-	/* Code lấy Text Field */ 
-	$name = get_field( 'name' );
+	/* Code lấy Field Module */ 
 	echo $field['service_title'];
-?>
 
-<?php
-	// Lấy field Select từ Cate
+	// Lấy Field Select từ Cate
 	$cate_group = get_field( 'cate_group', 'category_'.$ID );
-?>
 
-<?php /* Code lấy Image Field */ ?>
-<?php echo $field['about_ytbimage']['url']; ?>
-
-<?php
 	// Lấy field Image từ cate
 	$img = get_field( 'img_thumb', 'category_'.$ID );
-?>
 
+	// Get field option
+	$images = get_field('setting_post_kh','option');
+	$max = count($images);
+	$rand = rand(0,$max-1);
+	echo $images[$rand]['url'];
 
-<?php /* Code lấy Flexible-Content */ ?>
-<?php
+	// Chuyển string sang array
+	$data = explode("|",  $field["title"]);
+	echo $data[0]
+
+	/* Loại bỏ khoang trang */ 
+	$data_link = substr("$data[1]", 0,-1);
+
+	// Loop ảnh từ Gallery
+	$content = get_field( 'single_photo' );
+	foreach( $content as $image ):
+		echo "
+			{
+				pic: '".$image['url']."',
+				name: '".$image['title']."',
+				des: '".$image['description']."',
+			},
+		";
+	endforeach;
+
+	/* Code lấy Gallery Video */
+	$content = $field['news_clips'];
+	foreach( $content as $image ):
+		$linkID = getIDvideo($image['description']);
+		echo '
+			<div class="news_1_0_0__newsClip__item">
+				<a href="#" class="modal-clip" data-video-id="'.$linkID.'">
+					<img src="/rs/?w=263&amp;h=175&amp;src='.$image['url'].'" alt="'.$image['title'].'">
+				</a>
+				<p>'.$image['title'].'</p>
+			</div>
+		';
+	endforeach;
+
+	/* Code lấy Image Field */
+	echo $field['about_ytbimage']['url'];
+
+	/* Code lấy Flexible-Content */
 	foreach($field['cauchuyen_info'] as $key => $value):
 		$image_thumb = $value['image_thumb'];
 		if($key == 1):
@@ -43,11 +69,8 @@
 			</a>
 		';
 	endforeach;
-?>
 
-
-<?php /* Code lấy Relationship */ ?>
-<?php
+	/* Code lấy Relationship */
 	foreach($field['content'] as $key => $post):
 		setup_postdata($post);
 		$link = get_permalink();
@@ -82,37 +105,49 @@
 					</div>
 				</a>
 			';
-
+	
 		endif;
-
-	// endforeach;
-	// wp_reset_postdata(); 
-?>
-
-
-<?php /* Code lấy Gallery */ ?>
-<?php
-	$content = $field['news_clips'];
-	foreach( $content as $image ):
-		$linkID = getIDvideo($image['description']);
-		echo '
-			<div class="news_1_0_0__newsClip__item">
-				<a href="#" class="modal-clip" data-video-id="'.$linkID.'">
-					<img src="/rs/?w=263&amp;h=175&amp;src='.$image['url'].'" alt="'.$image['title'].'">
-				</a>
-				<p>'.$image['title'].'</p>
-			</div>
-		';
 	endforeach;
-?>
+	wp_reset_postdata(); 
 
+	// Get Field Custom Post
+	$args = array( 
+        'post_status'=>'publish',
+        'post_type' => 'tuyen-dung', 
+        'posts_per_page' => -1,
+        'order' => 'DESC',
+    );
+    
+    $loop = new WP_Query( $args );
+    
+    if($loop->have_posts()):
+        echo '
+            <script>
+                const data = [
+        ';
 
-<?php
-$data = explode("|",  $field["title"]);
-echo $main_tt[0]
-?>
-
-<?php /* Loại bỏ khoang trang */ ?>
-<?php
-// $data_link = substr("$data[1]", 0,-1);
+        while ( $loop->have_posts() ) : 
+            $loop->the_post();
+            $link = get_permalink($post->ID);
+            $title = get_the_title($post->ID);
+            $name = get_field( 'name' );
+            $deadline = get_field( 'deadline' );
+            $department = get_field( 'department' );
+            $location = get_field( 'location' );
+            
+            if($name){
+                echo '
+                    {
+                        name: "'. $name.'",
+                        link: "'.$link.'",
+                        deadline: "'.$deadline.'",
+                        department: "'.$department.'",
+                        location: "'.$location.'",
+                    },
+                ';
+            }
+        endwhile;
+        echo ' ]; </script>';
+    endif; 
+    wp_reset_postdata(); 
 ?>
