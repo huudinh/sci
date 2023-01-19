@@ -18,4 +18,13 @@
 		'rows' => 4,
 		'new_lines' => '',
 	),
+
+	// Get Field basic
+	$product_info = get_field('product_info');
+
+	/* Code lấy Field Module */ 
+	$field['service_title'];
+
+	// Lấy Field Select từ Cate
+	$cate_group = get_field( 'cate_group', 'category_'.$ID );	
 ?>

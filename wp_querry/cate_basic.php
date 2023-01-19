@@ -1,4 +1,29 @@
 <?php
+// Get description
+category_description();
+
+// Get title
+single_cat_title();
+
+// Get Term ID
+$category = get_queried_object();
+$category->term_id;
+
+// Get Cate ID
+$categories = get_the_category();
+$category_id = $categories[0]->cat_ID;
+
+// Get Categories
+$categories = get_the_category();
+
+if ( ! empty( $categories ) ) {
+    echo esc_html( $categories[0]->name );	
+}
+
+// Get thumbnail
+$kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');            
+$img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
+
 // Cate list
 if ( have_posts() ) :
     while ( have_posts() ) : the_post();
@@ -27,24 +52,3 @@ if ( have_posts() ) :
             ';
     endwhile;
 endif;
-
-// Get description
-category_description();
-
-// Get title
-single_cat_title();
-
-// Get Term ID
-$category = get_queried_object();
-$category->term_id;
-
-// Get Categories
-$categories = get_the_category();
-
-if ( ! empty( $categories ) ) {
-    echo esc_html( $categories[0]->name );	
-}
-
-// Get thumbnail
-$kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');            
-$img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);

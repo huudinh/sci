@@ -35,7 +35,7 @@
 			<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
 			<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
 			<?php
-				if(is_single()) {
+				if( is_single() || (get_query_var('cat') != 3) ) {
 					echo '
 						<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--post"></div>
 					';

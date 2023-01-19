@@ -3,7 +3,7 @@
 </style>
 
 <main class="container">
-    <div class="row">
+    <div class="main_dls_1_0_0__post row">
         <div class="col-xl-2">
             <?php get_sidebar(); ?>
         </div>

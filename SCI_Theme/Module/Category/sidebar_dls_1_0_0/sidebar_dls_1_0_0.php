@@ -5,7 +5,9 @@
     <div class="container">
         <aside class="sidebar_dls_1_0_0 ">
             <div class="sidebar_dls_1_0_0__title"><?php echo $field['sidebar_title']; ?></div>
-            <?php echo $field['sidebar_content']; ?>
+            <div class="sidebar_dls_1_0_0__box">
+                <?php echo $field['sidebar_content']; ?>
+            </div>
         </aside>
     </div>
 </div>
