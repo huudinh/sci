@@ -14,21 +14,7 @@ menuItem.forEach((item) => {
   });
 });
 
-window.onscroll = () => {
-  scrollFunction();
-};
 
-const scrollFunction = () => {
-  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-    document
-      .getElementsByClassName("header_sci_1_0_0")[0]
-      .classList.add("header_sci_1_0_0--active");
-  } else {
-    document
-      .getElementsByClassName("header_sci_1_0_0")[0]
-      .classList.remove("header_sci_1_0_0--active");
-  }
-};
 function urlHandler(value) {                               
   window.location.assign(`${value}`);
   let x = document.querySelector('.header_dls_1_0_0__language');
