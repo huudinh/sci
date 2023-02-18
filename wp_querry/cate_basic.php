@@ -17,7 +17,8 @@ $category_id = $categories[0]->cat_ID;
 $categories = get_the_category();
 
 if ( ! empty( $categories ) ) {
-    echo esc_html( $categories[0]->name );	
+    $cate_name = esc_html( $categories[0]->name );	
+    $cate_link = esc_html( $categories[0]->slug );
 }
 
 // Get thumbnail

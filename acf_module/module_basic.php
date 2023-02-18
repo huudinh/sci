@@ -1,7 +1,7 @@
 <?php
 // Khai bao css
     $path = get_template_directory_uri();
-    $path = $path.'/Module/Home/news_12_1_0';
+    $path = $path.'/Module/Home/news_12_1_0/';
 
     include(locate_template("Module/Home/news_12_1_0/css/news_12_1_0_css.php")); 
     

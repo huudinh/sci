@@ -118,11 +118,19 @@ function renderModule (type, module, data, logic){
         imgTheme(`${url}`, `.${module} img`);
     }
 
+    // Khai baos url
+    if ((data == 'data') || (logic == 'logic')){
+        var script = document.createElement('script');
+        script.type = "text/javascript";
+        script.innerHTML = `let ${module}_url = '${url}'`;
+        var t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(script,t);   
+    }
+
     // Khai bao api
     if (data == 'data'){
         var script = document.createElement('script');
         script.type = "text/javascript";
-        script.src = `${url}js/${module}_dataHome.js`;
+        script.src = `${url}js/${module}_data.js`;
         var t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(script,t);   
     }
 
