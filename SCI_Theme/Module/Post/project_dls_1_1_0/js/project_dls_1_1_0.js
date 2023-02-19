@@ -1,3 +1,21 @@
+// component photo
+const photoCard = (data, index) => {
+    (index == 0) ? className = 'project_dls_1_1_0__pic--big' : className = '';
+    return `
+        <div class="project_dls_1_1_0__pic ${className}">
+            <img src="${data.image}" class="modal-btn" onclick="popupPhoto(dataSlide, ${index})" alt="${data.text}">
+        </div>
+    `;
+}
+
+// Render photo card
+function renderPhoto(data){
+    for(let i = 0; i < data.length; i++){
+        document.getElementById('project_dls_1_1_0__photo').insertAdjacentHTML('beforeend', photoCard(data[i], i))     
+    }
+}
+renderPhoto(dataSlide);
+
 // compoinent modal popup
 const modalPop = (link) => {
     return `
