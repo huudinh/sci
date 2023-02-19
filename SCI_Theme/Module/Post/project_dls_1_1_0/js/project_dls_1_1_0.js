@@ -10,18 +10,35 @@ const photoCard = (data, index) => {
 
 // Render photo card
 function renderPhoto(data){
-    for(let i = 0; i < data.length; i++){
+    for(let i = 0; i < 5; i++){
         document.getElementById('project_dls_1_1_0__photo').insertAdjacentHTML('beforeend', photoCard(data[i], i))     
     }
 }
 renderPhoto(dataSlide);
 
+// Component list
+const listCard = (data, index) => {
+    return `
+        <div class="project_dls_1_1_0__item">
+            <img src="${data.image}" class="modal-btn" onclick="popupPhoto(dataSlide, ${index})" alt="${data.text}" />
+        </div>
+    `;
+}
+
+// Render List card
+function renderList(data){
+    for(let i = 5; i < data.length; i++){
+        document.getElementById('project_dls_1_1_0__list').insertAdjacentHTML('beforeend', listCard(data[i], i))
+    }
+}
+renderList(dataSlide);
+
 // compoinent modal popup
 const modalPop = (link) => {
     return `
       <div class="modal" id="modal-pic" style="display:flex">
-          <div class="modal-closePic">×</div>
-          <div class="modal-bg"></div>
+          <div class="modal-closePic" id="modal-closePic">×</div>
+          <div class="modal-bg" id="modal-bg"></div>
           <div class="modal-box modal-box-img animate-zoom">
               <div class="modal-pic" style="text-align:center">
                     <div class="slider"></div>
@@ -36,13 +53,13 @@ const modalPop = (link) => {
 };
 
 function popupPhoto(data, index){
-    document.querySelector('#modal').innerHTML = modalPop();
+    document.querySelector('#project_dls_1_1_0').insertAdjacentHTML('beforebegin', modalPop())
     createSlider(data, index);
-    document.querySelector('.modal-closePic').addEventListener('click', () => {
-        document.querySelector('#modal').innerHTML = '';
+    document.querySelector('#modal-closePic').addEventListener('click', () => {
+        document.querySelector('#modal-pic').remove();
     });
-    document.querySelector('.modal-bg').addEventListener('click', () => {
-        document.querySelector('#modal').innerHTML = '';
+    document.querySelector('#modal-bg').addEventListener('click', () => {
+        document.querySelector('#modal-pic').remove();
     });
 }
 
