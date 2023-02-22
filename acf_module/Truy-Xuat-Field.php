@@ -21,6 +21,7 @@
 
 	// Chuyển string sang array
 	$data = explode("|",  $field["title"]);
+	$data = explode("\n",  $field["title"]);
 	echo $data[0]
 
 	/* Loại bỏ khoang trang */ 

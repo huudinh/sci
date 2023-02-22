@@ -13,6 +13,9 @@ $category->term_id;
 $categories = get_the_category();
 $category_id = $categories[0]->cat_ID;
 
+// Get cate name theo ID
+get_the_category_by_ID( $cate1 );
+
 // Get Categories
 $categories = get_the_category();
 
@@ -48,6 +51,33 @@ if ( have_posts() ) :
                         </h2>
                         <p>'.$excerpt.'</p>
                         <span>Ngày '.$date.'</span>
+                    </div>
+                </div>
+            ';
+    endwhile;
+endif;
+
+// Loop post type
+$loop = new WP_Query( 'post_type=baiduthi' );
+if ( $loop -> have_posts() ) :
+    while (  $loop->have_posts() ) :  $loop->the_post();
+        global $post; 
+            $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');            
+            $img = ($kim[0]!='')?$kim[0]:get_template_directory_uri().'/post_placeholder.jpg';
+            
+            echo '
+                <div class="thiSinh__item">
+                    <div class="thiSinh__thumb">
+                        <a href="'.get_permalink($post->ID).'" class="thiSinh__pic">
+                            <img class="img-lazy" data-src="/rs?w=255&h=260&src='.get_field('chan_dung',$post->ID).'" alt="">
+                            <img class="img-lazy" data-src="/rs?w=255&h=260&src='.get_field('nghieng_trai',$post->ID).'" alt="">
+                            <span>'.get_field('ma_so',$post->ID).'</span>
+                        </a>
+                        <div class="thiSinh__like">'.get_field('vote',$post->ID).'</div>
+                        <a href="'.get_permalink($post->ID).'">
+                            <div class="thiSinh__name">'.get_field('ho_ten',$post->ID).'</div>
+                            <div class="thiSinh__city">'.((get_field('dia_chi') != '')?esc_attr(get_field('dia_chi')) : 'Đang cập nhật').'</div>
+                        </a>
                     </div>
                 </div>
             ';
