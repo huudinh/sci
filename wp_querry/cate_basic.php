@@ -19,6 +19,11 @@ get_the_category_by_ID( $cate1 );
 // Get Categories
 $categories = get_the_category();
 
+// Get Link cate
+$cat = get_the_category($post->ID);
+get_category_link($cat[0]->term_id);
+echo $cat[0]->name;
+
 if ( ! empty( $categories ) ) {
     $cate_name = esc_html( $categories[0]->name );	
     $cate_link = esc_html( $categories[0]->slug );

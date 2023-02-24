@@ -1,0 +1,113 @@
+.service_dls_1_1_0 {
+    padding: 40px 0 20px 0;
+    font-family: var(--primary-font);
+    margin:0 auto;
+    max-width: 80%;
+    .container{
+        max-width: 85%;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        height:auto;
+    }
+    &__content{
+        margin:40px 0;
+    }
+    &__description{
+        text-align: center;
+        margin: 40px auto;
+        max-width: 80%;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        font-size:15px;
+        &>div{
+            width:50%;
+        }
+        &--right{
+            flex-direction: row-reverse;
+        }
+    }
+    &__text{
+        &--right{
+            padding-right:60px;
+            text-align: right;
+        }
+        &--left{
+            padding-left:60px;
+        }
+    }
+    &__name{
+        font-size:20px;
+        margin:5px 0;
+        text-transform: uppercase;
+    }
+    &__place{
+        text-transform: uppercase;
+    }
+    &__des{
+        margin:20px 0;
+    }
+    &__more{
+        border: 1px solid #fff;
+        display: table;
+        margin: 60px auto;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            background:#222;
+            border:1px solid #222;
+        }
+    }
+}
+@media (max-width:912px){
+    .service_dls_1_1_0{
+        max-width: 100%;
+    }
+    .service_dls_1_1_0__text--right {
+        padding-right: 30px;
+    }
+    .service_dls_1_1_0__text--left {
+        padding-left: 30px;
+    }
+    .service_dls_1_1_0__name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0 4px;
+    }
+    .service_dls_1_1_0__item{
+        font-size:14px;
+    }
+    .service_dls_1_1_0__more {
+        margin: 30px auto;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+}
+@media(max-width:600px){
+    .service_dls_1_1_0__description{
+        max-width: 100%;
+    }
+    .service_dls_1_1_0{
+        padding:20px 0;
+    }
+    .service_dls_1_1_0__item{
+        flex-direction: column;
+    }
+    .service_dls_1_1_0__text--right,.service_dls_1_1_0__text--left{
+        text-align: left;
+        padding:0
+    }
+    .service_dls_1_1_0__item>div{
+        width:100%
+    }
+    .service_dls_1_1_0__num{
+        display: none;
+    }
+    .service_dls_1_1_0__des {
+        margin: 10px 0 15px;
+    }
+}

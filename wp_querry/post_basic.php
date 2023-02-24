@@ -12,6 +12,12 @@ endwhile;
 get_the_date('d/m/Y');
 get_the_time('d/m/Y');
 
+echo get_the_time('H:i:s - d/m/Y', $post->ID);
+
+if(is_user_logged_in()){
+    echo ' - <span class="vcard">' . get_the_author() . '</span>';
+} 
+
 // Get modified
 get_post_modified_time('d/m/Y');
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landa Studio</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css" />
+    <link rel="stylesheet" href="./assets/sass/custom.min.css" />
+
+    <script src="https://huudinh.github.io/assets/js/module.min.js"></script>
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+</head>
+<body>
+    <div id="header_dls_1_0_0"></div>
+    
+    <!-- main_dls_1_0_0 -->
+    <main class="main_dls_1_0_0 main_dls_1_0_0--page">
+        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
+        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
+        
+        <div id="breadcrumb_dls_1_0_0"></div>
+        <div id="projectList_dls_1_0_0"></div>
+        <div id="pagination_dls_1_0_0"></div>
+        <div id="footer_dls_1_0_0"></div>
+    </main>
+
+</body>
+<script>
+    // Type, Module, data, logic
+    renderModule ('Header', 'header_dls_1_0_0', '', 'logic');    
+    renderModule ('Category', 'breadcrumb_dls_1_0_0', '', '');
+    renderModule ('Category', 'projectList_dls_1_0_0', '', '');
+    renderModule ('Category', 'pagination_dls_1_0_0', '', '');
+    renderModule ('Footer', 'footer_dls_1_0_0', '', 'logic');
+</script>
+</html>
