@@ -10,6 +10,10 @@
 	// Lấy Field Select từ Cate
 	$cate_group = get_field( 'cate_group', 'category_'.$ID );
 
+	// Lấy Field từ Author
+	$author_id = get_the_author_meta('ID');
+    $author_field = get_field('author_info', 'user_'. $author_id );
+
 	// Lấy field Image từ cate
 	$img = get_field( 'img_thumb', 'category_'.$ID );
 

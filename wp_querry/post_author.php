@@ -7,3 +7,11 @@
     update_post_meta( get_the_ID(), 'pageview', $pageview );
 ?>
 <p><?php echo $pageview ?> lượt xem</p>
+
+<?php
+$url = $_SERVER["REQUEST_URI"];
+$author_id = get_post_field ('post_author', $cause_id);
+$display_name = get_the_author_meta( 'display_name' , $author_id ); 
+$avatar_img = get_avatar( get_the_author_meta('user_email') , 90 ) ;
+$user_description = get_the_author_meta( 'user_description', $post->post_author );
+$us = str_replace('[]', '</br>', $user_description);
