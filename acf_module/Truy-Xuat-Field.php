@@ -1,5 +1,3 @@
-<?php /* Tổng Hợp code Field */ ?>
-
 <?php 
 	// Get Field basic
 	$product_info = get_field('product_info');
@@ -30,6 +28,9 @@
 
 	/* Loại bỏ khoang trang */ 
 	$data_link = substr("$data[1]", 0,-1);
+
+	// Xoa khoang trang chuoi
+	$description = trim($description);
 
 	// Loop ảnh từ Gallery
 	$content = get_field( 'single_photo' );

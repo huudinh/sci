@@ -26,14 +26,14 @@
     is_page();
 
     // Check Page Search
-    is_search()
+    is_search();
 
     is_category();
 
     is_single();
 
     //check postype
-    post_type_exists( 'doi-ngu-bac-si' )
+    post_type_exists( 'doi-ngu-bac-si' );
 
     // Get Link
     $link = get_permalink();
@@ -73,7 +73,7 @@
     $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
 
     //Trim Word
-    wp_trim_words( get_the_excerpt($post->ID), 30 )
+    wp_trim_words( get_the_excerpt($post->ID), 30 );
 
     //Time
     get_post_modified_time('d/m/Y');
@@ -138,7 +138,7 @@
     add_action('wp_trash_post', 'restrict_page_deletion', 10, 1);
 
 // Thubnail
-<meta property="og:image" content="https://benhvienthammykangnam.com.vn/cp/tham-my-ham-mat/ngay-vang-chinh-hinh-ham-mat/media/images/thumb.jpg?ver=31" />
+// <meta property="og:image" content="https://benhvienthammykangnam.com.vn/cp/tham-my-ham-mat/ngay-vang-chinh-hinh-ham-mat/media/images/thumb.jpg?ver=31" />
 
 //Fix img thumbnail Function
 function get_first_image() {
