@@ -16,3 +16,10 @@
         }
     }
  }
+
+ // Remove comment author link
+add_filter('get_comment_author_link', 'jltwp_adminify_remove_comments_author_link');
+function jltwp_adminify_remove_comments_author_link($author_link)
+{
+    return strip_tags($author_link);
+}
