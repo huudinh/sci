@@ -29,30 +29,21 @@
 ?>
 
 <?php
-	foreach($field["content"] as $key => $post):
+	// $content = $field['content'];
+	$content = get_field('content');
+
+	foreach($content as $key => $post):
 		setup_postdata($post);
-		$link = get_permalink();
 		$title = get_the_title();
+		$link = get_permalink();
 		$img = get_the_post_thumbnail_url();
-		$excerpt = wp_trim_words( get_the_excerpt(), 30 );
-		$admin = get_the_author();
-		$time = get_the_date('d/m/Y');
-			if($key == 0):
-				echo'
-					<a href="'. $link.'" class="item">
-						<div class="pic">
-							<img width="559" height="335" class="lazy" data-src="'.$img.'" alt="'. $title.'">
-						</div>
-						<div class="sub">
-							<h3>'. $title.'</h3>
-							<span class="sub_time">Bác sĩ nha khoa - '.$time.'</span><br>
-							<span>
-								'.$excerpt.'
-							</span>
-						</div>
-					</a>
-				';
-			endif;
+		echo "
+			{
+				title : '".$title."',
+				link : '".$link."',
+				img : '".$img."',
+			},
+		";
 	endforeach;
 	wp_reset_postdata(); 
-?>
+?> 
