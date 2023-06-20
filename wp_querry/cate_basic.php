@@ -37,7 +37,7 @@ $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
 if ( have_posts() ) :
     while ( have_posts() ) : the_post();
         global $post; 
-            $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');            
+            $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');            
             $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
             $date = get_the_date();
             $excerpt = wp_trim_words( get_the_excerpt($post->ID), 120 );

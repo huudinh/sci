@@ -30,3 +30,5 @@ public_path();
 
 // Giải pháp: Bạn cần khôi phục lại file vendor/autoload.php trong ứng dụng laravel của bạn. 
 // composer install hoặc composer update 
+
+// Cài đặt local php artisan serve

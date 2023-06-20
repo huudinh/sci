@@ -70,12 +70,12 @@ while ($getposts->have_posts()) :
     ';
 endwhile; wp_reset_postdata(); 
 
-// Cách 3
+// Cách 3 =>> Good
 // Lấy 5 bài viết mới nhất -->
 
 $args = array(
     'post_status' => 'publish',
-    'showposts' => 5,
+    'showposts' => 10,
 );
 
 $getposts = new WP_query($args); 
