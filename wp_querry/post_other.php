@@ -50,4 +50,53 @@
 		echo $dat;
 	}
 	tinkhac(get_query_var('cat'));
+
+	// Cách 3
+	$post_tag = $amp_helper->post_tag($post_id);
+	if(!empty($post_tag)) {
+		$argsRelatedPost = array(
+			'tag__in' => $tag_ids,
+			'post__not_in' => array($post->ID),
+			'posts_per_page' => 6, // Number of related posts to display.
+			'caller_get_posts' => 6,
+			'post_status' => 'publish'
+		);
+
+		$queryRelatedPost = new WP_Query($argsRelatedPost);
+
+		if($queryRelatedPost->have_posts()) {
+			?>
+			<div class="post_other_3_0_0">
+				<div class="post_other_3_0_0__title">Bài viết liên quan</div>
+				<div class="post_other_3_0_0__box">
+					<?php
+					while($queryRelatedPost->have_posts()) {
+						$queryRelatedPost->the_post();
+						global $post;
+						$postId = $post->ID;
+						array_push($post_exclude, $postId);
+
+						$title = get_the_title();
+						$feature = AMP_THEMES_URL .'images/no-image/img-square.jpg';
+						if(has_post_thumbnail($postId))
+							$feature = wp_get_attachment_image_url(get_post_thumbnail_id($postId), 'medium');
+						?>
+						<article>
+							<div class="post_other_3_0_0__boxPic">
+								<a href="<?php echo get_the_permalink(); ?>">
+									<amp-img src="<?php echo $feature; ?>" alt="<?php echo $title; ?>" width="156" height="115"></amp-img>
+								</a>
+							</div>
+							<div class="post_other_3_0_0__boxSub">
+								<h3><a href="<?php echo get_the_permalink(); ?>"><?php echo $title; ?></a></h3>
+							</div>
+						</article>
+					<?php } ?>
+				</div>
+			</div>
+			<?php
+		}
+
+		wp_reset_query();
+	}
 ?>
