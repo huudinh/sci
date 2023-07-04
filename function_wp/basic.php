@@ -228,3 +228,47 @@ define( 'WP_SITEURL', 'https://phauthuatnangmuisline.com' );
 
 // post show
 echo get_post_field('post_content', $post->ID); 
+
+// Khai báo menu Function
+add_theme_support( 'menus' );
+register_nav_menus(
+    array(
+        'main-nav' => 'menu-header'
+    )
+);
+
+// => header
+wp_nav_menu(
+    array(
+        'menu' => 'Main Menu',
+        'container' => '',
+        'menu_class' => 'header_vpl_1_0_0__navBox',
+        'menu_id' => '',
+        'theme_location' => 'menu-header' 
+    )
+);
+
+// Theme Option
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Cấu hình website',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+    
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Theme Header Settings',
+    //     'menu_title'    => 'Header',
+    //     'parent_slug'   => 'theme-general-settings',
+    // ));
+    
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Theme Footer Settings',
+    //     'menu_title'    => 'Footer',
+    //     'parent_slug'   => 'theme-general-settings',
+    // ));
+    
+}
