@@ -1,5 +1,5 @@
 <?php 
-// Cách 1
+// Cách 1 ==> lỗi
 $args = array( 
     'post_status'=>'publish',
     'post_type' => 'post', 
@@ -39,7 +39,7 @@ if($loop->have_posts()):
 endif; 
 wp_reset_postdata(); 
 
-// Cách 2
+// Cách 2 ==> Lỗi
 $args = array(
     'post_status'=>'publish',
     'post_type' => 'post', 

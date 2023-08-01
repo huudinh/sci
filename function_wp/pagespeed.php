@@ -4,6 +4,12 @@
 // basic editor
 add_filter('use_block_editor_for_post', '__return_false');
 
+// Remove classic-theme-styles 
+add_action( 'wp_enqueue_scripts', 'mywptheme_child_deregister_styles', 20 );
+function mywptheme_child_deregister_styles() {
+    wp_dequeue_style( 'classic-theme-styles' );
+}
+
 // Fix upload max
 function filter_site_upload_size_limit( $size ) { 
     return 1024 * 1024 * 0.25; 
