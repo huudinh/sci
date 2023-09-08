@@ -8,3 +8,6 @@
 8. Chạy php artisan migrate
 9. Chạy php artisan db:seed
 10. Chạy php artisan serve
+
+=> login authent
+php artisan passport:install

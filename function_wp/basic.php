@@ -272,3 +272,13 @@ if( function_exists('acf_add_options_page') ) {
     // ));
     
 }
+
+// Check admin show editer
+if (current_user_can('administrator') || current_user_can('editor')) {
+    wp_admin_bar_render();
+    echo '
+    <meta name="robots" content="noindex,follow"/>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="/wp-includes/css/admin-bar.min.css?ver=4.9.10" />
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.9.10" />
+    ';
+}
