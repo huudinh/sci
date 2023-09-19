@@ -1,41 +1,45 @@
-<div class="row news_12_1_0_box">
-    <?php
-        $orig_post = $post;
-        global $post;
-        $tags = wp_get_post_tags($post->ID);
+<?php
+    $orig_post = $post;
+    global $post;
+    $tags = wp_get_post_tags($post->ID);
 
-        if ($tags) {
-            $tag_ids = array();
-            foreach ($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
-            $args = array(
-                'tag__in' => $tag_ids,
-                'post__not_in' => array($post->ID),
-                'posts_per_page' => 6, // Number of related posts to display.
-                'caller_get_posts' => 6
-            );
+    if ($tags) {
+        $tag_ids = array();
+        foreach ($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
+        $args = array(
+            'tag__in' => $tag_ids,
+            'post__not_in' => array($post->ID),
+            'posts_per_page' => 4, // Number of related posts to display.
+            'caller_get_posts' => 4
+        );
+        $html = '';
+        $my_query = new wp_query($args);
+        while ($my_query->have_posts()) {
+            $my_query->the_post();
+            $title = get_the_title();
+            $link = get_permalink();
+            $time = get_post_modified_time('d/m/Y');
+            $excerpt = get_the_excerpt($post->ID);
 
-            $my_query = new wp_query($args);
-
-            while ($my_query->have_posts()) {
-                $my_query->the_post();
-                $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
-                $img = ($kim[0] != '') ? $kim[0] : catch_that_image($post->ID);
-                echo '
-                    <div class="col-md-4">
-                        <a href="' . get_the_permalink() . '">
-                            <div class="news_12_1_0_box__pic">
-                                <img src="/rs/?w=184&h=184&src=' . $img . '" alt="' . get_the_title() . '">
-                            </div>
-                            <h3 class="news_12_1_0_box__sub">
-                                ' . get_the_title() . '
-                            </h3>
-                        </a>
+            $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');            
+            $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
+            $html .= '
+                <a href="'.$link.'" class="postOther_da_1_1_0__item">
+                    <div class="postOther_da_1_1_0__pic">
+                        <img width="180" height="108" class="lazy" data-src="'.$img.'" alt="'.$title.'">
                     </div>
-                ';
-            
-            }
+                    <div class="postOther_da_1_1_0__text">
+                        <div class="postOther_da_1_1_0__title">'.$title.'</div>
+                        <p class="postOther_da_1_1_0__desc">'.$excerpt.'</p>
+                    </div>
+                </a>
+            ';
         }
-        $post = $orig_post;
-        wp_reset_query();
-    ?>
-</div>
+
+        echo '
+            <section class="postOther_da_1_1_0">'.$html.'</section>
+        '; 
+    }
+    $post = $orig_post;
+    wp_reset_query();
+?> 

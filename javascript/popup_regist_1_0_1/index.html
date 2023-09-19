@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" href="sass/popup_regist_1_0_1.min.css">
+</head>
+
+<body style="margin:0;padding:0">
+    <p class="popup_regist">Button</p>
+    <div class="popup_regist_1_0_1" id="popup_regist_1_0_1">
+        <div class="popup_regist_1_0_1_block">
+            <div class="popup_regist_1_0_1_overlay" id="popup_regist_1_0_1_overlay" style="display:none"></div>
+            <div id="popup_regist_1_0_1_overlayClickForm" class="popup_regist_1_0_1_overlayForm">
+                <div class="popup_regist_1_0_1_boxTv">
+                    <form id="register-form">
+                        <article>
+                            <div class="popup_regist_1_0_1_headerBox">
+                                <img src="images/logo.png" alt="">
+                                <p class="popup_regist_1_0_1_headerBox_tt">Đăng kí tư vấn miễn phí</p>
+                            </div>
+                            <div class="popup_regist_1_0_1_contentBox">
+                                <div>
+                                    <input id="fullname" name="fullname" rules="required" type="text" required placeholder="Họ tên*:">
+                                    <!-- <input id="imob" name="imob" type="textbox" required placeholder="Điện thoại*:"> -->
+                                    <input id="email" name="email" rules="required|email" type="text" placeholder="Email:">
+                                    <input id="password" name="password" rules="required|min:6" type="password" placeholder="Mật khẩu">
+                                    <!-- <textarea id="itext" type="hidden" name="itext" value="" placeholder="Nhu cầu tư vấn"></textarea> -->
+                                </div>
+                                <div>
+                                    <input id="popup_regist_1_0_1_clickSent" type="button" value="HOÀN THÀNH">
+                                    <div class="popup_regist_1_0_1_contact">
+                                        <p>Tư vấn trực tiếp 24/7: <a href="tel:1900.633.988">1900.6900</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a id="popup_regist_1_0_1_closePopup">✖</a>
+                        </article>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/popup_regist_1_0_1.js"></script>
+<script src="js/validator.js"></script>
+<script>
+    Validator('#register-form');
+</script>
+</html>
