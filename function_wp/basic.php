@@ -1,7 +1,11 @@
 <?php   
     // Check url test
-    if(isset($_GET['test'])):
+    if(isset($_GET['t'])):
+        echo '<pre>';
+        var_dump($field['slide_pc']);
+        echo '</pre>';
     else:
+    
     endif;
 
     // Check Mobile
