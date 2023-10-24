@@ -4,10 +4,8 @@
 4. Đổi lại cấu hình trong file .env  và database.php 
 5. Mở ứng dụng Console hoặc terminal và nhớ trỏ tới đúng tới thư mục gốc của dự án 
 6. Chạy composer install hoặc php composer.phar install
-7. Chạy php artisan key:generate
-8. Chạy php artisan migrate
-9. Chạy php artisan db:seed
-10. Chạy php artisan serve
-
-=> login authent
-php artisan passport:install
+7. Chạy (login authent nếu có) php artisan passport:install
+8. Chạy php artisan key:generate
+9. Chạy php artisan migrate
+10. Chạy php artisan db:seed
+11. Chạy php artisan serve
