@@ -1,0 +1,39 @@
+<IfModule mod_headers.c>
+    <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    RewriteCond %{REQUEST_FILENAME} (.*)header\.js$
+    RewriteRule ^ header.php [L]   
+
+    RewriteCond %{REQUEST_FILENAME} (.*)header-data\.js$
+    RewriteRule ^ header-data.php [L]   
+	
+	RewriteCond %{REQUEST_FILENAME} (.*)footer\.js$
+    RewriteRule ^ footer.php [L]
+
+	RewriteCond %{REQUEST_FILENAME} (.*)locations\.js$
+    RewriteRule ^ locations.php [L]
+
+	RewriteCond %{REQUEST_FILENAME} (.*)doctor\.json$
+    RewriteRule ^ doctor.php [L]
+    
+</IfModule>
+
+# END WordPress
+
+#Order deny,allow
+#Deny from all
+#Allow from 118.70.183.201
+#Allow from 118.70.187.254
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|Baiduspider) [NC]
+RewriteRule .* - [R=403,L]
+</IfModule>
