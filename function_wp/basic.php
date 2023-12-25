@@ -1,4 +1,7 @@
 <?php   
+    // Loai bo the xuong dong api wp
+    $str=str_replace("\r\n","",$str);
+
     // Check url test
     if(isset($_GET['t'])):
         echo '<pre>';
@@ -177,6 +180,8 @@ if(is_category()){
     $idcat=get_query_var('cat');    
 }
     
+$cate = get_the_category($post->ID); 
+$idcat = $cate[0] -> cat_ID;
 $video = get_field('video','category_' . $idcat); 
 
 // Cate Loop
@@ -286,3 +291,9 @@ if (current_user_can('administrator') || current_user_can('editor')) {
     <link id="pagestyle" rel="stylesheet" type="text/css" href="/wp-includes/css/dashicons.min.css?ver=4.9.10" />
     ';
 }
+
+// fix tac gia custom post type admin
+function add_author_support_to_posts() {
+    add_post_type_support( 'your_custom_post_type', 'author' ); 
+ }
+ add_action( 'init', 'add_author_support_to_posts' );

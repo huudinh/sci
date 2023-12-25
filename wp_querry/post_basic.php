@@ -2,6 +2,9 @@
 // Get Title
 the_title(); 
 
+// Check Post ID 
+$postid = get_the_ID();
+
 // Query Post
 while ( have_posts() ) : 
     the_post(); 

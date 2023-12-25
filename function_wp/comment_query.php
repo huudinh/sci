@@ -23,3 +23,12 @@ function jltwp_adminify_remove_comments_author_link($author_link)
 {
     return strip_tags($author_link);
 }
+
+// Remove field Comment
+add_filter('comment_form_default_fields', 'website_remove');
+function website_remove($fields)
+{
+   if(isset($fields['url']))
+   unset($fields['url']);
+   return $fields;
+}
