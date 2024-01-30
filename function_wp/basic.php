@@ -295,5 +295,17 @@ if (current_user_can('administrator') || current_user_can('editor')) {
 // fix tac gia custom post type admin
 function add_author_support_to_posts() {
     add_post_type_support( 'your_custom_post_type', 'author' ); 
- }
- add_action( 'init', 'add_author_support_to_posts' );
+}
+add_action( 'init', 'add_author_support_to_posts' );
+
+// Fix css admin
+add_action('admin_head', 'my_custom_fonts');
+
+function my_custom_fonts() {
+  echo '<style>
+    body, td, textarea, input, select {
+      font-family: "Lucida Grande";
+      font-size: 12px;
+    } 
+  </style>';
+}
