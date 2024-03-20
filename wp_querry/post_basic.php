@@ -31,3 +31,29 @@ $post_slug = pathinfo( $url_path, PATHINFO_BASENAME );
 
 // Get url
 get_permalink( $post->ID );
+
+// Get Keyword
+// $postId = $post->ID
+$keyword = get_post_meta( $postId, '_yoast_wpseo_focuskw', true );
+
+// Get Description
+$meta_desc = get_post_meta($postId, '_yoast_wpseo_metadesc', true);
+
+if(empty($meta_desc)) {
+    $sapo = preg_split('/\r?\n|\r/', $post->post_content);
+
+    $description = $sapo[0];
+    if(mb_strlen($description, 'UTF-8') > 297) {
+        $meta_desc = mb_substr($description, 0, 297, 'UTF-8') . '...';
+    } else {
+        $meta_desc = $description;
+    }
+}
+
+// Count Words Post
+function prefix_wcount(){
+    ob_start();
+    the_content();
+    $content = ob_get_clean();
+    return sizeof(explode(" ", $content));
+}
