@@ -1,0 +1,111 @@
+@import url("https://huudinh.github.io/assets/sass/icon.min.css");
+
+@font-face {
+    font-family: "fontello";
+
+    src: url(https://huudinh.github.io/assets/fonts/fontello.woff2) format("woff2"),
+
+        url(https://huudinh.github.io/assets/fonts/fontello.woff) format("woff");
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #333;
+}
+
+.content {
+    text-align: center;
+    list-style: none;
+}
+
+.content li {
+    padding: 5px 0
+}
+
+.select {
+    list-style: none;
+    margin: 20px auto;
+    width: 220px;
+    display: block;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px #ebecef;
+    border: 1px solid #ccc;
+    display: flex;
+    color: #333;
+    padding: 0;
+}
+
+.select li {
+    padding: 10px
+}
+
+.select li:hover {
+    color: #c00;
+}
+
+.pageNumbers {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    box-shadow: 0px 0px 5px 2px #ebecef;
+    border-radius: 6px;
+}
+.pageNumbers ul{
+    display: flex;
+    margin:0;
+    padding:0;
+}
+
+.pageNumbers li {
+    padding: 10px;
+    width: 30px;
+    margin: 0;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pageNumbers li.control {
+    padding: 0 8px;
+}
+
+.pageNumbers li.back {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.pageNumbers li.next {
+    border-radius: 0px 6px 6px 0px;
+}
+
+.pageNumbers li.active {
+    background-color: #ccc;
+    background-color: #eef2ff;
+    border-color: #6366f1;
+}
+
+.pageNumbers li:hover {
+    background: #eee;
+    border-color: #a3a5ff;
+}
+
+.pageNumbers li button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pageNumbers li button:focus {
+    outline: none;
+}
