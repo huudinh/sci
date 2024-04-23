@@ -15,20 +15,37 @@ function youtube_shortcode($att,$content=null){
 }
 add_shortcode('youtube','youtube_shortcode');
 
-// Shortcode Editor
-function my_custom_styles( $init_array ) {  
-
-    $style_formats = array(  
-        array(  
-            'title' => 'Ghi chú',  
-            'block' => 'div',  
-            'classes' => 'post_note',
-            'wrapper' => true,
-        ),
-    );  
-    $init_array['style_formats'] = json_encode( $style_formats );  
+// RSS View
+function rss_shortcode($atts,$content=null){
+	$url = $atts['url'];
     
-    return $init_array;  
-  
-} 
-add_filter( 'tiny_mce_before_init', 'my_custom_styles' );
+    if(function_exists('fetch_feed')) {
+ 
+        include_once(ABSPATH.WPINC.'/feed.php');
+        $feed = fetch_feed($url);
+     
+        $limit = $feed->get_item_quantity(7); // specify number of items
+        $items = $feed->get_items(0, $limit); // create an array of items
+
+    }
+    if ($limit == 0) echo '<div>The feed is either empty or unavailable.</div>';
+    else foreach ($items as $item) :
+        $content .= '
+            <div>
+                <a href="'.$item->get_permalink().'" title="'.$item->get_date('j F Y @ g:i a').'">
+                    '.$item->get_title().'
+                </a>
+            </div>
+            <div>
+                <p>'.$item->get_date('j F Y - g:i a').'</p>
+                <p>'.substr($item->get_description(), 0, 200).'</p>
+            </div>
+        ';
+    endforeach;
+
+    return $content;
+	
+}
+add_shortcode('rss','rss_shortcode');
+
+// echo do_shortcode("[your_shortcode]");

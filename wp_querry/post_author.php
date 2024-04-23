@@ -15,3 +15,7 @@ $display_name = get_the_author_meta( 'display_name' , $author_id );
 $avatar_img = get_avatar( get_the_author_meta('user_email') , 90 ) ;
 $user_description = get_the_author_meta( 'user_description', $post->post_author );
 $us = str_replace('[]', '</br>', $user_description);
+
+$author_url = esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );
+$author_name = get_the_author();
+$time = get_post_modified_time('d/m/Y');

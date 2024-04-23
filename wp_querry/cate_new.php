@@ -76,6 +76,7 @@ endwhile; wp_reset_postdata();
 $args = array(
     'post_status' => 'publish',
     'showposts' => 10,
+    // 'cat' => $category_id,
 );
 
 $getposts = new WP_query($args); 
