@@ -39,39 +39,44 @@ if($loop->have_posts()):
 endif; 
 wp_reset_postdata(); 
 
-// Cách 2 ==> Lỗi
+// Cách 2 Lấy bài viết mới nhất
+// $args = array(
+//     'post_status'=>'publish',
+//     'post_type' => 'post', 
+//     'posts_per_page' => 3,
+//     'order' => 'DESC',
+//     'category__not_in' => array( 150 ),
+//     'category_name' => array('Latest News','News') 
+// );
 $args = array(
-    'post_status'=>'publish',
-    'post_type' => 'post', 
-    'posts_per_page' => 3,
-    'order' => 'DESC',
+    'post_status' => 'publish',
+    'showposts' => 0,
+    'orderby' => 'desc',
     'category__not_in' => array( 150 ),
-    'category_name' => array('Latest News','News') 
 );
 $getposts = new WP_query($args); 
-while ($getposts->have_posts()) : 
+$num = 0; 
+while ($getposts->have_posts() && $num < 3) : 
+    $num++;
     $getposts->the_post(); 
     $link = get_permalink();
     $title = get_the_title();
     $img = get_the_post_thumbnail_url();
-    $time = get_post_modified_time('d/m/Y');
+    $time = get_the_date('d/m/Y');
+    $excerpt = wp_trim_words( get_the_excerpt(), 15 );
     echo'
-        <a href="'.$link.'" class="news_da_1_0_0__item">
-            <div class="news_da_1_0_0__pic ">
-                <img width="177" height="128" src="/rs?w=177&h=128&src='.$img.'" alt="'.$title.'">
+        <a href="'.$link.'" class="new_dhh_1_0_0__item">
+            <div class="new_dhh_1_0_0__des">
+                new
             </div>
-            <h3 class="news_da_1_0_0__detail">
+            <h3 class="new_dhh_1_0_0__text">
                 '.$title.'
-                <div class="news_da_1_0_0__numb">
-                    <img width="15" height="13" src="'.$path.'images/icon.png" alt="icon"> '.$time.'
-                </div>
             </h3>
         </a>
     ';
 endwhile; wp_reset_postdata(); 
 
-// Cách 3 =>> Good
-// Lấy 5 bài viết mới nhất -->
+// Cách 3 Lấy bài viết mới nhất =>> Good 
 
 $args = array(
     'post_status' => 'publish',
@@ -92,4 +97,38 @@ while ($getposts->have_posts()) : $getposts->the_post();
     ';
 endwhile; 
 wp_reset_postdata();
-?>
+
+
+// Hiển thị cate theo ID
+$category_id = $field['news1'];
+$args = array( 
+    'post_status'=>'publish',
+    'post_type' => 'post', 
+    'posts_per_page' => 3,
+    'order' => 'DESC',
+    'cat' => $category_id,
+    'category_name' => array('Latest News','News')  
+);
+$getposts = new WP_query($args); 
+while ($getposts->have_posts()) : $getposts->the_post(); 
+    $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');            
+    $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);                         
+    echo'
+        <a href="'.get_permalink().'" class="news_drg_1_0_0__item">
+            <div class="news_drg_1_0_0__pic">
+                <img width="270" height="155" src="'.$img.'" alt="'.get_the_title().'">
+            </div>
+            <div class="news_drg_1_0_0__content">
+                <div class="news_drg_1_0_0__titleNews">
+                    '.get_the_title().'
+                </div>
+                <div class="news_drg_1_0_0__time">
+                    '.get_the_date('d/m/Y').'
+                </div>
+                <div class="news_drg_1_0_0__desc">
+                    '.wp_trim_words( get_the_excerpt(), 25 ).'
+                </div>
+            </div>
+        </a>
+    ';
+endwhile; wp_reset_postdata(); 
