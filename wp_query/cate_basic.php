@@ -10,8 +10,8 @@ $category = get_queried_object();
 $category->term_id;
 
 // Get Cate ID
-$categories = get_the_category();
-$category_id = $categories[0]->cat_ID;
+// $categories = get_the_category();
+// $category_id = $categories[0]->cat_ID;
 
 // Get cate name theo ID
 get_the_category_by_ID( $cate1 );

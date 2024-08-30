@@ -87,10 +87,12 @@ $args = array(
 $getposts = new WP_query($args); 
 global $wp_query; $wp_query->in_the_loop = true; 
 while ($getposts->have_posts()) : $getposts->the_post();     
+    $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');            
+    $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
     echo'
         <a href="'.get_permalink($post->ID).'" class="sidebar_4_0_0_box_item">
             <div class="pic">
-                <img class="lazy" data-src="'.get_the_post_thumbnail_url($post->ID).'" alt="'.get_the_title($post->ID).'">
+                <img class="lazy" data-src="'.$img.'" alt="'.get_the_title($post->ID).'">
             </div>
             <div class="text">'.get_the_title($post->ID).' »</div>
         </a>
@@ -100,7 +102,7 @@ wp_reset_postdata();
 
 
 // Hiển thị cate theo ID
-$category_id = $field['news1'];
+$category_id = number_format($field['news1']);
 $args = array( 
     'post_status'=>'publish',
     'post_type' => 'post', 
