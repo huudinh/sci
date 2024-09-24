@@ -5,9 +5,12 @@ category_description();
 // Get title
 single_cat_title();
 
-// Get Term ID
 $category = get_queried_object();
-$category->term_id;
+// Get Term ID
+$cate_id = $category->term_id;
+
+// Get Slug category
+$cate_link = $category->slug;
 
 // Get Cate ID
 // $categories = get_the_category();
@@ -30,6 +33,8 @@ if ( ! empty( $categories ) ) {
     $cate_name = esc_html( $categories[0]->name );	
     $cate_link = esc_html( $categories[0]->slug );
 }
+
+
 
 // Get thumbnail
 $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');            

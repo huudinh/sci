@@ -1,4 +1,5 @@
 <?php
+    // Khai báo lượt xem
     $pageview = get_post_meta(get_the_ID(),'pageview',true);
     if($pageview =="") $pageview ="0";
     $pageview = (int)$pageview +1;
