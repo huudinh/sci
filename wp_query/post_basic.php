@@ -57,3 +57,30 @@ function prefix_wcount(){
     $content = ob_get_clean();
     return sizeof(explode(" ", $content));
 }
+
+// Lấy danh sách thẻ Tags
+$tags = get_the_tags();
+if ($tags) {
+    foreach ($tags as $tag) {
+        echo '<span>' . $tag->name . '</span>';
+    }
+}
+
+// Lấy nội dung bài viết theo ID
+// Lấy id bs Huy
+$post_id = 140;
+
+// Lấy nội dung bài viết
+$post = get_post($post_id);
+
+// Kiểm tra xem bài viết có tồn tại không
+if ($post) {
+    $title = $post->post_title;
+    $content = $post->post_content;
+    $img = get_the_post_thumbnail_url($post->ID);
+    $degree = get_field('degree', $post_id);
+    $position = get_field('pos', $post_id);
+
+} else {
+    echo 'Bài viết không tồn tại.';
+}

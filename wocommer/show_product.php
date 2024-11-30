@@ -35,3 +35,11 @@ add_shortcode('sanpham', function($atts, $content=null) {
     display_woocommerce_products_by_ids($id);
     return ob_get_clean();
 });
+
+// Hiển thị 12 sản phẩm trong cate sản phẩm
+function custom_woocommerce_query($query) {
+    if (!is_admin() && $query->is_main_query() && is_product_category()) {
+        $query->set('posts_per_page', 12);
+    }
+}
+add_action('pre_get_posts', 'custom_woocommerce_query');

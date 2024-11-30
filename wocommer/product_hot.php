@@ -1,4 +1,5 @@
 <?php
+    // Lấy sản phẩm nổi bật khi chọn sao
     $tax_query[] = array(
         'taxonomy' => 'product_visibility',
         'field'    => 'name',
@@ -21,6 +22,3 @@
         <!-- <a href="<?php bloginfo('url'); ?>?add-to-cart=<?php the_ID(); ?>">Thêm vào giỏ</a> -->
     </div>
 <?php endwhile; wp_reset_postdata(); ?>
-                
-
-

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Geolocation API Example</h2>
+<p>Nhấn vào nút dưới đây để xem vị trí của bạn:</p>
+
+<button onclick="getLocation()">Lấy vị trí của tôi</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    x.innerHTML = "Trình duyệt của bạn không hỗ trợ Geolocation.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Vĩ độ: " + position.coords.latitude + 
+  "<br>Kinh độ: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "Người dùng từ chối yêu cầu Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Thông tin vị trí không khả dụng.";
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "Yêu cầu lấy vị trí bị hết thời gian.";
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "Đã xảy ra lỗi không xác định.";
+      break;
+  }
+}
+</script>
+
+</body>
+</html>

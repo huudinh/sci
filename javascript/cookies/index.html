@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="likeButton">Like</button>
+    <script>
+        // Hàm để thiết lập cookie
+        function setCookie(name, value, days) {
+            let date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        // Hàm để lấy giá trị của cookie
+        function getCookie(name) {
+            let cookieArr = document.cookie.split(";");
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split("=");
+                if (name == cookiePair[0].trim()) {
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
+
+        // Hàm để xử lý sự kiện "like"
+        function handleLike() {
+            if (getCookie("liked") === "true") {
+                alert("Bạn đã ấn like rồi!");
+                return;
+            }
+
+            // Gửi yêu cầu "like" đến server
+            fetch('like.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                // body: JSON.stringify({ liked: true })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        setCookie("liked", "true", 365); // Lưu cookie trong 1 năm
+                        alert("Cảm ơn bạn đã ấn like!");
+                    } else {
+                        alert(data.message);
+                    }
+                });
+        }
+
+        // Gắn sự kiện click vào nút "like"
+        document.getElementById("likeButton").addEventListener("click", handleLike);
+
+    </script>
+</body>
+
+</html>

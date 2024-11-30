@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hàm tính khoảng cách giữa hai điểm sử dụng công thức Haversine
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Bán kính Trái Đất tính bằng km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c; // Khoảng cách tính bằng km
+}
+
+// Hàm tìm vị trí gần nhất
+function findNearestLocation(targetLocation, locations) {
+    let nearestLocation = null;
+    let shortestDistance = Infinity;
+
+    locations.forEach(location => {
+        const distance = calculateDistance(
+            targetLocation.lat, targetLocation.lon,
+            location.lat, location.lon
+        );
+        if (distance < shortestDistance) {
+            shortestDistance = distance;
+            nearestLocation = location;
+        }
+    });
+
+    return nearestLocation;
+}
+
+// Ví dụ sử dụng
+const targetLocation = { lat: 21.0285, lon: 105.8542 }; // Tọa độ Hà Nội
+const locations = [
+    { lat: 21.0278, lon: 105.8342, name: "Location 1" },
+    { lat: 21.0385, lon: 105.8482, name: "Location 2" },
+    { lat: 21.0185, lon: 105.8642, name: "Location 3" }
+];
+
+const nearestLocation = findNearestLocation(targetLocation, locations);
+console.log(`Vị trí gần nhất là: ${nearestLocation.name}`);
+
+    </script>
+</body>
+</html>

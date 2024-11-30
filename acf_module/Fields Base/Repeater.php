@@ -1,4 +1,54 @@
 <?php
+    // test
+    'id_slider_pr_2_0_0' => array(
+        'key' => 'id_slider_pr_2_0_0',
+        'name' => 'slider_pr_2_0_0',
+        'label' => 'Slider (slider_pr_2_0_0)',
+        'display' => 'block',
+        'sub_fields' => array(
+            array(
+                'key' => 'id_slider_pr_2_0_0_sub2',
+                'label' => '',
+                'name' => 'slide',
+                'type' => 'repeater',
+                'instructions' => '',
+                'layout' => 'table',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'id_slider_pr_2_0_0_sub2_sub1',
+                        'label' => '',
+                        'name' => 'img',
+                        'type' => 'textarea',
+                        'instructions' => 'Dòng 1: Tên Slider, 2: Link ảnh PC (Size 1920x700), 3: Link ảnh MB (size 428x700), 4: Link chiến dịch',
+                        'rows' => 4,
+                    ),
+                ),
+                
+            ),
+        ),
+        'min' => '',
+        'max' => '',
+    ),
+
+
+    // Show code
+    $rows = $field["slide"];
+    foreach($rows as $row):
+        $data = explode("\n",  $row["img"]);
+        echo '
+            <div class="slider_pr_2_0_0__itemSlide">
+                <a class="slider_pr_2_0_0__item" href="'.$data[3].'">
+                    <picture>
+                        <source media="(min-width: 767px)" width="1440" height="606" srcset="'.$data[1].'">
+                        <img width="428" height="250" src="'.$data[2].'" alt="'.$data[0].'">
+                    </picture>
+                </a>
+            </div>
+        ';
+    endforeach;
+
+
+    // Test full
     array(
         'key' => 'id_header_8_0_0_sub2',
         'label' => 'Chi nhánh',

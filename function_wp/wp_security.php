@@ -32,6 +32,16 @@ define('WP_POST_REVISIONS', 20);
 
 // --------------> function.php
 
+// Tắt thông báo Plugin
+function remove_all_admin_notices() {
+	remove_all_actions('admin_notices');
+	remove_all_actions('all_admin_notices');
+}
+add_action('admin_head', 'remove_all_admin_notices');
+
+// Tắt thông báo cập nhật plugin
+add_filter('site_transient_update_plugins', '__return_null');
+
 // Login remove wordpress authentication
 remove_filter('authenticate', 'wp_authenticate_username_password', 20);
 add_filter('authenticate', function($user, $email, $password){

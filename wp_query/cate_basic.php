@@ -95,3 +95,9 @@ if ( $loop -> have_posts() ) :
             ';
     endwhile;
 endif;
+
+// Get tags
+$tags = get_tags();
+foreach ($tags as $tag) {
+    echo '<a class="topic_knhd_1_0_0__item" href="/tag/'.$tag->slug.'/">' . $tag->name . '</a>';
+}
