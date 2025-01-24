@@ -34,8 +34,6 @@ if ( ! empty( $categories ) ) {
     $cate_link = esc_html( $categories[0]->slug );
 }
 
-
-
 // Get thumbnail
 $kim = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');            
 $img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
@@ -96,8 +94,3 @@ if ( $loop -> have_posts() ) :
     endwhile;
 endif;
 
-// Get tags
-$tags = get_tags();
-foreach ($tags as $tag) {
-    echo '<a class="topic_knhd_1_0_0__item" href="/tag/'.$tag->slug.'/">' . $tag->name . '</a>';
-}

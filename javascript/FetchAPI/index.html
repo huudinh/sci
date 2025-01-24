@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // URL của file JSON
+        const jsonUrl = 'https://benhvienthammykangnam.com.vn/hoi-dap/wp-content/themes/KnAnser2024/Module/assets/js/post.json';
+
+        // Sử dụng fetch để đọc dữ liệu từ URL
+        fetch(jsonUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                // Xử lý dữ liệu JSON ở đây
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+
+    </script>
+</body>
+
+</html>

@@ -1,84 +1,58 @@
-
 <?php
-    $tags = get_tags();
-    // var_dump($tags);
-    $path = get_template_directory_uri().'/Module/Home/topic_knhd_1_0_0/';
-    if($tags && is_front_page()):
-?>
+// 1. Lấy các bài viết thuộc danh mục cụ thể
+function get_tags_by_category($category_id) {
+    $args = array(
+        'category' => $category_id,
+        'posts_per_page' => -1, // Lấy tất cả các bài viết
+    );
+    $posts = get_posts($args);
 
-<style>
-    <?php include(locate_template("Module/Home/topic_knhd_1_0_0/sass/topic_knhd_1_0_0.min.css"));  ?>
-</style>
+    // Lấy danh sách các tags
+    $tags = array();
+    foreach ($posts as $post) {
+        $post_tags = wp_get_post_tags($post->ID);
+        foreach ($post_tags as $tag) {
+            if (!in_array($tag, $tags)) {
+                $tags[] = $tag;
+            }
+        }
+    }
 
-<section class="topic_knhd_1_0_0">
-    <div class="topic_knhd_1_0_0__head">Chủ đề được quan tâm</div>
-    <div class="topic_knhd_1_0_0__box">
-        <div class="topic_knhd_1_0_0__arrow topic_knhd_1_0_0__arrow--1">
-            <img width="10" height="10" src="<?php echo $path ?>images/icon-left.svg" alt="">
-        </div>
-        <div class="topic_knhd_1_0_0__list">
-            <div class="topic_knhd_1_0_0__scroll">               
-                <?php                    
-                    foreach ($tags as $tag) {
-                        $view = get_field('tag_check', $tag); // Assuming 'tag_check' is related to the tag
-                        // var_dump($view);
-                    
-                        if ($view[0] == 'home') {
-                            echo '<a class="topic_knhd_1_0_0__item" href="/hoi-dap/tag/' . $tag->slug . '/">' . $tag->name . '</a>';
-                        }
-                    }                    
-                ?>
-            </div>
-        </div>
-        <div class="topic_knhd_1_0_0__arrow topic_knhd_1_0_0__arrow--2">
-            <img width="10" height="10" src="<?php echo $path ?>images/icon-left.svg" alt="">
-        </div>
-    </div>
-</section>
+    return $tags;
+}
 
-<script>
-    <?php include(locate_template("Module/Home/topic_knhd_1_0_0/js/topic_knhd_1_0_0.min.js"));  ?>
-</script>
-
-<?php endif; ?>
+// Sử dụng hàm để lấy tags của danh mục có ID là 1
+$tags = get_tags_by_category(1);
+foreach ($tags as $tag) {
+    echo $tag->name . '<br>';
+}
 
 
-<?php 
-    if(is_single()):
-?>
-<style>
-    <?php include(locate_template("Module/Home/topic_knhd_1_0_0/sass/topic_knhd_1_0_0.min.css"));  ?>
-</style>
+// 2. Lấy các Tags ra trang chủ theo ACF
+$tags = get_tags();
+if($tags && is_front_page()):
+    foreach ($tags as $tag) {
+        $view = get_field('tag_check', $tag); // Assuming 'tag_check' is related to the tag
+        // var_dump($view);
+    
+        if ($view[0] == 'home') {
+            echo '<a class="topic_knhd_1_0_0__item" href="/hoi-dap/tag/' . $tag->slug . '/">' . $tag->name . '</a>';
+        }
+    }                    
+endif; 
+ 
+// 3. Lấy các Tags ra trang chi tiết bài viết
+if(is_single()):
+    $tags = get_the_tags();
+    if ($tags) {
+        foreach ($tags as $tag) {
+            echo '<a class="topic_knhd_1_0_0__item" href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+        }
+    }
+endif;
 
-<section class="topic_knhd_1_0_0">
-    <div class="topic_knhd_1_0_0__head topic_knhd_1_0_0__post" >Tags:</div>
-    <div class="topic_knhd_1_0_0__box">
-        <div class="topic_knhd_1_0_0__arrow topic_knhd_1_0_0__arrow--1">
-            <img width="10" height="10" src="<?php echo $path ?>images/icon-left.svg" alt="">
-        </div>
-        <div class="topic_knhd_1_0_0__list">
-            <div class="topic_knhd_1_0_0__scroll">               
-                <?php
-                    $tags = get_the_tags();
-                    if ($tags) {
-                        foreach ($tags as $tag) {
-                            echo '<a class="topic_knhd_1_0_0__item" href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
-                        }
-                    }
-                ?>
-            </div>
-        </div>
-        <div class="topic_knhd_1_0_0__arrow topic_knhd_1_0_0__arrow--2">
-            <img width="10" height="10" src="<?php echo $path ?>images/icon-left.svg" alt="">
-        </div>
-    </div>
-</section>
-
-<script>
-    <?php include(locate_template("Module/Home/topic_knhd_1_0_0/js/topic_knhd_1_0_0.min.js"));  ?>
-</script>
-
-
-<?php 
-    endif;
-?>
+// 4. Get tags liên quan
+$tags = get_tags();
+foreach ($tags as $tag) {
+    echo '<a class="topic_knhd_1_0_0__item" href="/tag/'.$tag->slug.'/">' . $tag->name . '</a>';
+}
