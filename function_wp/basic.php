@@ -2,6 +2,9 @@
     // Loai bo the xuong dong api wp
     $str=str_replace("\r\n","",$str);
 
+    // Lấy URL của trang chủ
+    $home_url = home_url();
+
     // Check url test
     if(isset($_GET['t'])):
         echo '<pre>';

@@ -13,3 +13,12 @@ Header("Location: ".home_url()."");
 $url = 'https://benhvienthammykangnam.com.vn';
 Header( "HTTP/1.1 301 Moved Permanently" );
 Header("Location: ".$url."");
+
+// Lấy URL hiện tại
+$request_uri = $_SERVER['REQUEST_URI'];
+
+// Chuyển hướng 301 đến URL mới
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: https://benhvienthammykangnam.com.vn/hoi-dap/" . $request_uri);
+exit();
+?>

@@ -1,4 +1,15 @@
 <?php
+// Get Link cate
+if(isset($_GET['t'])):
+
+global $post;
+$categories = get_the_category($post->ID);
+if (!empty($categories)) {
+    echo $categories[0]->term_id; // Lấy ID của danh mục đầu tiên
+}
+
+endif;
+
 // Get description
 category_description();
 
