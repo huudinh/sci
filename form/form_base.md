@@ -211,7 +211,6 @@ function checkSendForm(data, formID, number){
                 onSubmit: function (data) {
                     data.code_campaign = '533588630';
                     data.name_campaign = '[Kangnam] Yêu Cầu Gọi Lại';
-                    data.iname = 'Yêu Cầu Gọi Lại';
 
                     checkSendForm(data, this.form, number);
                 },
@@ -239,6 +238,7 @@ function checkSendForm(data, formID, number){
                         <div class="pop_callkn_1_2_0__inputGroup">
                             <form id="form-call">
                                 <div style="display: none">
+                                    <input name="iname" value="Yêu Cầu Gọi Lại" type="text" placeholder="Họ tên" />
                                     <input name="email" type="text" placeholder="Email" />
                                     <input name="referred" value="" />
                                     <input name="location" value="" />
