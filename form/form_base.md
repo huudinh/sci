@@ -305,7 +305,7 @@ function checkSendForm(data, formID, number){
                     Validator.isRequired('input[name="imob"]'),
                     Validator.isRequired('input[name="iname"]'),
                     Validator.isMobile('input[name="imob"]'),
-                    Validator.addInput('#form-reg input[name="itext"]', () => (`Chi nhánh gần nhất: ${document.querySelector('#form-reg select[name="address"]').value} + Dịch vụ quan tâm: ${document.querySelector('#form-reg select[name="service"]').value}`)),
+                    Validator.addInput(`${formRegist} input[name="itext"]`, () => (`Chi nhánh gần nhất: ${document.querySelector(`${formRegist} select[name="address"]`).value} + Dịch vụ quan tâm: ${document.querySelector(`${formRegist} select[name="service"]`).value}`)),
                 ],
                 onSubmit: function (data) {
                     checkSendForm(data, this.form, number);
