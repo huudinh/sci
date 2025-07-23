@@ -11,18 +11,18 @@ Các form trực tiếp gắn trên màn hình Landingpage
 <script type="text/javascript" src="https://nhakhoaparis.vn/css/lib/js_v2.min.js?ver=16"></script>
 ```
 
-#### Get Number Random
+##### Get Number Random
 ```
     const number = totalCapcha(formRegist);
 ```
 
-#### Gửi Form 
+##### Gửi Form 
 
 ```
     checkSendForm(data, this.form, number)
 ```
 
-### Capcha HTML
+##### Capcha HTML
 
 ```html
 <div class="capcha">
