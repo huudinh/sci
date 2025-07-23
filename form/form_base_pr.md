@@ -11,6 +11,17 @@ Các form trực tiếp gắn trên màn hình Landingpage
 <script type="text/javascript" src="https://nhakhoaparis.vn/css/lib/js_v2.min.js?ver=16"></script>
 ```
 
+#### Get Number Random
+```
+    const number = totalCapcha(formRegist);
+```
+
+#### Gửi Form 
+
+```
+    checkSendForm(data, this.form, number)
+```
+
 ### Capcha HTML
 
 ```html
@@ -24,19 +35,6 @@ Các form trực tiếp gắn trên màn hình Landingpage
         <input type="number" class="capcha__result form__result">
     </div>
 </div>
-```
-
-### Function js_v2.min.js
-
-#### Get Number Random
-```
-    const number = totalCapcha(formRegist);
-```
-
-#### Gửi Form 
-
-```
-    checkSendForm(data, this.form, number)
 ```
 
 ### HTML Form Base
