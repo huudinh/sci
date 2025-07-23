@@ -39,7 +39,74 @@ Các form trực tiếp gắn trên màn hình Landingpage
     checkSendForm(data, this.form, number)
 ```
 
-### Template
+### HTML Form Base
+
+``` html
+<form class="registSidebar_pr_1_0_0" id="registSidebar_pr_1_0_0">
+    <article>
+        <div>
+            <div style="display:none">
+                <input name="email" value="" type="textbox" placeholder="Email:">
+                <input id="gclid_field" name="referred" value="">
+                <input name="location" value="">
+            </div>
+            <div class="form-group">
+                <input name="iname" type="textbox" placeholder="Họ tên*:">
+                <div class="form-message"></div>
+            </div>
+            <div class="form-group">
+                <input name="imob" type="textbox" placeholder="Điện thoại*:">
+                <div class="form-message"></div>
+            </div>
+            <div class="form-group">
+                <textarea name="inote" placeholder="Nhu cầu tư vấn"></textarea>
+                <div class="form-message"></div>
+            </div>
+            <div class="capcha">
+                <p class="capcha__note">Vui lòng điền kết quả phép tính trước khi gửi thông tin.</p>
+                <div class="capcha__question">
+                    <div class="capcha__number number--one">2</div>
+                    <div class="capcha__number">+</div>
+                    <div class="capcha__number number--tow">1</div>
+                    <div class="capcha__number">=</div>
+                    <input type="number" class="capcha__result form__result">
+                </div>
+            </div>        
+        </div>
+        <div>
+            <input class="registSidebar_pr_1_0_0__Sent" type="submit" value="HOÀN THÀNH">
+        </div>
+    </article>
+</form>
+```
+
+### Logic Form Base
+
+```js
+// Form Bottom
+const formBottom = "#registSidebar_pr_1_0_0";
+const number = totalCapcha(formBottom);
+
+// Validate
+Validator({
+    form: formBottom,
+    errorSelector: ".form-message",
+    formGroupSelector: ".form-group",
+    rules: [
+        Validator.isRequired('input[name="imob"]'),
+        Validator.isRequired('input[name="iname"]'),
+        Validator.isMobile('input[name="imob"]'),
+    ],
+    onSubmit: function (data) {
+        data.code_campaign = '558803151'; 
+        data.name_campaign = '[Paris] Thương Hiệu Tư Vấn - Sidebar';
+        data.itext = `Đăng ký tư vấn miễn phí: ${data.inote}`;
+        checkSendForm(data, this.form, number);
+    },
+});
+```
+
+### Template Form Regist
 
 ```html
     <button type="button" class="btn btn-danger notiRegist">button</button>
@@ -106,7 +173,7 @@ Các form trực tiếp gắn trên màn hình Landingpage
 ```
 
 
-### Logic
+### Logic Form Regist
 
 ```js
 const registBtnPopup_1_0_1 = document.querySelectorAll(".notiRegist, .btnnktv");
