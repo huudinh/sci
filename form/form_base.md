@@ -68,11 +68,12 @@ function checkSendForm(data, formID, number){
         rules: [
             Validator.isRequired('input[name="imob"]'),
             Validator.isRequired('input[name="iname"]'),
-            Validator.isMobile('input[name="imob"]'),
-            Validator.addInput(`${formBottom} input[name="itext"]`, () => (`Chi nhánh gần nhất: ${document.querySelector(`${formBottom} select[name="address"]`).value} + Dịch vụ quan tâm: ${document.querySelector(`${formBottom} select[name="service"]`).value}`)),
+            Validator.isMobile('input[name="imob"]'),            
         ],
         onSubmit: function (data) {
             // data.iemail = 'a@a.vn'; data.code_campaign = '583971142 1'; data.name_campaign = '[Kangnam] Sale Kangnam 1';
+            data.itext = `Chi nhánh gần nhất: ${data.address}, Dịch vụ quan tâm: ${data.service}`;
+
             // Kiểm tra Form Gửi: (data, formID, number)
             checkSendForm(data, this.form, number);
         },
@@ -147,10 +148,6 @@ function checkSendForm(data, formID, number){
                 <option value="hút mỡ">Hút mỡ</option>
                 <option value="Khác">Khác</option>
             </select>
-            <div class="form-message"></div>
-        </div>
-        <div class="form-group" style="display: none">
-            <input name="itext" type="text" placeholder="Ghi chú" />
             <div class="form-message"></div>
         </div>
         <p class="screen8__note">
@@ -305,9 +302,9 @@ function checkSendForm(data, formID, number){
                     Validator.isRequired('input[name="imob"]'),
                     Validator.isRequired('input[name="iname"]'),
                     Validator.isMobile('input[name="imob"]'),
-                    Validator.addInput(`${formRegist} input[name="itext"]`, () => (`Chi nhánh gần nhất: ${document.querySelector(`${formRegist} select[name="address"]`).value} + Dịch vụ quan tâm: ${document.querySelector(`${formRegist} select[name="service"]`).value}`)),
                 ],
                 onSubmit: function (data) {
+                    data.itext = `Chi nhánh gần nhất: ${data.address}, Dịch vụ quan tâm: ${data.service}`;
                     checkSendForm(data, this.form, number);
                 },
             });
@@ -343,10 +340,6 @@ function checkSendForm(data, formID, number){
                         <div class="form-group">
                             <input id="phonepopup" name="imob" type="text" maxlength="11" minlength="10"
                                 pattern="(84|0)([3|5|7|8|9])([0-9]{8})" required placeholder="Điện thoại*:" />
-                            <div class="form-message"></div>
-                        </div>
-                        <div class="form-group" style="display: none">
-                            <input name="itext" type="text" placeholder="Ghi chú" />
                             <div class="form-message"></div>
                         </div>
                         <div class="form-group">
